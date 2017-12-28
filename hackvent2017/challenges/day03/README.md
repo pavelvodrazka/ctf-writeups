@@ -15,7 +15,7 @@ $ grep -i message logcat.txt
 11-13 20:40:13.542   137   137 I DEBUG   : 	      FAILED TO SEND RAW PDU MESSAGE
 ```
 
-When we follow that PID we'll get these lines. 
+When we follow that PID we get these lines. 
 
 ```
 $ grep "\s137\s" logcat.txt 
