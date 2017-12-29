@@ -8,7 +8,7 @@ Santa has hidden something for you [here](files/HoHoHo.pdf "HoHoHo.pdf")
 
 Let's extract files from given PDF using binwalk and see what's inside.
 
-```
+```bash
 $ binwalk -e HoHoHo.pdf 
 
 DECIMAL       HEXADECIMAL     DESCRIPTION

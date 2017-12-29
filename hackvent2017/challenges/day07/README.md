@@ -10,7 +10,7 @@ Please help us to recover it: [Download](files/SANTA.FILE "SANTA.FILE")
 
 Let's take a look what we got.
 
-```
+```bash
 $ file SANTA.FILE 
 SANTA.FILE: Zip archive data, at least v1.0 to extract
 $ unzip SANTA.FILE 
@@ -24,7 +24,7 @@ It is a ZIP archive containing file [SANTA.IMA](files/SANTA.IMA "SANTA.IMA") whi
 
 I feel lucky so let's try to use `strings` instead of mounting it.
 
-```
+```bash
 $ strings SANTA.IMA | grep HV17
 Y*C:\Hackvent\HV17-UCyz-0yEU-d90O-vSqS-Sd64.exe
 ```
