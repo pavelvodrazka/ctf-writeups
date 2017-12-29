@@ -6,7 +6,6 @@ Most passwords of Santa GiftLogistics were stolen. You find an example of the tr
 
 Unfortunately this was an incomplete countermeasure. It's still possible to retrieve the protected user profile data where you will find the flag.
 
-
 [Link](http://challenges.hackvent.hacking-lab.com:7240/giftlogistics/) + [Traffic](files/giftlogistics.pcapng "giftlogistics.pcapng")
 
 ### Solution
