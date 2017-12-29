@@ -1,11 +1,13 @@
 # Day 03: Strange Logcat Entry
+
 *Lost in messages*
 
 I found those strange entries in my Android logcat, but I don't know what it's all about... I just want to read my messages!
 
-[Get the logcat](files/logcat.txt)
+[Get the logcat](files/logcat.txt "logcat.txt")
 
 ### Solution
+
 When we try to find the word *message* in the logcat file we get an interesting debug line.
 
 ```

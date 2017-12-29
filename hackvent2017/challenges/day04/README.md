@@ -1,9 +1,11 @@
 # Day 04: HoHoHo
+
 *NOTE: New easyfied attachment available*
 
 Santa has hidden something for you [here](files/HoHoHo.pdf "HoHoHo.pdf")
 
 ### Solution
+
 Let's extract files from given PDF using binwalk and see what's inside.
 
 ```

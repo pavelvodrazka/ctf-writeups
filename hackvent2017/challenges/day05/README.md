@@ -33,7 +33,7 @@ I found a handy Python [script](files/reversecrc.py "reversecrc.py") to reverse 
 
 The rest is straightforward since we know the expected flag format. We have to reverse each checksum to a 4-characters long string.
 
-```python
+```
 0x69355f71 = crc32('HV17')
 0xc2c8c11c = crc32('7pKs')
 0xdf45873c = crc32('whyz')
