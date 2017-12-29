@@ -10,7 +10,7 @@ Follow Santa Claus as he makes his journey around the world.
 
 Page is serving QR codes continually changing with each request. I tried to decode few codes and all of them contained name of some state. I assume there is a QR code with flag hidden somewhere so it will be like finding needle in a haystack. 
 
-We can try to catch the flag by hand using a web browser and some mobile app for reading QR codes, but I'm too lazy for this so I wrote a simple Scala program (source can be found [here](../../src/main/scala/hackvent2017/Day06.scala)) to catch it for me. 
+We can try to catch the flag by hand using a web browser and some mobile app for reading QR codes, but I'm too lazy for this so I wrote a simple Scala program (source code can be found [here](../../src/main/scala/hackvent2017/Day06.scala)) to catch it for me. 
 
 
 ```scala

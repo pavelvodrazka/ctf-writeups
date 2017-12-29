@@ -18,7 +18,7 @@ I quickly realized that the onion is too big and I should write a program to aut
 * **rev**: reverse content string
 * **flag**: print content (flag)
 
-I ended up with following Scala program (source can be found [here](../../src/main/scala/hackvent2017/Day09.scala)).
+I ended up with following Scala program (source code can be found [here](../../src/main/scala/hackvent2017/Day09.scala)).
 
 ```scala
 case class MapLayer(op: String, mapTo: String, content: String, mapFrom: String)
