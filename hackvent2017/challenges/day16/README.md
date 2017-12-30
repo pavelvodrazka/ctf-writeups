@@ -109,7 +109,7 @@ This indicates that `SANTA()` function calls `zip()` at some point and the argum
 ```scala
 val nc = NetCat.open("challenges.hackvent.hacking-lab.com", 1034)
 try {
-val allowedChars = List('"', ''', '(', ')', '+', '.', '0', '1', '2', '3', '7', '9', 'A', 'C', 'D', 'E', 'I', 'L', 'N', 'O', 'P', 'R', 'S', 'T', 'V', '[', ']', '_', 'a', 'c', 'd', 'e', 'i', 'l', 'n', 'o', 'p', 'r', 's', 't', 'v')
+val allowedChars = List('"', '\'', '(', ')', '+', '.', '0', '1', '2', '3', '7', '9', 'A', 'C', 'D', 'E', 'I', 'L', 'N', 'O', 'P', 'R', 'S', 'T', 'V', '[', ']', '_', 'a', 'c', 'd', 'e', 'i', 'l', 'n', 'o', 'p', 'r', 's', 't', 'v')
 
 // read prompt
 nc.read
