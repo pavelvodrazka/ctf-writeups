@@ -20,7 +20,7 @@ object Day09 {
 
   def main(args: Array[String]): Unit = {
     var queue = List(Source.fromFile("hackvent2017/challenges/day09/files/jsonion.json").mkString)
-    while (!queue.isEmpty) {
+    while (queue.nonEmpty) {
       queue = queue.flatMap { str =>
         val elements = str.parseJson.asInstanceOf[JsArray].elements
         elements.map { el =>
