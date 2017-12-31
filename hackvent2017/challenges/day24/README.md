@@ -68,7 +68,7 @@ The Message Board Admin Panel was running on port [1088](http://challenges.hackv
 
 This stage contained *Tools* section with a form which generated certificate based on submitted CRS.
 
-Hints 3 and 4 directed me to the `state` field of CSR which suffered from SQL injection. I wrote a script which used blind time-based SQLi on that field to find useful data in the underlying database. It was very time consuming part but i managed to extract link to the last stage from column `private_key` of the first row of table `hv24_2.keystorage`. It contained this value:
+Hints 3 and 4 directed me to the `state` field of CSR which suffered from SQL injection. I wrote a script which used blind time-based SQLi on that field to find useful data in the underlying database. It was very time consuming part but I managed to extract link to the last stage from column `private_key` of the first row of table `hv24_2.keystorage`. It contained this value:
 
 ```
 challenges.hackvent.hacking-lab.com:1089?key=W5zzcusgZty9CNgw
@@ -80,7 +80,7 @@ The Easy Webshop was running on port [1089](http://challenges.hackvent.hacking-l
 
 The last hint indicated it has something to do with SSTi vulnerability. I quickly realized it's referencing to [Jinja2](http://jinja.pocoo.org/docs/2.10/) templating engine for Python.
 
-I found this useful [article](https://nvisium.com/blog/2016/03/11/exploring-ssti-in-flask-jinja2-part-ii/) which showed me how to exploit that vulnerability. I found that UTL path is vulnerable but it took me some time to put all the necessary things things together and make it work.
+I found this useful [article](https://nvisium.com/blog/2016/03/11/exploring-ssti-in-flask-jinja2-part-ii/) which showed me how to exploit that vulnerability. I found that URL path is vulnerable but it took me some time to put all the necessary things together and make it work.
 
 I started local netcat opened for incoming connections: 
 
