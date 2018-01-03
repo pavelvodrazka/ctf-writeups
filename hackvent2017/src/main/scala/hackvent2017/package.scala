@@ -130,4 +130,13 @@ package object hackvent2017 {
 
   }
 
+  /* -- time -- */
+
+  def time(fun: () => Any): Long = {
+    val started = System.currentTimeMillis
+    fun()
+    val ended = System.currentTimeMillis
+    (ended - started) / 1000
+  }
+
 }

