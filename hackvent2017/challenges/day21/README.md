@@ -1,8 +1,8 @@
-# Day 21: tamagotchi
+# Day 21: Tamagotchi
   
-*ohai fuud or gtfo*
+*Ohai fuud or gtfo*
 
-**ohai**
+**Ohai**
 
 I'm a little tamagotchi who wants fuuuuud, pls don't giveh me too much or I'll crash...
 

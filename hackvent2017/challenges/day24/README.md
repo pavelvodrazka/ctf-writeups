@@ -10,7 +10,7 @@ It's easy to create a private chat and start chatting without a registration.
 
 [Chatterbox](http://challenges.hackvent.hacking-lab.com:1087/)
 
-Hint #1: the admin is a lazy clicker boy and only likes `<a href="..."></a>`  
+Hint #1: The admin is a lazy clicker boy and only likes `<a href="..."></a>`  
 Hint #2: As a passionate designer, the admin loves different fonts.  
 Hint #3: For step 2: I'd better be my own CA.  
 Hint #4: For step 2: It's all about the state  
@@ -26,7 +26,7 @@ The Chatterbox was running on port [1087](http://challenges.hackvent.hacking-lab
 
 As a regular user I was able to create a private channel with my own CSS. This was very suspicious right from the beginning. Some form of CSS injection? But which and how?
 
-The first hint indicates that it is possible to invite admin to my private channel. It didn't seem so because admin silently joined the channel but didn't respond to any post. I verified his presence by modifying CSS to send GET request to my hookbin on load.
+The first hint indicated that it is possible to invite admin to my private channel. It didn't seem so because admin silently joined the channel but didn't respond to any post. I verified his presence by modifying CSS to send GET request to my hookbin on load.
 
 The second hint about fonts sent me to the right direction and I found this [article](http://mksben.l0.cm/2015/10/css-based-attack-abusing-unicode-range.html) about @font-face unicode-range vulnerability.
 

@@ -1,6 +1,6 @@
-# Day 12: giftlogistics
+# Day 12: Giftlogistics
 
-*countercomplete inmeasure*
+*Countercomplete inmeasure*
 
 Most passwords of Santa GiftLogistics were stolen. You find an example of the traffic for Santa's account with password and everything. The Elves CSIRT Team detected this and made sure that everyone changed their password.
 

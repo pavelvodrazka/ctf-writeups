@@ -1,6 +1,6 @@
 # Day 14: Happy Cryptmas
 
-todays gift was encrypted with the attached program. try to unbox your xmas present.
+Todays gift was encrypted with the attached program. try to unbox your xmas present.
 
 ```
 Flag: 7A9FDCA5BB061D0D638BE1442586F3488B536399BA05A14FCAE3F0A2E5F268F2F3142D1956769497AE677A12E4D44EC727E255B391005B9ADCF53B4A74FFC34C

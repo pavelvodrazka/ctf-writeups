@@ -1,4 +1,4 @@
-# Day 23: only perl can parse Perl
+# Day 23: Only perl can parse Perl
 
 *... but there is always one more way to approach things!*
 

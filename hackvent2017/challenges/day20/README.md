@@ -1,8 +1,8 @@
-# Day 20: linux malware
+# Day 20: Linux malware
 
-*oh boy, this will go wrong... =D*
+*Oh boy, this will go wrong... =D*
 
-**ohai** my name is muffinx...
+**Ohai** my name is muffinx...
 ...um yeah btw. cyberwar just started and you should just pwn everyone?
 
 
