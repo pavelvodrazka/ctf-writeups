@@ -85,9 +85,9 @@ $ docker cp 94978f1117d5:/root/party.py .
 Then I inspected those files.
 
 * [bot](files/bot "bot") - 64-bit ELF binary of the bot
-* [checker.py](files/checker.py "checker.py") - looks like some heart-beat script which gets `nonce` from [challenges site](http://challenges.hackvent.hacking-lab.com:8081) which is sent bact after 2 seconds
+* [checker.py](files/checker.py "checker.py") - heart-beat script which gets `nonce` from [challenges site](http://challenges.hackvent.hacking-lab.com:8081) which is xored and sent back after 2 seconds
 * [loopz.py](files/loopz.py "loopz.py") - simple scheduler script which executes bot binary every 3 seconds
-* [party.py](files/party.py "party.py") - purpose of this script is to create random files and directories to distract
+* [party.py](files/party.py "party.py") - distraction script which creates random files and directories
 
 I focused on the ELF binary. After decompiling it I realized it unwraps itself (series of ELF binary and Python script layers) using hidden temporary files in `/tmp`. I wrote a simple [bash script](files/capture.sh) which helped me to capture those [layers](files/bot_layers).
 
