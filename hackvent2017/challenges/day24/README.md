@@ -37,7 +37,7 @@ $ wget -O styles-original.css -q http://challenges.hackvent.hacking-lab.com:1087
 $ dos2unix -q styles-original.css
 ``` 
 
-Then I created my [modified](files/styles-pwned.css "styles-pwned.css") version with this Scala [script](../../src/main/scala/hackvent2017/Day24.scala#L13 "Day24.scala"):
+Then I created my [modified](files/styles-pwned.css "styles-pwned.css") version with this Scala [script](../../src/main/scala/hackvent2017/Day24.scala#L15 "Day24.scala"):
 
 ```scala
 val cssOriginal = Paths.get("hackvent2017/challenges/day24/files/styles-original.css")
@@ -128,7 +128,7 @@ rm -f /tmp/hv17-d24.cert
 rm -f /tmp/hv17-d24.csr
 ```
 
-Then I wrote a Scala [script](../../src/main/scala/hackvent2017/Day24.scala#L42 "Day24.scala") on top of the script which used blind time-based SQLi on that field to find useful data in the underlying MySQL database. 
+Then I wrote a Scala [script](../../src/main/scala/hackvent2017/Day24.scala#L44 "Day24.scala") on top of the script which used blind time-based SQLi on that field to find useful data in the underlying MySQL database. 
 
 ```scala
 val idChars = ('a' to 'z') ++ ('0' to '9') :+ '$' :+ '_' // case insensitive
@@ -252,6 +252,8 @@ The last step was to use the remote shell through the local netcat instance.
 $ cat /home/flag
 HV17-7h1s-1sju-t4ra-nd0m-flag
 ```
+
+Here is a Scala [script](../../src/main/scala/hackvent2017/Day24.scala#L136 "Day24.scala") to automate it.
 
 The result flag:
 

