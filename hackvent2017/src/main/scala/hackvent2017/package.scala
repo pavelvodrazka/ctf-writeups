@@ -1,13 +1,11 @@
+import java.io._
+import java.net._
+import java.nio.file.{Files, Paths}
 import java.security.MessageDigest
 import java.util.Base64
-
-import org.apache.commons.compress.utils.IOUtils
-import java.io._
-import java.net.{InetAddress, Socket}
-import java.nio.file.{Files, Paths}
 import java.util.zip.GZIPInputStream
 
-import scala.collection.mutable.ArrayBuffer
+import org.apache.commons.compress.utils.IOUtils
 
 package object hackvent2017 {
 
@@ -60,6 +58,11 @@ package object hackvent2017 {
   def ascii(n: Byte): Char = (n.toInt & 0xff).toChar
   def ascii(n: Array[Byte]): String = n.map(ascii).mkString
 
+  /* -- url -- */
+
+  def urlencode(text: String): String = URLEncoder.encode(text, "UTF-8").replaceAll("\\+", "%20")
+  def urldecode(text: String): String = URLDecoder.decode(text.replaceAll("%20", "\\+"), "UTF-8")
+
   /* -- compression -- */
 
   def gunzip(bytes: Array[Byte]): Array[Byte] = {
@@ -79,56 +82,6 @@ package object hackvent2017 {
 
   def gcd(a: BigInt, b: BigInt): BigInt = if (b==0) a.abs else gcd(b, a.mod(b))
   def lcm(a: BigInt, b: BigInt): BigInt = (a * b).abs / gcd(a,b)
-
-  /* -- netcat -- */
-
-  object NetCat {
-    def open(host: String, port: Int): NetCat = new NetCat(host, port)
-  }
-
-  class NetCat(host: String, port: Int) {
-
-    private val socket = new Socket(InetAddress.getByName(host), port)
-
-    private val in = new BufferedReader(new InputStreamReader(socket.getInputStream))
-    private val out = new PrintStream(socket.getOutputStream, true)
-
-    private val buffer = Array.ofDim[Char](1024)
-
-    private var trace = false
-
-    def trace(value: Boolean): Unit = trace = value
-
-    def read: String = {
-      val data = ArrayBuffer.empty[Char]
-      do {
-        val length = in.read(buffer)
-        data ++= buffer.slice(0, length)
-      } while (in.ready())
-
-      val msg = data.mkString
-      if (trace) print(msg)
-      msg
-    }
-
-    def writeln(msg: String): Unit = {
-      out.println(msg)
-      if (trace) println(msg)
-    }
-
-    def write(msg: String): Unit = {
-      out.print(msg)
-      if (trace) print(msg)
-    }
-
-    def write(msg: Array[Byte]): Unit = {
-      out.print(msg)
-      if (trace) print(msg)
-    }
-
-    def close(): Unit = socket.close()
-
-  }
 
   /* -- time -- */
 

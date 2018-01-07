@@ -1,9 +1,11 @@
 package hackvent2017
 
+import tools.NetCat
+
 object Day10 {
 
   def main(args: Array[String]): Unit = {
-    val nc = NetCat.open("challenges.hackvent.hacking-lab.com", 1037)
+    val nc = NetCat.connect("challenges.hackvent.hacking-lab.com", 1037)
     try {
       // start game
       nc.read
@@ -46,7 +48,7 @@ object Day10 {
         }
       }
     } finally {
-      nc.close
+      nc.close()
     }
   }
 

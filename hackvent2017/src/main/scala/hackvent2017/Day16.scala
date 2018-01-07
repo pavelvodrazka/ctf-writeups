@@ -1,9 +1,11 @@
 package hackvent2017
 
+import tools.NetCat
+
 object Day16 {
 
   def main(args: Array[String]): Unit = {
-    val nc = NetCat.open("challenges.hackvent.hacking-lab.com", 1034)
+    val nc = NetCat.connect("challenges.hackvent.hacking-lab.com", 1034)
     try {
       // read prompt
       nc.read
@@ -14,7 +16,7 @@ object Day16 {
       val mask = (0 until 29).map(i => "1337".charAt(i % 4)).mkString
       println(callSanta(nc, mask))
     } finally {
-      nc.close
+      nc.close()
     }
   }
 
