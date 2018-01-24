@@ -1,4 +1,10 @@
-# HACKvent 2017
+# HACKvent 2017 write-up by pjslf
+
+#### Ranking
+
+I managed to complete all daily and hidden challenges but I lost two points for late submissions of solutions of day 21 and 24. At the end I finished 15th with 93 points out of 95 possible. I am very happy with the result and as always I learned a lot!
+
+![ranking.jpg](images/ranking.jpg "ranking")
 
 #### Daily challenges
 
