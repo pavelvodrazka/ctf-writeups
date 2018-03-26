@@ -77,10 +77,10 @@ package object hackvent2017 {
 
   /* -- math -- */
 
-  def gcd(a: Int, b: Int): Int = if (b==0) a.abs else gcd(b, a % b)
+  def gcd(a: Int, b: Int): Int = if (b == 0) a.abs else gcd(b, a % b)
   def lcm(a: Int, b: Int): Int = (a * b).abs / gcd(a,b)
 
-  def gcd(a: BigInt, b: BigInt): BigInt = if (b==0) a.abs else gcd(b, a.mod(b))
+  def gcd(a: BigInt, b: BigInt): BigInt = if (b == 0) a.abs else gcd(b, a.mod(b))
   def lcm(a: BigInt, b: BigInt): BigInt = (a * b).abs / gcd(a,b)
 
   /* -- time -- */
