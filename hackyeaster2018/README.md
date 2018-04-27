@@ -9,3 +9,4 @@
 [Egg 05: Sloppy & Paste](challenges/egg05/README.md)  
 [Egg 06: Cooking for Hackers](challenges/egg06/README.md)  
 [Egg 07: Jigsaw](challenges/egg07/README.md)  
+[Egg 08: Disco Egg](challenges/egg08/README.md)  
