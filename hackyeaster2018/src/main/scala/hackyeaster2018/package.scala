@@ -52,6 +52,11 @@ package object hackyeaster2018 {
   def sha256(text: String): Array[Byte] = sha256digest.digest(text.getBytes)
   def sha256hex(text: String): String = hex(sha1(text))
 
+  /* -- bytes -- */
+
+  def bytes(str: String): Array[Byte] = str.getBytes
+  def hexbytes(str: String): Array[Byte] = BigInt(str, 16).toByteArray
+
   /* -- ascii -- */
 
   def ascii(n: Int): Char = n.toChar
