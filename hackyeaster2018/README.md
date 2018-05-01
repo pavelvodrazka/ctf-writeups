@@ -13,3 +13,4 @@
 [Egg 09: Dial Trial](challenges/egg09/README.md)  
 [Egg 10: Level Two](challenges/egg10/README.md)  
 [Egg 11: De Egg you must](challenges/egg11/README.md)  
+[Egg 12: Patience](challenges/egg12/README.md)  
