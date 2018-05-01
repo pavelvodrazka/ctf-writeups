@@ -36,13 +36,13 @@ The `ps://clip` URL was handled by this method of `Activity` class.
 
 ```java
 private void handleClip() {
-        String text = getResources().getString(C0089R.string.egg_5);
-        if (VERSION.SDK_INT < 11) {
-            ((ClipboardManager) getBaseContext().getSystemService("clipboard")).setText(text);
-        } else {
-            ((android.content.ClipboardManager) getBaseContext().getSystemService("clipboard")).setPrimaryClip(ClipData.newPlainText("Copied Text", text));
-        }
+    String text = getResources().getString(C0089R.string.egg_5);
+    if (VERSION.SDK_INT < 11) {
+        ((ClipboardManager) getBaseContext().getSystemService("clipboard")).setText(text);
+    } else {
+        ((android.content.ClipboardManager) getBaseContext().getSystemService("clipboard")).setPrimaryClip(ClipData.newPlainText("Copied Text", text));
     }
+}
 ```
 
 This method put a different Base64 text defined as `egg_5` resource in `strings.xml` in to the clipboard.
