@@ -16,3 +16,4 @@
 [Egg 12: Patience](challenges/egg12/README.md)  
 [Egg 13: Sagittarius...](challenges/egg13/README.md)  
 [Egg 14: Same same...](challenges/egg14/README.md)  
+[Egg 15: Manila greetings](challenges/egg15/README.md)  

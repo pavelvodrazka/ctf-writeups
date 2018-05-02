@@ -4,6 +4,7 @@ import java.nio.file.{Files, Paths}
 import java.security.MessageDigest
 import java.util.Base64
 import java.util.zip.GZIPInputStream
+import scala.collection.JavaConverters._
 
 import org.apache.commons.compress.utils.IOUtils
 
@@ -40,6 +41,7 @@ package object hackyeaster2018 {
   /* -- files -- */
 
   def saveToFile(path: String, content: Array[Byte]): Unit = Files.write(Paths.get(path), content)
+  def saveToFile(path: String, lines: Iterable[String]): Unit = Files.write(Paths.get(path), lines.asJava)
 
   /* -- hashes -- */
 
