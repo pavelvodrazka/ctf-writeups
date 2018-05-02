@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="700" width="700" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="demis background" opacity="0.5" transform="translate(0,0)">
+		<image height="700" id="background map 1" opacity="1" width="700" x="0" xlink:href="http://www2.demis.nl/wms/wms.asp?version=1.1.0&amp;wms=WorldMap&amp;request=GetMap&amp;srs=EPSG:4326&amp;bbox=118.4011372,-46.6288094,121.5988628,-44.3746448&amp;width=700&amp;height=700&amp;format=PNG&amp;transparent=FALSE&amp;exceptions=INIMAGE&amp;wrapdateline=TRUE&amp;layers=Bathymetry,Countries,Topography,Builtup+areas,Coastlines,Waterbodies,Rivers,Streams,Highways,Roads,Railroads,Trails,Hillshading,Borders,Settlements,Cities,Airports" y="0" />
+	</g>
+	<g id="Waypoints">
+		<circle cx="504.7896" cy="129.8813" fill="#000000" fill-opacity="0" id="wpt1 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt1 label" transform="translate(0,0)" x="508.2896" y="129.8813" />
+		<circle cx="497.9199" cy="120.5505" fill="#000000" fill-opacity="0" id="wpt2 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt2 label" transform="translate(0,0)" x="501.4199" y="120.5505" />
+		<circle cx="490.1399" cy="110.9030" fill="#000000" fill-opacity="0" id="wpt3 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt3 label" transform="translate(0,0)" x="495.1399" y="110.903" />
+		<circle cx="481.3434" cy="101.0346" fill="#000000" fill-opacity="0" id="wpt4 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt4 label" transform="translate(0,0)" x="485.5934" y="101.0346" />
+		<circle cx="471.4270" cy="91.0818" fill="#000000" fill-opacity="0" id="wpt5 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt5 label" transform="translate(0,0)" x="476.427" y="91.0818" />
+		<circle cx="460.3002" cy="81.2289" fill="#000000" fill-opacity="0" id="wpt6 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt6 label" transform="translate(0,0)" x="464.5502" y="81.2289" />
+		<circle cx="447.8976" cy="71.7115" fill="#000000" fill-opacity="0" id="wpt7 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt7 label" transform="translate(0,0)" x="452.1476" y="71.7115" />
+		<circle cx="403.0924" cy="48.1992" fill="#000000" fill-opacity="0" id="wpt8 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt8 label" transform="translate(0,0)" x="406.5924" y="48.1992" />
+		<circle cx="331.8209" cy="40.0000" fill="#000000" fill-opacity="0" id="wpt9 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt9 label" transform="translate(0,0)" x="335.3209" y="40" />
+		<circle cx="314.0121" cy="43.1525" fill="#000000" fill-opacity="0" id="wpt10 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt10 label" transform="translate(0,0)" x="319.0121" y="43.1525" />
+		<circle cx="280.7760" cy="54.8630" fill="#000000" fill-opacity="0" id="wpt11 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt11 label" transform="translate(0,0)" x="285.026" y="54.863" />
+		<circle cx="252.1024" cy="71.7115" fill="#000000" fill-opacity="0" id="wpt12 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt12 label" transform="translate(0,0)" x="256.3524" y="71.7115" />
+		<circle cx="239.6998" cy="81.2289" fill="#000000" fill-opacity="0" id="wpt13 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt13 label" transform="translate(0,0)" x="243.1998" y="81.2289" />
+		<circle cx="228.5730" cy="91.0818" fill="#000000" fill-opacity="0" id="wpt14 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt14 label" transform="translate(0,0)" x="233.573" y="91.0818" />
+		<circle cx="218.6566" cy="101.0346" fill="#000000" fill-opacity="0" id="wpt15 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt15 label" transform="translate(0,0)" x="222.1566" y="101.0346" />
+		<circle cx="209.8601" cy="110.9030" fill="#000000" fill-opacity="0" id="wpt16 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt16 label" transform="translate(0,0)" x="214.1101" y="110.903" />
+		<circle cx="202.0801" cy="120.5505" fill="#000000" fill-opacity="0" id="wpt17 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt17 label" transform="translate(0,0)" x="205.5801" y="120.5505" />
+		<circle cx="195.2104" cy="129.8813" fill="#000000" fill-opacity="0" id="wpt18 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt18 label" transform="translate(0,0)" x="198.7104" y="129.8813" />
+		<circle cx="511.3672" cy="139.6266" fill="#000000" fill-opacity="0" id="wpt19 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt19 label" transform="translate(0,0)" x="514.8672" y="139.6266" />
+		<circle cx="446.0881" cy="99.5634" fill="#000000" fill-opacity="0" id="wpt20 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt20 label" transform="translate(0,0)" x="449.5881" y="99.5634" />
+		<circle cx="418.5753" cy="81.9437" fill="#000000" fill-opacity="0" id="wpt21 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt21 label" transform="translate(0,0)" x="422.0753" y="81.9437" />
+		<circle cx="402.7980" cy="74.8356" fill="#000000" fill-opacity="0" id="wpt22 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt22 label" transform="translate(0,0)" x="407.048" y="74.8356" />
+		<circle cx="368.1672" cy="65.9744" fill="#000000" fill-opacity="0" id="wpt23 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt23 label" transform="translate(0,0)" x="371.6672" y="65.9744" />
+		<circle cx="350.0000" cy="64.8054" fill="#000000" fill-opacity="0" id="wpt24 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt24 label" transform="translate(0,0)" x="354.25" y="64.8054" />
+		<circle cx="297.2020" cy="74.8356" fill="#000000" fill-opacity="0" id="wpt25 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt25 label" transform="translate(0,0)" x="300.702" y="74.8356" />
+		<circle cx="253.9119" cy="99.5634" fill="#000000" fill-opacity="0" id="wpt26 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt26 label" transform="translate(0,0)" x="258.1619" y="99.5634" />
+		<circle cx="188.6328" cy="139.6266" fill="#000000" fill-opacity="0" id="wpt27 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt27 label" transform="translate(0,0)" x="192.1328" y="139.6266" />
+		<circle cx="518.1679" cy="150.6631" fill="#000000" fill-opacity="0" id="wpt28 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt28 label" transform="translate(0,0)" x="522.4179" y="150.6631" />
+		<circle cx="478.9914" cy="166.4784" fill="#000000" fill-opacity="0" id="wpt29 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt29 label" transform="translate(0,0)" x="483.2414" y="166.4784" />
+		<circle cx="472.0334" cy="157.1138" fill="#000000" fill-opacity="0" id="wpt30 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt30 label" transform="translate(0,0)" x="477.0334" y="157.1138" />
+		<circle cx="463.9577" cy="147.3902" fill="#000000" fill-opacity="0" id="wpt31 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt31 label" transform="translate(0,0)" x="467.4577" y="147.3902" />
+		<circle cx="443.8550" cy="127.5614" fill="#000000" fill-opacity="0" id="wpt32 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt32 label" transform="translate(0,0)" x="448.105" y="127.5614" />
+		<circle cx="402.4184" cy="101.5971" fill="#000000" fill-opacity="0" id="wpt33 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt33 label" transform="translate(0,0)" x="405.9184" y="101.5971" />
+		<circle cx="385.7758" cy="95.7087" fill="#000000" fill-opacity="0" id="wpt34 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt34 label" transform="translate(0,0)" x="389.2758" y="95.7087" />
+		<circle cx="368.1516" cy="91.9677" fill="#000000" fill-opacity="0" id="wpt35 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt35 label" transform="translate(0,0)" x="372.4016" y="91.9677" />
+		<circle cx="297.5816" cy="101.5971" fill="#000000" fill-opacity="0" id="wpt36 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt36 label" transform="translate(0,0)" x="302.5816" y="101.5971" />
+		<circle cx="282.2504" cy="109.1922" fill="#000000" fill-opacity="0" id="wpt37 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt37 label" transform="translate(0,0)" x="285.7504" y="109.1922" />
+		<circle cx="256.1450" cy="127.5614" fill="#000000" fill-opacity="0" id="wpt38 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt38 label" transform="translate(0,0)" x="260.395" y="127.5614" />
+		<circle cx="236.0423" cy="147.3902" fill="#000000" fill-opacity="0" id="wpt39 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt39 label" transform="translate(0,0)" x="239.5423" y="147.3902" />
+		<circle cx="227.9666" cy="157.1138" fill="#000000" fill-opacity="0" id="wpt40 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt40 label" transform="translate(0,0)" x="232.2166" y="157.1138" />
+		<circle cx="221.0086" cy="166.4784" fill="#000000" fill-opacity="0" id="wpt41 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt41 label" transform="translate(0,0)" x="225.2586" y="166.4784" />
+		<circle cx="181.8321" cy="150.6631" fill="#000000" fill-opacity="0" id="wpt42 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt42 label" transform="translate(0,0)" x="186.8321" y="150.6631" />
+		<circle cx="525.1245" cy="163.1419" fill="#000000" fill-opacity="0" id="wpt43 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt43 label" transform="translate(0,0)" x="529.3745" y="163.1419" />
+		<circle cx="485.5927" cy="176.3488" fill="#000000" fill-opacity="0" id="wpt44 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt44 label" transform="translate(0,0)" x="489.0927" y="176.3488" />
+		<circle cx="466.0922" cy="184.7769" fill="#000000" fill-opacity="0" id="wpt45 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt45 label" transform="translate(0,0)" x="469.5922" y="184.7769" />
+		<circle cx="459.0747" cy="175.3904" fill="#000000" fill-opacity="0" id="wpt46 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt46 label" transform="translate(0,0)" x="464.0747" y="175.3904" />
+		<circle cx="441.0702" cy="155.6773" fill="#000000" fill-opacity="0" id="wpt47 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt47 label" transform="translate(0,0)" x="446.0702" y="155.6773" />
+		<circle cx="416.6795" cy="136.6349" fill="#000000" fill-opacity="0" id="wpt48 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt48 label" transform="translate(0,0)" x="420.1795" y="136.6349" />
+		<circle cx="401.9180" cy="128.5132" fill="#000000" fill-opacity="0" id="wpt49 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt49 label" transform="translate(0,0)" x="405.418" y="128.5132" />
+		<circle cx="368.1306" cy="117.9859" fill="#000000" fill-opacity="0" id="wpt50 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt50 label" transform="translate(0,0)" x="371.6306" y="117.9859" />
+		<circle cx="331.8694" cy="117.9859" fill="#000000" fill-opacity="0" id="wpt51 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt51 label" transform="translate(0,0)" x="335.3694" y="117.9859" />
+		<circle cx="314.3845" cy="122.1075" fill="#000000" fill-opacity="0" id="wpt52 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt52 label" transform="translate(0,0)" x="319.3845" y="122.1075" />
+		<circle cx="298.0820" cy="128.5132" fill="#000000" fill-opacity="0" id="wpt53 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt53 label" transform="translate(0,0)" x="302.332" y="128.5132" />
+		<circle cx="258.9298" cy="155.6773" fill="#000000" fill-opacity="0" id="wpt54 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt54 label" transform="translate(0,0)" x="262.4298" y="155.6773" />
+		<circle cx="240.9253" cy="175.3904" fill="#000000" fill-opacity="0" id="wpt55 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt55 label" transform="translate(0,0)" x="244.4253" y="175.3904" />
+		<circle cx="233.9078" cy="184.7769" fill="#000000" fill-opacity="0" id="wpt56 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt56 label" transform="translate(0,0)" x="237.4078" y="184.7769" />
+		<circle cx="214.4073" cy="176.3488" fill="#000000" fill-opacity="0" id="wpt57 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt57 label" transform="translate(0,0)" x="219.4073" y="176.3488" />
+		<circle cx="174.8755" cy="163.1419" fill="#000000" fill-opacity="0" id="wpt58 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt58 label" transform="translate(0,0)" x="178.3755" y="163.1419" />
+		<circle cx="532.1405" cy="177.2091" fill="#000000" fill-opacity="0" id="wpt59 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt59 label" transform="translate(0,0)" x="535.6405" y="177.2091" />
+		<circle cx="492.4471" cy="187.8049" fill="#000000" fill-opacity="0" id="wpt60 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt60 label" transform="translate(0,0)" x="497.4471" y="187.8049" />
+		<circle cx="472.7091" cy="194.7318" fill="#000000" fill-opacity="0" id="wpt61 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt61 label" transform="translate(0,0)" x="476.2091" y="194.7318" />
+		<circle cx="453.1931" cy="203.0754" fill="#000000" fill-opacity="0" id="wpt62 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt62 label" transform="translate(0,0)" x="457.4431" y="203.0754" />
+		<circle cx="437.5622" cy="183.8443" fill="#000000" fill-opacity="0" id="wpt63 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt63 label" transform="translate(0,0)" x="441.8122" y="183.8443" />
+		<circle cx="385.3949" cy="148.6207" fill="#000000" fill-opacity="0" id="wpt64 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt64 label" transform="translate(0,0)" x="390.3949" y="148.6207" />
+		<circle cx="350.0000" cy="142.4394" fill="#000000" fill-opacity="0" id="wpt65 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt65 label" transform="translate(0,0)" x="353.5" y="142.4394" />
+		<circle cx="314.6051" cy="148.6207" fill="#000000" fill-opacity="0" id="wpt66 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt66 label" transform="translate(0,0)" x="319.6051" y="148.6207" />
+		<circle cx="284.7350" cy="164.2956" fill="#000000" fill-opacity="0" id="wpt67 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt67 label" transform="translate(0,0)" x="288.235" y="164.2956" />
+		<circle cx="262.4378" cy="183.8443" fill="#000000" fill-opacity="0" id="wpt68 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt68 label" transform="translate(0,0)" x="265.9378" y="183.8443" />
+		<circle cx="246.8069" cy="203.0754" fill="#000000" fill-opacity="0" id="wpt69 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt69 label" transform="translate(0,0)" x="251.0569" y="203.0754" />
+		<circle cx="227.2909" cy="194.7318" fill="#000000" fill-opacity="0" id="wpt70 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt70 label" transform="translate(0,0)" x="230.7909" y="194.7318" />
+		<circle cx="207.5529" cy="187.8049" fill="#000000" fill-opacity="0" id="wpt71 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt71 label" transform="translate(0,0)" x="211.8029" y="187.8049" />
+		<circle cx="167.8595" cy="177.2091" fill="#000000" fill-opacity="0" id="wpt72 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt72 label" transform="translate(0,0)" x="172.1095" y="177.2091" />
+		<circle cx="539.0860" cy="192.9934" fill="#000000" fill-opacity="0" id="wpt73 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt73 label" transform="translate(0,0)" x="542.586" y="192.9934" />
+		<circle cx="433.1028" cy="211.9272" fill="#000000" fill-opacity="0" id="wpt74 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt74 label" transform="translate(0,0)" x="437.3528" y="211.9272" />
+		<circle cx="413.3544" cy="192.1847" fill="#000000" fill-opacity="0" id="wpt75 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt75 label" transform="translate(0,0)" x="416.8544" y="192.1847" />
+		<circle cx="385.0805" cy="175.2873" fill="#000000" fill-opacity="0" id="wpt76 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt76 label" transform="translate(0,0)" x="389.3305" y="175.2873" />
+		<circle cx="331.9412" cy="170.1381" fill="#000000" fill-opacity="0" id="wpt77 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt77 label" transform="translate(0,0)" x="336.1912" y="170.1381" />
+		<circle cx="314.9195" cy="175.2873" fill="#000000" fill-opacity="0" id="wpt78 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt78 label" transform="translate(0,0)" x="318.4195" y="175.2873" />
+		<circle cx="299.6985" cy="182.9640" fill="#000000" fill-opacity="0" id="wpt79 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt79 label" transform="translate(0,0)" x="303.9485" y="182.964" />
+		<circle cx="266.8972" cy="211.9272" fill="#000000" fill-opacity="0" id="wpt80 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt80 label" transform="translate(0,0)" x="270.3972" y="211.9272" />
+		<circle cx="160.9140" cy="192.9934" fill="#000000" fill-opacity="0" id="wpt81 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt81 label" transform="translate(0,0)" x="165.914" y="192.9934" />
+		<circle cx="545.7951" cy="210.5876" fill="#000000" fill-opacity="0" id="wpt82 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt82 label" transform="translate(0,0)" x="549.2951" y="210.5876" />
+		<circle cx="526.1616" cy="213.1544" fill="#000000" fill-opacity="0" id="wpt83 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt83 label" transform="translate(0,0)" x="531.1616" y="213.1544" />
+		<circle cx="506.4250" cy="216.3223" fill="#000000" fill-opacity="0" id="wpt84 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt84 label" transform="translate(0,0)" x="509.925" y="216.3223" />
+		<circle cx="486.6053" cy="220.2727" fill="#000000" fill-opacity="0" id="wpt85 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt85 label" transform="translate(0,0)" x="490.1053" y="220.2727" />
+		<circle cx="466.7496" cy="225.2491" fill="#000000" fill-opacity="0" id="wpt86 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt86 label" transform="translate(0,0)" x="470.2496" y="225.2491" />
+		<circle cx="446.9532" cy="231.5753" fill="#000000" fill-opacity="0" id="wpt87 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt87 label" transform="translate(0,0)" x="450.4532" y="231.5753" />
+		<circle cx="427.3948" cy="239.6725" fill="#000000" fill-opacity="0" id="wpt88 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt88 label" transform="translate(0,0)" x="431.6448" y="239.6725" />
+		<circle cx="410.7135" cy="220.2727" fill="#000000" fill-opacity="0" id="wpt89 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt89 label" transform="translate(0,0)" x="415.7135" y="220.2727" />
+		<circle cx="384.6120" cy="202.1633" fill="#000000" fill-opacity="0" id="wpt90 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt90 label" transform="translate(0,0)" x="388.112" y="202.1633" />
+		<circle cx="350.0000" cy="194.1955" fill="#000000" fill-opacity="0" id="wpt91 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt91 label" transform="translate(0,0)" x="355" y="194.1955" />
+		<circle cx="315.3880" cy="202.1633" fill="#000000" fill-opacity="0" id="wpt92 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt92 label" transform="translate(0,0)" x="320.388" y="202.1633" />
+		<circle cx="289.2865" cy="220.2727" fill="#000000" fill-opacity="0" id="wpt93 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt93 label" transform="translate(0,0)" x="292.7865" y="220.2727" />
+		<circle cx="272.6052" cy="239.6725" fill="#000000" fill-opacity="0" id="wpt94 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt94 label" transform="translate(0,0)" x="276.1052" y="239.6725" />
+		<circle cx="253.0468" cy="231.5753" fill="#000000" fill-opacity="0" id="wpt95 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt95 label" transform="translate(0,0)" x="257.2968" y="231.5753" />
+		<circle cx="233.2504" cy="225.2491" fill="#000000" fill-opacity="0" id="wpt96 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt96 label" transform="translate(0,0)" x="236.7504" y="225.2491" />
+		<circle cx="213.3947" cy="220.2727" fill="#000000" fill-opacity="0" id="wpt97 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt97 label" transform="translate(0,0)" x="218.3947" y="220.2727" />
+		<circle cx="193.5750" cy="216.3223" fill="#000000" fill-opacity="0" id="wpt98 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt98 label" transform="translate(0,0)" x="197.075" y="216.3223" />
+		<circle cx="173.8384" cy="213.1544" fill="#000000" fill-opacity="0" id="wpt99 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt99 label" transform="translate(0,0)" x="178.0884" y="213.1544" />
+		<circle cx="154.2049" cy="210.5876" fill="#000000" fill-opacity="0" id="wpt100 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt100 label" transform="translate(0,0)" x="157.7049" y="210.5876" />
+		<circle cx="350.0000" cy="220.0735" fill="#000000" fill-opacity="0" id="wpt101 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt101 label" transform="translate(0,0)" x="353.5" y="220.0735" />
+		<circle cx="293.0212" cy="248.4269" fill="#000000" fill-opacity="0" id="wpt102 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt102 label" transform="translate(0,0)" x="296.5212" y="248.4269" />
+		<circle cx="557.6721" cy="251.2635" fill="#000000" fill-opacity="0" id="wpt103 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt103 label" transform="translate(0,0)" x="561.9221" y="251.2635" />
+		<circle cx="538.5822" cy="252.1837" fill="#000000" fill-opacity="0" id="wpt104 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt104 label" transform="translate(0,0)" x="542.0822" y="252.1837" />
+		<circle cx="519.3739" cy="253.3551" fill="#000000" fill-opacity="0" id="wpt105 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt105 label" transform="translate(0,0)" x="522.8739" y="253.3551" />
+		<circle cx="500.0288" cy="254.8731" fill="#000000" fill-opacity="0" id="wpt106 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt106 label" transform="translate(0,0)" x="503.5288" y="254.8731" />
+		<circle cx="480.5301" cy="256.8796" fill="#000000" fill-opacity="0" id="wpt107 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt107 label" transform="translate(0,0)" x="484.7801" y="256.8796" />
+		<circle cx="441.0702" cy="263.3364" fill="#000000" fill-opacity="0" id="wpt108 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt108 label" transform="translate(0,0)" x="445.3202" y="263.3364" />
+		<circle cx="421.2236" cy="268.6343" fill="#000000" fill-opacity="0" id="wpt109 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt109 label" transform="translate(0,0)" x="424.7236" y="268.6343" />
+		<circle cx="401.5965" cy="276.2696" fill="#000000" fill-opacity="0" id="wpt110 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt110 label" transform="translate(0,0)" x="405.8465" y="276.2696" />
+		<circle cx="393.7811" cy="266.6540" fill="#000000" fill-opacity="0" id="wpt111 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt111 label" transform="translate(0,0)" x="398.0311" y="266.654" />
+		<circle cx="382.6325" cy="256.8796" fill="#000000" fill-opacity="0" id="wpt112 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt112 label" transform="translate(0,0)" x="387.6325" y="256.8796" />
+		<circle cx="350.0000" cy="245.9516" fill="#000000" fill-opacity="0" id="wpt113 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt113 label" transform="translate(0,0)" x="354.25" y="245.9516" />
+		<circle cx="332.3025" cy="249.0422" fill="#000000" fill-opacity="0" id="wpt114 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt114 label" transform="translate(0,0)" x="336.5525" y="249.0422" />
+		<circle cx="306.2189" cy="266.6540" fill="#000000" fill-opacity="0" id="wpt115 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt115 label" transform="translate(0,0)" x="309.7189" y="266.654" />
+		<circle cx="278.7764" cy="268.6343" fill="#000000" fill-opacity="0" id="wpt116 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt116 label" transform="translate(0,0)" x="283.0264" y="268.6343" />
+		<circle cx="239.1298" cy="259.5900" fill="#000000" fill-opacity="0" id="wpt117 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt117 label" transform="translate(0,0)" x="242.6298" y="259.59" />
+		<circle cx="199.9712" cy="254.8731" fill="#000000" fill-opacity="0" id="wpt118 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt118 label" transform="translate(0,0)" x="204.2212" y="254.8731" />
+		<circle cx="161.4178" cy="252.1837" fill="#000000" fill-opacity="0" id="wpt119 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt119 label" transform="translate(0,0)" x="164.9178" y="252.1837" />
+		<circle cx="562.3696" cy="274.1475" fill="#000000" fill-opacity="0" id="wpt120 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt120 label" transform="translate(0,0)" x="565.8696" y="274.1475" />
+		<circle cx="524.7279" cy="275.1037" fill="#000000" fill-opacity="0" id="wpt121 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt121 label" transform="translate(0,0)" x="529.7279" y="275.1037" />
+		<circle cx="486.6451" cy="276.7726" fill="#000000" fill-opacity="0" id="wpt122 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt122 label" transform="translate(0,0)" x="490.8951" y="276.7726" />
+		<circle cx="467.3702" cy="278.1067" fill="#000000" fill-opacity="0" id="wpt123 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt123 label" transform="translate(0,0)" x="470.8702" y="278.1067" />
+		<circle cx="428.2125" cy="282.8930" fill="#000000" fill-opacity="0" id="wpt124 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt124 label" transform="translate(0,0)" x="431.7125" y="282.893" />
+		<circle cx="408.3748" cy="287.3564" fill="#000000" fill-opacity="0" id="wpt125 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt125 label" transform="translate(0,0)" x="412.6248" y="287.3564" />
+		<circle cx="388.6974" cy="294.5681" fill="#000000" fill-opacity="0" id="wpt126 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt126 label" transform="translate(0,0)" x="392.9474" y="294.5681" />
+		<circle cx="332.6940" cy="275.8135" fill="#000000" fill-opacity="0" id="wpt127 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt127 label" transform="translate(0,0)" x="337.694" y="275.8135" />
+		<circle cx="311.3026" cy="294.5681" fill="#000000" fill-opacity="0" id="wpt128 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt128 label" transform="translate(0,0)" x="314.8026" y="294.5681" />
+		<circle cx="291.6252" cy="287.3564" fill="#000000" fill-opacity="0" id="wpt129 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt129 label" transform="translate(0,0)" x="296.6252" y="287.3564" />
+		<circle cx="194.2459" cy="275.8135" fill="#000000" fill-opacity="0" id="wpt130 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt130 label" transform="translate(0,0)" x="197.7459" y="275.8135" />
+		<circle cx="156.4072" cy="274.5651" fill="#000000" fill-opacity="0" id="wpt131 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt131 label" transform="translate(0,0)" x="160.6572" y="274.5651" />
+		<circle cx="510.2696" cy="298.9401" fill="#000000" fill-opacity="0" id="wpt132 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt132 label" transform="translate(0,0)" x="514.5196" y="298.9401" />
+		<circle cx="453.8360" cy="300.3636" fill="#000000" fill-opacity="0" id="wpt133 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt133 label" transform="translate(0,0)" x="458.086" y="300.3636" />
+		<circle cx="434.6870" cy="301.4094" fill="#000000" fill-opacity="0" id="wpt134 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt134 label" transform="translate(0,0)" x="438.187" y="301.4094" />
+		<circle cx="395.5351" cy="306.4000" fill="#000000" fill-opacity="0" id="wpt135 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt135 label" transform="translate(0,0)" x="400.5351" y="306.4" />
+		<circle cx="366.3163" cy="303.1716" fill="#000000" fill-opacity="0" id="wpt136 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt136 label" transform="translate(0,0)" x="369.8163" y="303.1716" />
+		<circle cx="350.0000" cy="297.7076" fill="#000000" fill-opacity="0" id="wpt137 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt137 label" transform="translate(0,0)" x="353.5" y="297.7076" />
+		<circle cx="324.2017" cy="312.8666" fill="#000000" fill-opacity="0" id="wpt138 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt138 label" transform="translate(0,0)" x="329.2017" y="312.8666" />
+		<circle cx="304.4649" cy="306.4000" fill="#000000" fill-opacity="0" id="wpt139 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt139 label" transform="translate(0,0)" x="309.4649" y="306.4" />
+		<circle cx="284.7350" cy="303.1716" fill="#000000" fill-opacity="0" id="wpt140 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt140 label" transform="translate(0,0)" x="288.985" y="303.1716" />
+		<circle cx="265.3130" cy="301.4094" fill="#000000" fill-opacity="0" id="wpt141 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt141 label" transform="translate(0,0)" x="268.813" y="301.4094" />
+		<circle cx="227.2183" cy="299.6990" fill="#000000" fill-opacity="0" id="wpt142 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt142 label" transform="translate(0,0)" x="231.4683" y="299.699" />
+		<circle cx="208.4203" cy="299.2529" fill="#000000" fill-opacity="0" id="wpt143 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt143 label" transform="translate(0,0)" x="212.6703" y="299.2529" />
+		<circle cx="134.0729" cy="298.4118" fill="#000000" fill-opacity="0" id="wpt144 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt144 label" transform="translate(0,0)" x="137.5729" y="298.4118" />
+		<circle cx="568.1494" cy="323.6750" fill="#000000" fill-opacity="0" id="wpt145 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt145 label" transform="translate(0,0)" x="572.3994" y="323.675" />
+		<circle cx="513.1750" cy="323.7439" fill="#000000" fill-opacity="0" id="wpt146 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt146 label" transform="translate(0,0)" x="516.675" y="323.7439" />
+		<circle cx="476.4115" cy="323.8457" fill="#000000" fill-opacity="0" id="wpt147 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt147 label" transform="translate(0,0)" x="481.4115" y="323.8457" />
+		<circle cx="401.9180" cy="324.9136" fill="#000000" fill-opacity="0" id="wpt148 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt148 label" transform="translate(0,0)" x="406.918" y="324.9136" />
+		<circle cx="382.6325" cy="326.3177" fill="#000000" fill-opacity="0" id="wpt149 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt149 label" transform="translate(0,0)" x="386.1325" y="326.3177" />
+		<circle cx="362.8991" cy="331.1651" fill="#000000" fill-opacity="0" id="wpt150 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt150 label" transform="translate(0,0)" x="367.1491" y="331.1651" />
+		<circle cx="317.3675" cy="326.3177" fill="#000000" fill-opacity="0" id="wpt151 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt151 label" transform="translate(0,0)" x="321.6175" y="326.3177" />
+		<circle cx="298.0820" cy="324.9136" fill="#000000" fill-opacity="0" id="wpt152 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt152 label" transform="translate(0,0)" x="301.582" y="324.9136" />
+		<circle cx="279.2101" cy="324.3583" fill="#000000" fill-opacity="0" id="wpt153 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt153 label" transform="translate(0,0)" x="282.7101" y="324.3583" />
+		<circle cx="260.5606" cy="324.0882" fill="#000000" fill-opacity="0" id="wpt154 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt154 label" transform="translate(0,0)" x="264.8106" y="324.0882" />
+		<circle cx="242.0364" cy="323.9377" fill="#000000" fill-opacity="0" id="wpt155 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt155 label" transform="translate(0,0)" x="245.5364" y="323.9377" />
+		<circle cx="223.5885" cy="323.8457" fill="#000000" fill-opacity="0" id="wpt156 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt156 label" transform="translate(0,0)" x="227.0885" y="323.8457" />
+		<circle cx="186.8250" cy="323.7439" fill="#000000" fill-opacity="0" id="wpt157 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt157 label" transform="translate(0,0)" x="191.825" y="323.7439" />
+		<circle cx="150.1606" cy="323.6919" fill="#000000" fill-opacity="0" id="wpt158 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt158 label" transform="translate(0,0)" x="154.4106" y="323.6919" />
+		<circle cx="131.8506" cy="323.6750" fill="#000000" fill-opacity="0" id="wpt159 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt159 label" transform="translate(0,0)" x="135.3506" y="323.675" />
+		<circle cx="568.9056" cy="349.4637" fill="#000000" fill-opacity="0" id="wpt160 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt160 label" transform="translate(0,0)" x="572.4056" y="349.4637" />
+		<circle cx="550.6635" cy="349.4637" fill="#000000" fill-opacity="0" id="wpt161 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt161 label" transform="translate(0,0)" x="555.6635" y="349.4637" />
+		<circle cx="459.4528" cy="349.4637" fill="#000000" fill-opacity="0" id="wpt162 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt162 label" transform="translate(0,0)" x="464.4528" y="349.4637" />
+		<circle cx="404.7264" cy="349.4637" fill="#000000" fill-opacity="0" id="wpt163 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt163 label" transform="translate(0,0)" x="408.2264" y="349.4637" />
+		<circle cx="368.2421" cy="349.4637" fill="#000000" fill-opacity="0" id="wpt164 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt164 label" transform="translate(0,0)" x="373.2421" y="349.4637" />
+		<circle cx="313.5157" cy="349.4637" fill="#000000" fill-opacity="0" id="wpt165 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt165 label" transform="translate(0,0)" x="317.7657" y="349.4637" />
+		<circle cx="258.7893" cy="349.4637" fill="#000000" fill-opacity="0" id="wpt166 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt166 label" transform="translate(0,0)" x="262.2893" y="349.4637" />
+		<circle cx="240.5472" cy="349.4637" fill="#000000" fill-opacity="0" id="wpt167 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt167 label" transform="translate(0,0)" x="244.0472" y="349.4637" />
+		<circle cx="167.5787" cy="349.4637" fill="#000000" fill-opacity="0" id="wpt168 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt168 label" transform="translate(0,0)" x="171.8287" y="349.4637" />
+		<circle cx="149.3365" cy="349.4637" fill="#000000" fill-opacity="0" id="wpt169 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt169 label" transform="translate(0,0)" x="152.8365" y="349.4637" />
+		<circle cx="131.0944" cy="349.4637" fill="#000000" fill-opacity="0" id="wpt170 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt170 label" transform="translate(0,0)" x="134.5944" y="349.4637" />
+		<circle cx="568.1494" cy="375.2523" fill="#000000" fill-opacity="0" id="wpt171 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt171 label" transform="translate(0,0)" x="573.1494" y="375.2523" />
+		<circle cx="549.8394" cy="375.2354" fill="#000000" fill-opacity="0" id="wpt172 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt172 label" transform="translate(0,0)" x="553.3394" y="375.2354" />
+		<circle cx="531.5160" cy="375.2133" fill="#000000" fill-opacity="0" id="wpt173 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt173 label" transform="translate(0,0)" x="535.016" y="375.2133" />
+		<circle cx="494.8101" cy="375.1419" fill="#000000" fill-opacity="0" id="wpt174 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt174 label" transform="translate(0,0)" x="498.3101" y="375.1419" />
+		<circle cx="382.6325" cy="372.6097" fill="#000000" fill-opacity="0" id="wpt175 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt175 label" transform="translate(0,0)" x="386.1325" y="372.6097" />
+		<circle cx="350.0000" cy="375.3417" fill="#000000" fill-opacity="0" id="wpt176 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt176 label" transform="translate(0,0)" x="353.5" y="375.3417" />
+		<circle cx="317.3675" cy="372.6097" fill="#000000" fill-opacity="0" id="wpt177 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt177 label" transform="translate(0,0)" x="321.6175" y="372.6097" />
+		<circle cx="223.5885" cy="375.0816" fill="#000000" fill-opacity="0" id="wpt178 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt178 label" transform="translate(0,0)" x="227.0885" y="375.0816" />
+		<circle cx="186.8250" cy="375.1834" fill="#000000" fill-opacity="0" id="wpt179 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt179 label" transform="translate(0,0)" x="190.325" y="375.1834" />
+		<circle cx="168.4840" cy="375.2133" fill="#000000" fill-opacity="0" id="wpt180 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt180 label" transform="translate(0,0)" x="173.484" y="375.2133" />
+		<circle cx="565.9271" cy="400.5155" fill="#000000" fill-opacity="0" id="wpt181 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt181 label" transform="translate(0,0)" x="569.4271" y="400.5155" />
+		<circle cx="528.8788" cy="400.2147" fill="#000000" fill-opacity="0" id="wpt182 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt182 label" transform="translate(0,0)" x="533.1288" y="400.2147" />
+		<circle cx="453.8360" cy="398.5638" fill="#000000" fill-opacity="0" id="wpt183 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt183 label" transform="translate(0,0)" x="458.836" y="398.5638" />
+		<circle cx="434.6870" cy="397.5180" fill="#000000" fill-opacity="0" id="wpt184 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt184 label" transform="translate(0,0)" x="438.187" y="397.518" />
+		<circle cx="415.2650" cy="395.7557" fill="#000000" fill-opacity="0" id="wpt185 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt185 label" transform="translate(0,0)" x="420.265" y="395.7557" />
+		<circle cx="395.5351" cy="392.5273" fill="#000000" fill-opacity="0" id="wpt186 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt186 label" transform="translate(0,0)" x="399.7851" y="392.5273" />
+		<circle cx="375.7983" cy="386.0607" fill="#000000" fill-opacity="0" id="wpt187 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt187 label" transform="translate(0,0)" x="379.2983" y="386.0607" />
+		<circle cx="304.4649" cy="392.5273" fill="#000000" fill-opacity="0" id="wpt188 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt188 label" transform="translate(0,0)" x="308.7149" y="392.5273" />
+		<circle cx="284.7350" cy="395.7557" fill="#000000" fill-opacity="0" id="wpt189 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt189 label" transform="translate(0,0)" x="288.235" y="395.7557" />
+		<circle cx="208.4203" cy="399.6744" fill="#000000" fill-opacity="0" id="wpt190 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt190 label" transform="translate(0,0)" x="211.9203" y="399.6744" />
+		<circle cx="189.7304" cy="399.9873" fill="#000000" fill-opacity="0" id="wpt191 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt191 label" transform="translate(0,0)" x="193.2304" y="399.9873" />
+		<circle cx="152.5733" cy="400.3849" fill="#000000" fill-opacity="0" id="wpt192 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt192 label" transform="translate(0,0)" x="156.0733" y="400.3849" />
+		<circle cx="134.0729" cy="400.5155" fill="#000000" fill-opacity="0" id="wpt193 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt193 label" transform="translate(0,0)" x="138.3229" y="400.5155" />
+		<circle cx="562.3696" cy="424.7798" fill="#000000" fill-opacity="0" id="wpt194 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt194 label" transform="translate(0,0)" x="565.8696" y="424.7798" />
+		<circle cx="486.6451" cy="422.1547" fill="#000000" fill-opacity="0" id="wpt195 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt195 label" transform="translate(0,0)" x="490.8951" y="422.1547" />
+		<circle cx="467.3702" cy="420.8206" fill="#000000" fill-opacity="0" id="wpt196 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt196 label" transform="translate(0,0)" x="470.8702" y="420.8206" />
+		<circle cx="388.6974" cy="404.3593" fill="#000000" fill-opacity="0" id="wpt197 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt197 label" transform="translate(0,0)" x="392.9474" y="404.3593" />
+		<circle cx="380.3567" cy="414.0591" fill="#000000" fill-opacity="0" id="wpt198 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt198 label" transform="translate(0,0)" x="383.8567" y="414.0591" />
+		<circle cx="350.0000" cy="427.0977" fill="#000000" fill-opacity="0" id="wpt199 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt199 label" transform="translate(0,0)" x="353.5" y="427.0977" />
+		<circle cx="319.6433" cy="414.0591" fill="#000000" fill-opacity="0" id="wpt200 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt200 label" transform="translate(0,0)" x="324.6433" y="414.0591" />
+		<circle cx="271.7875" cy="416.0343" fill="#000000" fill-opacity="0" id="wpt201 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt201 label" transform="translate(0,0)" x="276.0375" y="416.0343" />
+		<circle cx="252.1024" cy="418.9017" fill="#000000" fill-opacity="0" id="wpt202 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt202 label" transform="translate(0,0)" x="255.6024" y="418.9017" />
+		<circle cx="213.3549" cy="422.1547" fill="#000000" fill-opacity="0" id="wpt203 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt203 label" transform="translate(0,0)" x="218.3549" y="422.1547" />
+		<circle cx="194.2459" cy="423.1138" fill="#000000" fill-opacity="0" id="wpt204 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt204 label" transform="translate(0,0)" x="199.2459" y="423.1138" />
+		<circle cx="137.6304" cy="424.7798" fill="#000000" fill-opacity="0" id="wpt205 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt205 label" transform="translate(0,0)" x="142.6304" y="424.7798" />
+		<circle cx="557.6721" cy="447.6639" fill="#000000" fill-opacity="0" id="wpt206 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt206 label" transform="translate(0,0)" x="561.1721" y="447.6639" />
+		<circle cx="519.3739" cy="445.5722" fill="#000000" fill-opacity="0" id="wpt207 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt207 label" transform="translate(0,0)" x="522.8739" y="445.5722" />
+		<circle cx="500.0288" cy="444.0542" fill="#000000" fill-opacity="0" id="wpt208 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt208 label" transform="translate(0,0)" x="504.2788" y="444.0542" />
+		<circle cx="460.8702" cy="439.3373" fill="#000000" fill-opacity="0" id="wpt209 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt209 label" transform="translate(0,0)" x="464.3702" y="439.3373" />
+		<circle cx="441.0702" cy="435.5909" fill="#000000" fill-opacity="0" id="wpt210 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt210 label" transform="translate(0,0)" x="445.3202" y="435.5909" />
+		<circle cx="382.6325" cy="442.0477" fill="#000000" fill-opacity="0" id="wpt211 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt211 label" transform="translate(0,0)" x="386.1325" y="442.0477" />
+		<circle cx="350.0000" cy="452.9758" fill="#000000" fill-opacity="0" id="wpt212 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt212 label" transform="translate(0,0)" x="353.5" y="452.9758" />
+		<circle cx="332.3025" cy="449.8852" fill="#000000" fill-opacity="0" id="wpt213 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt213 label" transform="translate(0,0)" x="335.8025" y="449.8852" />
+		<circle cx="317.3675" cy="442.0477" fill="#000000" fill-opacity="0" id="wpt214 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt214 label" transform="translate(0,0)" x="321.6175" y="442.0477" />
+		<circle cx="298.4035" cy="422.6578" fill="#000000" fill-opacity="0" id="wpt215 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt215 label" transform="translate(0,0)" x="301.9035" y="422.6578" />
+		<circle cx="278.7764" cy="430.2930" fill="#000000" fill-opacity="0" id="wpt216 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt216 label" transform="translate(0,0)" x="282.2764" y="430.293" />
+		<circle cx="258.9298" cy="435.5909" fill="#000000" fill-opacity="0" id="wpt217 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt217 label" transform="translate(0,0)" x="263.9298" y="435.5909" />
+		<circle cx="239.1298" cy="439.3373" fill="#000000" fill-opacity="0" id="wpt218 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt218 label" transform="translate(0,0)" x="242.6298" y="439.3373" />
+		<circle cx="219.4699" cy="442.0477" fill="#000000" fill-opacity="0" id="wpt219 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt219 label" transform="translate(0,0)" x="222.9699" y="442.0477" />
+		<circle cx="199.9712" cy="444.0542" fill="#000000" fill-opacity="0" id="wpt220 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt220 label" transform="translate(0,0)" x="203.4712" y="444.0542" />
+		<circle cx="180.6261" cy="445.5722" fill="#000000" fill-opacity="0" id="wpt221 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt221 label" transform="translate(0,0)" x="184.1261" y="445.5722" />
+		<circle cx="406.9788" cy="450.5004" fill="#000000" fill-opacity="0" id="wpt222 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt222 label" transform="translate(0,0)" x="411.2288" y="450.5004" />
+		<circle cx="316.1252" cy="469.5994" fill="#000000" fill-opacity="0" id="wpt223 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt223 label" transform="translate(0,0)" x="320.3752" y="469.5994" />
+		<circle cx="303.0725" cy="460.4148" fill="#000000" fill-opacity="0" id="wpt224 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt224 label" transform="translate(0,0)" x="306.5725" y="460.4148" />
+		<circle cx="293.0212" cy="450.5004" fill="#000000" fill-opacity="0" id="wpt225 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt225 label" transform="translate(0,0)" x="297.2712" y="450.5004" />
+		<circle cx="226.2456" cy="459.1863" fill="#000000" fill-opacity="0" id="wpt226 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt226 label" transform="translate(0,0)" x="230.4956" y="459.1863" />
+		<circle cx="186.8374" cy="465.1937" fill="#000000" fill-opacity="0" id="wpt227 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt227 label" transform="translate(0,0)" x="190.3374" y="465.1937" />
+		<circle cx="545.7951" cy="488.3397" fill="#000000" fill-opacity="0" id="wpt228 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt228 label" transform="translate(0,0)" x="550.0451" y="488.3397" />
+		<circle cx="526.1616" cy="485.7729" fill="#000000" fill-opacity="0" id="wpt229 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt229 label" transform="translate(0,0)" x="530.4116" y="485.7729" />
+		<circle cx="506.4250" cy="482.6050" fill="#000000" fill-opacity="0" id="wpt230 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt230 label" transform="translate(0,0)" x="509.925" y="482.605" />
+		<circle cx="486.6053" cy="478.6546" fill="#000000" fill-opacity="0" id="wpt231 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt231 label" transform="translate(0,0)" x="490.8553" y="478.6546" />
+		<circle cx="466.7496" cy="473.6782" fill="#000000" fill-opacity="0" id="wpt232 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt232 label" transform="translate(0,0)" x="470.9996" y="473.6782" />
+		<circle cx="446.9532" cy="467.3520" fill="#000000" fill-opacity="0" id="wpt233 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt233 label" transform="translate(0,0)" x="450.4532" y="467.352" />
+		<circle cx="427.3948" cy="459.2548" fill="#000000" fill-opacity="0" id="wpt234 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt234 label" transform="translate(0,0)" x="430.8948" y="459.2548" />
+		<circle cx="410.7135" cy="478.6546" fill="#000000" fill-opacity="0" id="wpt235 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt235 label" transform="translate(0,0)" x="414.9635" y="478.6546" />
+		<circle cx="367.9939" cy="502.6192" fill="#000000" fill-opacity="0" id="wpt236 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt236 label" transform="translate(0,0)" x="371.4939" y="502.6192" />
+		<circle cx="350.0000" cy="504.7318" fill="#000000" fill-opacity="0" id="wpt237 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt237 label" transform="translate(0,0)" x="353.5" y="504.7318" />
+		<circle cx="332.0061" cy="502.6192" fill="#000000" fill-opacity="0" id="wpt238 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt238 label" transform="translate(0,0)" x="335.5061" y="502.6192" />
+		<circle cx="289.2865" cy="478.6546" fill="#000000" fill-opacity="0" id="wpt239 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt239 label" transform="translate(0,0)" x="294.2865" y="478.6546" />
+		<circle cx="272.6052" cy="459.2548" fill="#000000" fill-opacity="0" id="wpt240 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt240 label" transform="translate(0,0)" x="277.6052" y="459.2548" />
+		<circle cx="233.2504" cy="473.6782" fill="#000000" fill-opacity="0" id="wpt241 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt241 label" transform="translate(0,0)" x="237.5004" y="473.6782" />
+		<circle cx="173.8384" cy="485.7729" fill="#000000" fill-opacity="0" id="wpt242 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt242 label" transform="translate(0,0)" x="178.0884" y="485.7729" />
+		<circle cx="154.2049" cy="488.3397" fill="#000000" fill-opacity="0" id="wpt243 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt243 label" transform="translate(0,0)" x="159.2049" y="488.3397" />
+		<circle cx="539.0860" cy="505.9339" fill="#000000" fill-opacity="0" id="wpt244 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt244 label" transform="translate(0,0)" x="543.336" y="505.9339" />
+		<circle cx="433.1028" cy="487.0001" fill="#000000" fill-opacity="0" id="wpt245 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt245 label" transform="translate(0,0)" x="438.1028" y="487.0001" />
+		<circle cx="368.0588" cy="528.7892" fill="#000000" fill-opacity="0" id="wpt246 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt246 label" transform="translate(0,0)" x="371.5588" y="528.7892" />
+		<circle cx="314.9195" cy="523.6401" fill="#000000" fill-opacity="0" id="wpt247 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt247 label" transform="translate(0,0)" x="319.1695" y="523.6401" />
+		<circle cx="286.6456" cy="506.7426" fill="#000000" fill-opacity="0" id="wpt248 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt248 label" transform="translate(0,0)" x="290.1456" y="506.7426" />
+		<circle cx="240.1712" cy="485.7901" fill="#000000" fill-opacity="0" id="wpt249 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt249 label" transform="translate(0,0)" x="243.6712" y="485.7901" />
+		<circle cx="220.4048" cy="492.4518" fill="#000000" fill-opacity="0" id="wpt250 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt250 label" transform="translate(0,0)" x="224.6548" y="492.4518" />
+		<circle cx="160.9140" cy="505.9339" fill="#000000" fill-opacity="0" id="wpt251 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt251 label" transform="translate(0,0)" x="165.164" y="505.9339" />
+		<circle cx="532.1405" cy="521.7182" fill="#000000" fill-opacity="0" id="wpt252 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt252 label" transform="translate(0,0)" x="535.6405" y="521.7182" />
+		<circle cx="492.4471" cy="511.1224" fill="#000000" fill-opacity="0" id="wpt253 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt253 label" transform="translate(0,0)" x="495.9471" y="511.1224" />
+		<circle cx="472.7091" cy="504.1955" fill="#000000" fill-opacity="0" id="wpt254 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt254 label" transform="translate(0,0)" x="476.9591" y="504.1955" />
+		<circle cx="453.1931" cy="495.8519" fill="#000000" fill-opacity="0" id="wpt255 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt255 label" transform="translate(0,0)" x="456.6931" y="495.8519" />
+		<circle cx="437.5622" cy="515.0830" fill="#000000" fill-opacity="0" id="wpt256 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt256 label" transform="translate(0,0)" x="442.5622" y="515.083" />
+		<circle cx="415.2650" cy="534.6318" fill="#000000" fill-opacity="0" id="wpt257 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt257 label" transform="translate(0,0)" x="419.515" y="534.6318" />
+		<circle cx="368.1013" cy="554.8892" fill="#000000" fill-opacity="0" id="wpt258 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt258 label" transform="translate(0,0)" x="371.6013" y="554.8892" />
+		<circle cx="350.0000" cy="556.4879" fill="#000000" fill-opacity="0" id="wpt259 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt259 label" transform="translate(0,0)" x="354.25" y="556.4879" />
+		<circle cx="314.6051" cy="550.3067" fill="#000000" fill-opacity="0" id="wpt260 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt260 label" transform="translate(0,0)" x="318.1051" y="550.3067" />
+		<circle cx="298.7581" cy="543.3065" fill="#000000" fill-opacity="0" id="wpt261 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt261 label" transform="translate(0,0)" x="303.0081" y="543.3065" />
+		<circle cx="284.7350" cy="534.6318" fill="#000000" fill-opacity="0" id="wpt262 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt262 label" transform="translate(0,0)" x="288.235" y="534.6318" />
+		<circle cx="272.6535" cy="525.0199" fill="#000000" fill-opacity="0" id="wpt263 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt263 label" transform="translate(0,0)" x="276.1535" y="525.0199" />
+		<circle cx="262.4378" cy="515.0830" fill="#000000" fill-opacity="0" id="wpt264 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt264 label" transform="translate(0,0)" x="266.6878" y="515.083" />
+		<circle cx="253.8998" cy="505.2653" fill="#000000" fill-opacity="0" id="wpt265 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt265 label" transform="translate(0,0)" x="258.8998" y="505.2653" />
+		<circle cx="246.8069" cy="495.8519" fill="#000000" fill-opacity="0" id="wpt266 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt266 label" transform="translate(0,0)" x="250.3069" y="495.8519" />
+		<circle cx="207.5529" cy="511.1224" fill="#000000" fill-opacity="0" id="wpt267 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt267 label" transform="translate(0,0)" x="211.0529" y="511.1224" />
+		<circle cx="525.1245" cy="535.7855" fill="#000000" fill-opacity="0" id="wpt268 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt268 label" transform="translate(0,0)" x="529.3745" y="535.7855" />
+		<circle cx="485.5927" cy="522.5786" fill="#000000" fill-opacity="0" id="wpt269 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt269 label" transform="translate(0,0)" x="489.0927" y="522.5786" />
+		<circle cx="466.0922" cy="514.1504" fill="#000000" fill-opacity="0" id="wpt270 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt270 label" transform="translate(0,0)" x="470.3422" y="514.1504" />
+		<circle cx="459.0747" cy="523.5370" fill="#000000" fill-opacity="0" id="wpt271 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt271 label" transform="translate(0,0)" x="463.3247" y="523.537" />
+		<circle cx="441.0702" cy="543.2501" fill="#000000" fill-opacity="0" id="wpt272 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt272 label" transform="translate(0,0)" x="445.3202" y="543.2501" />
+		<circle cx="416.6795" cy="562.2924" fill="#000000" fill-opacity="0" id="wpt273 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt273 label" transform="translate(0,0)" x="420.1795" y="562.2924" />
+		<circle cx="385.6155" cy="576.8198" fill="#000000" fill-opacity="0" id="wpt274 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt274 label" transform="translate(0,0)" x="389.1155" y="576.8198" />
+		<circle cx="350.0000" cy="582.3659" fill="#000000" fill-opacity="0" id="wpt275 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt275 label" transform="translate(0,0)" x="355" y="582.3659" />
+		<circle cx="331.8694" cy="580.9414" fill="#000000" fill-opacity="0" id="wpt276 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt276 label" transform="translate(0,0)" x="335.3694" y="580.9414" />
+		<circle cx="270.2675" cy="553.0569" fill="#000000" fill-opacity="0" id="wpt277 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt277 label" transform="translate(0,0)" x="273.7675" y="553.0569" />
+		<circle cx="258.9298" cy="543.2501" fill="#000000" fill-opacity="0" id="wpt278 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt278 label" transform="translate(0,0)" x="263.9298" y="543.2501" />
+		<circle cx="240.9253" cy="523.5370" fill="#000000" fill-opacity="0" id="wpt279 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt279 label" transform="translate(0,0)" x="244.4253" y="523.537" />
+		<circle cx="233.9078" cy="514.1504" fill="#000000" fill-opacity="0" id="wpt280 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt280 label" transform="translate(0,0)" x="237.4078" y="514.1504" />
+		<circle cx="194.6951" cy="529.7201" fill="#000000" fill-opacity="0" id="wpt281 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt281 label" transform="translate(0,0)" x="198.1951" y="529.7201" />
+		<circle cx="174.8755" cy="535.7855" fill="#000000" fill-opacity="0" id="wpt282 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt282 label" transform="translate(0,0)" x="179.1255" y="535.7855" />
+		<circle cx="518.1679" cy="548.2642" fill="#000000" fill-opacity="0" id="wpt283 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt283 label" transform="translate(0,0)" x="521.6679" y="548.2642" />
+		<circle cx="478.9914" cy="532.4490" fill="#000000" fill-opacity="0" id="wpt284 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt284 label" transform="translate(0,0)" x="482.4914" y="532.449" />
+		<circle cx="472.0334" cy="541.8135" fill="#000000" fill-opacity="0" id="wpt285 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt285 label" transform="translate(0,0)" x="477.0334" y="541.8135" />
+		<circle cx="463.9577" cy="551.5371" fill="#000000" fill-opacity="0" id="wpt286 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt286 label" transform="translate(0,0)" x="468.9577" y="551.5371" />
+		<circle cx="443.8550" cy="571.3659" fill="#000000" fill-opacity="0" id="wpt287 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt287 label" transform="translate(0,0)" x="447.355" y="571.3659" />
+		<circle cx="417.7496" cy="589.7351" fill="#000000" fill-opacity="0" id="wpt288 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt288 label" transform="translate(0,0)" x="421.2496" y="589.7351" />
+		<circle cx="402.4184" cy="597.3302" fill="#000000" fill-opacity="0" id="wpt289 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt289 label" transform="translate(0,0)" x="406.6684" y="597.3302" />
+		<circle cx="385.7758" cy="603.2186" fill="#000000" fill-opacity="0" id="wpt290 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt290 label" transform="translate(0,0)" x="390.0258" y="603.2186" />
+		<circle cx="331.8484" cy="606.9597" fill="#000000" fill-opacity="0" id="wpt291 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt291 label" transform="translate(0,0)" x="336.0984" y="606.9597" />
+		<circle cx="314.2242" cy="603.2186" fill="#000000" fill-opacity="0" id="wpt292 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt292 label" transform="translate(0,0)" x="318.4742" y="603.2186" />
+		<circle cx="297.5816" cy="597.3302" fill="#000000" fill-opacity="0" id="wpt293 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt293 label" transform="translate(0,0)" x="301.8316" y="597.3302" />
+		<circle cx="282.2504" cy="589.7351" fill="#000000" fill-opacity="0" id="wpt294 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt294 label" transform="translate(0,0)" x="286.5004" y="589.7351" />
+		<circle cx="245.3882" cy="561.4647" fill="#000000" fill-opacity="0" id="wpt295 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt295 label" transform="translate(0,0)" x="248.8882" y="561.4647" />
+		<circle cx="227.9666" cy="541.8135" fill="#000000" fill-opacity="0" id="wpt296 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt296 label" transform="translate(0,0)" x="232.2166" y="541.8135" />
+		<circle cx="181.8321" cy="548.2642" fill="#000000" fill-opacity="0" id="wpt297 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt297 label" transform="translate(0,0)" x="186.0821" y="548.2642" />
+		<circle cx="511.3672" cy="559.3007" fill="#000000" fill-opacity="0" id="wpt298 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt298 label" transform="translate(0,0)" x="515.6172" y="559.3007" />
+		<circle cx="446.0881" cy="599.3639" fill="#000000" fill-opacity="0" id="wpt299 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt299 label" transform="translate(0,0)" x="450.3381" y="599.3639" />
+		<circle cx="418.5753" cy="616.9837" fill="#000000" fill-opacity="0" id="wpt300 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt300 label" transform="translate(0,0)" x="422.0753" y="616.9837" />
+		<circle cx="368.1672" cy="632.9529" fill="#000000" fill-opacity="0" id="wpt301 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt301 label" transform="translate(0,0)" x="371.6672" y="632.9529" />
+		<circle cx="281.4247" cy="616.9837" fill="#000000" fill-opacity="0" id="wpt302 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt302 label" transform="translate(0,0)" x="284.9247" y="616.9837" />
+		<circle cx="266.9649" cy="608.6070" fill="#000000" fill-opacity="0" id="wpt303 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt303 label" transform="translate(0,0)" x="271.9649" y="608.607" />
+		<circle cx="253.9119" cy="599.3639" fill="#000000" fill-opacity="0" id="wpt304 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt304 label" transform="translate(0,0)" x="258.1619" y="599.3639" />
+		<circle cx="242.2687" cy="589.6189" fill="#000000" fill-opacity="0" id="wpt305 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt305 label" transform="translate(0,0)" x="245.7687" y="589.6189" />
+		<circle cx="222.9323" cy="569.7770" fill="#000000" fill-opacity="0" id="wpt306 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt306 label" transform="translate(0,0)" x="227.1823" y="569.777" />
+		<circle cx="188.6328" cy="559.3007" fill="#000000" fill-opacity="0" id="wpt307 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt307 label" transform="translate(0,0)" x="193.6328" y="559.3007" />
+		<circle cx="504.7896" cy="569.0460" fill="#000000" fill-opacity="0" id="wpt308 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt308 label" transform="translate(0,0)" x="508.2896" y="569.046" />
+		<circle cx="497.9199" cy="578.3768" fill="#000000" fill-opacity="0" id="wpt309 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt309 label" transform="translate(0,0)" x="502.1699" y="578.3768" />
+		<circle cx="490.1399" cy="588.0243" fill="#000000" fill-opacity="0" id="wpt310 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt310 label" transform="translate(0,0)" x="494.3899" y="588.0243" />
+		<circle cx="481.3434" cy="597.8927" fill="#000000" fill-opacity="0" id="wpt311 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt311 label" transform="translate(0,0)" x="485.5934" y="597.8927" />
+		<circle cx="471.4270" cy="607.8455" fill="#000000" fill-opacity="0" id="wpt312 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt312 label" transform="translate(0,0)" x="474.927" y="607.8455" />
+		<circle cx="460.3002" cy="617.6984" fill="#000000" fill-opacity="0" id="wpt313 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt313 label" transform="translate(0,0)" x="464.5502" y="617.6984" />
+		<circle cx="447.8976" cy="627.2158" fill="#000000" fill-opacity="0" id="wpt314 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt314 label" transform="translate(0,0)" x="451.3976" y="627.2158" />
+		<circle cx="419.2240" cy="644.0643" fill="#000000" fill-opacity="0" id="wpt315 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt315 label" transform="translate(0,0)" x="422.724" y="644.0643" />
+		<circle cx="385.9879" cy="655.7748" fill="#000000" fill-opacity="0" id="wpt316 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt316 label" transform="translate(0,0)" x="390.2379" y="655.7748" />
+		<circle cx="350.0000" cy="660.0000" fill="#000000" fill-opacity="0" id="wpt317 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt317 label" transform="translate(0,0)" x="353.5" y="660" />
+		<circle cx="331.8209" cy="658.9273" fill="#000000" fill-opacity="0" id="wpt318 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt318 label" transform="translate(0,0)" x="336.0709" y="658.9273" />
+		<circle cx="314.0121" cy="655.7748" fill="#000000" fill-opacity="0" id="wpt319 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt319 label" transform="translate(0,0)" x="319.0121" y="655.7748" />
+		<circle cx="296.9076" cy="650.7282" fill="#000000" fill-opacity="0" id="wpt320 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt320 label" transform="translate(0,0)" x="300.4076" y="650.7282" />
+		<circle cx="265.8055" cy="636.1126" fill="#000000" fill-opacity="0" id="wpt321 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt321 label" transform="translate(0,0)" x="270.0555" y="636.1126" />
+		<circle cx="252.1024" cy="627.2158" fill="#000000" fill-opacity="0" id="wpt322 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt322 label" transform="translate(0,0)" x="256.3524" y="627.2158" />
+		<circle cx="228.5730" cy="607.8455" fill="#000000" fill-opacity="0" id="wpt323 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt323 label" transform="translate(0,0)" x="232.073" y="607.8455" />
+		<circle cx="209.8601" cy="588.0243" fill="#000000" fill-opacity="0" id="wpt324 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt324 label" transform="translate(0,0)" x="213.3601" y="588.0243" />
+		<circle cx="202.0801" cy="578.3768" fill="#000000" fill-opacity="0" id="wpt325 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt325 label" transform="translate(0,0)" x="206.3301" y="578.3768" />
+		<circle cx="195.2104" cy="569.0460" fill="#000000" fill-opacity="0" id="wpt326 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
+		<g id="wpt326 label" transform="translate(0,0)" x="198.7104" y="569.046" />
+	</g>
+	<rect fill="none" height="699" id="image_boundary" opacity="0" stroke="#000000" stroke-width="1" width="699" x="0.5" y="0.5" />
+</svg>

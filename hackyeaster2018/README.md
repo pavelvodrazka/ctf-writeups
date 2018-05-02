@@ -14,3 +14,4 @@
 [Egg 10: Level Two](challenges/egg10/README.md)  
 [Egg 11: De Egg you must](challenges/egg11/README.md)  
 [Egg 12: Patience](challenges/egg12/README.md)  
+[Egg 13: Sagittarius...](challenges/egg13/README.md)  
