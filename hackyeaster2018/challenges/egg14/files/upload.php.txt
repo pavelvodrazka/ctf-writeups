@@ -1,0 +1,24 @@
+<?php
+require __DIR__ . "/vendor/autoload.php"; // QR decoder library from https://github.com/khanamiryan/php-qrcode-detector-decoder
+
+try {
+    $qrcode1 = new QrReader($_FILES["file1"]["tmp_name"]);
+    $answer1 = $qrcode1->text();
+} catch(Exception $e) {
+    exit("Error while reading the first QR.");
+}
+
+try {
+    $qrcode2 = new QrReader($_FILES["file2"]["tmp_name"]);
+    $answer2 = $qrcode2->text(); 
+} catch(Exception $e) {
+    exit("Error while reading the second QR.");
+}
+
+if(($answer1 == "Hackvent" && $answer2 == "Hacky Easter" or $answer1 == "Hacky Easter" && $answer2 == "Hackvent") && sha1_file($_FILES["file1"]["tmp_name"]) == sha1_file($_FILES["file2"]["tmp_name"])) {
+    [SURPRISE]
+}
+else {
+    echo ":-(";
+}
+?>
