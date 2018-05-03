@@ -18,3 +18,4 @@
 [Egg 14: Same same...](challenges/egg14/README.md)  
 [Egg 15: Manila greetings](challenges/egg15/README.md)  
 [Egg 16: git cloak --hard](challenges/egg16/README.md)  
+[Egg 17: Space Invaders](challenges/egg17/README.md)  
