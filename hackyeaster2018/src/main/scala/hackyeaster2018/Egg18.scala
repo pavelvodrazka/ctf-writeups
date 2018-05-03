@@ -7,6 +7,8 @@ object Egg18 {
 
     val passwd = Stream.from(0).find(n => password(n.toString) == 9191).get
     println(s"password is: $passwd")
+
+
   }
 
   private def username(name: String): String = {

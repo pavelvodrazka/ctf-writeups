@@ -20,3 +20,4 @@
 [Egg 16: git cloak --hard](challenges/egg16/README.md)  
 [Egg 17: Space Invaders](challenges/egg17/README.md)  
 [Egg 18: Egg Factory](challenges/egg18/README.md)  
+[Egg 19: Virtual Hen](challenges/egg19/README.md)  
