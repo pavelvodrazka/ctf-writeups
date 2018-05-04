@@ -22,3 +22,4 @@
 [Egg 18: Egg Factory](challenges/egg18/README.md)  
 [Egg 19: Virtual Hen](challenges/egg19/README.md)  
 [Egg 20: Artist: No Name Yet](challenges/egg20/README.md)  
+[Egg 21: Hot Dog](challenges/egg21/README.md)  

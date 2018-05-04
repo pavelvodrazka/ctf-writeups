@@ -40,6 +40,7 @@ package object hackyeaster2018 {
 
   /* -- files -- */
 
+  def loadFromFile(path: String): Array[Byte] = Files.readAllBytes(Paths.get(path))
   def saveToFile(path: String, content: Array[Byte]): Unit = Files.write(Paths.get(path), content)
   def saveToFile(path: String, lines: Iterable[String]): Unit = Files.write(Paths.get(path), lines.asJava)
 
