@@ -24,3 +24,4 @@
 [Egg 20: Artist: No Name Yet](challenges/egg20/README.md)  
 [Egg 21: Hot Dog](challenges/egg21/README.md)  
 [Egg 22: Block Jane](challenges/egg22/README.md)  
+[Egg 23: Rapbid Learning](challenges/egg23/README.md)  
