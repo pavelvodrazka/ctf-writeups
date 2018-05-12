@@ -25,3 +25,4 @@
 [Egg 21: Hot Dog](challenges/egg21/README.md)  
 [Egg 22: Block Jane](challenges/egg22/README.md)  
 [Egg 23: Rapbid Learning](challenges/egg23/README.md)  
+[Egg 24: ELF](challenges/egg24/README.md)  
