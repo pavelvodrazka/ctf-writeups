@@ -16,7 +16,7 @@ crtstuff.c
 
 I kept them in my mind in hope they could help me later.
 
-Then I decompiled the binary with IDA and tried to understand the [decompiled code](files/create_egg.c) as much as possible.
+Then I decompiled the binary with IDA and tried to understand the [decompiled code](files/create_egg.decompiled.c) as much as possible.
 
 The `main` function does basically these steps:
 

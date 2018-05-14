@@ -17,7 +17,7 @@
 [Egg 13: Sagittarius...](challenges/egg13/README.md)  
 [Egg 14: Same same...](challenges/egg14/README.md)  
 [Egg 15: Manila greetings](challenges/egg15/README.md)  
-[Egg 16: git cloak --hard](challenges/egg16/README.md)  
+[Egg 16: Git cloak --hard](challenges/egg16/README.md)  
 [Egg 17: Space Invaders](challenges/egg17/README.md)  
 [Egg 18: Egg Factory](challenges/egg18/README.md)  
 [Egg 19: Virtual Hen](challenges/egg19/README.md)  

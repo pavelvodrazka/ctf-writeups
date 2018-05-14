@@ -43,8 +43,6 @@ Track 16 looked like a morse code:
 -.-. --- -- .--. --- ... . -.. -... -.-- -.. .--- ... .--. ----- ----- -. -.--
 ```
 
------------------------------------------------------
-
 The last step was to demorse the secret of this trackline. The hidden message was:
 
 ```
