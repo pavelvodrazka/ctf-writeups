@@ -1,5 +1,11 @@
 # HackyEaster 2018 write-up by pjslf
 
+#### Ranking
+
+This year I finished at the 5th place as the first non-German perfect solver. My best result so far! 
+
+[![tweet.png](images/tweet.png "tweet.png")](https://twitter.com/HackyEaster/status/981592364119744517)
+
 #### Challenges
 
 [Egg 01: Prison Break](challenges/egg01/README.md)  
