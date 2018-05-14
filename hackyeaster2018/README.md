@@ -26,3 +26,6 @@
 [Egg 22: Block Jane](challenges/egg22/README.md)  
 [Egg 23: Rapbid Learning](challenges/egg23/README.md)  
 [Egg 24: ELF](challenges/egg24/README.md)  
+[Egg 25: Hidden Egg #1](challenges/egg25/README.md)  
+[Egg 26: Hidden Egg #2](challenges/egg26/README.md)  
+[Egg 27: Hidden Egg #3](challenges/egg27/README.md)
