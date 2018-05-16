@@ -77,7 +77,7 @@ private def downloadTrainData(size: Int, dest: String): Unit = {
 }
 ```
 
-Then I almost started to build a machine learning devstack for this classification problem, but I changed my mind at the last minute. This is a HackyEaster challenge so there had to be a simpler way how to solve it...
+Then I almost started to build a machine learning devstack for this classification problem, but I changed my mind at the last minute. There had to be a simpler way to solve such Hacky Easter challenge...
 
 I decided to take a look at the [train dataset](files/train_data.txt) and try to find some correlations among the data attributes by hand. I chose to do it from commandline.
 
@@ -137,7 +137,7 @@ Found correlation: `false` for `c0l0r == "black"`, `true` for `c0l0r in ["blue",
 
 The other data attributes have no correlations with the classification attribute.
 
-I extended my program with methods for handling the assignment and starting a session. It was also necessary to tweak the underlying http client a bit in order to handle `session_id` cookie correctly.
+I extended my program with methods for handling the assignment and starting a session. It was also necessary to tweak the underlying HTTP client a bit in order to handle `session_id` cookie correctly.
 
 ```scala
 case class Assignment(attributes: Array[String], data: Array[Array[JsValue]])

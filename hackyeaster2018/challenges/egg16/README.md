@@ -16,7 +16,7 @@ And then I took a look at the log.
 
 ```bash
 $ cd repo
-git log --reflog --graph --oneline --all
+$ git log --reflog --graph --oneline --all
 * b9e860f (HEAD -> master) even more funny images added
 | * 9a29769 (branch) branch created
 |/  

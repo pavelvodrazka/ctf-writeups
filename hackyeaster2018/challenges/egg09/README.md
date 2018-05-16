@@ -8,7 +8,7 @@ This is a mobile challenge. Check it out in the Hacky Easter app!
 
 ### Description
 
-The dial button starts to play a dial tones sequence once clicked.
+The dial button started to play a dial tones sequence once clicked.
 
 ### Solution
 
@@ -30,7 +30,7 @@ Then I uploaded the wav and let the tool decode it. This was the result:
 4*7#2*6#1*2#2*5#2*3#3*6#2*6#2*6#3*6#2*5#3*4#1*2
 ```
 
-It was the Multi-Tap Cipher used in the [first challenge](../egg01/README.md) again but this time a slightly different notation was used: `n*m` which meant `n` repetitions of digit `d`. `#` sign was used as a delimiter. This is an expanded version of the dial sequence.
+It was the Multi-Tap Cipher used in the [first challenge](../egg01/README.md) again but this time a slightly different notation was used: `n*m` which meant `n` repetitions of digit `d`. `#` sign was used as a delimiter. This was the expanded version of the dial sequence.
 
 ```
 7777 66 2 55 33 666 66 66 666 55 444 2

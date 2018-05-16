@@ -7,22 +7,22 @@ Your fellow inmate secretly passed you an old cell phone and a weird origami. Th
 555-7475464 Sara
 ```
 
-Find the password and enter it in the Egg-o-Matic below. **Lowercase only, no spaces!**
+Find the password and enter it in the Egg-o-Matic below. Lowercase only, no spaces!
 
 [origami.png](files/origami.png "origami.png")
 
 ### Solution
 
-There is a message written on the origami which contains a text followed by two lines of dots.
+There was a message written on the origami which contained a text followed by two lines of dots.
 
 ```
 . ... ... .... ... .. ..
 ... ... .... .. ... .. .
 ```
 
-We have two lines containing seven clusters of dots each and there are two phone numbers stored in the phone consisting of predial followed by seven numbers. Now we can put it all together. 
+I had two lines containing seven clusters of dots each and there were two phone numbers stored in the phone consisting of predial followed by seven numbers. Now I had to put it all together. 
 
-The number of dots in each cluster determines the number of repetitions of a digit at the corresponding position of the phone number. This is the Multi-Tap Cipher principle. The reconstructed ciphertext is:
+The number of dots in each cluster determined the number of repetitions of a digit at the corresponding position of the phone number. This is called the Multi-Tap Cipher principle. The reconstructed ciphertext was:
 
 ```
 7 777 444 7777 666 66 33 777 444 7777 55 444 66 4

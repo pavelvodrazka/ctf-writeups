@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg height="700" width="700" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<g id="demis background" opacity="0.5" transform="translate(0,0)">
-		<image height="700" id="background map 1" opacity="1" width="700" x="0" xlink:href="http://www2.demis.nl/wms/wms.asp?version=1.1.0&amp;wms=WorldMap&amp;request=GetMap&amp;srs=EPSG:4326&amp;bbox=118.4011372,-46.6288094,121.5988628,-44.3746448&amp;width=700&amp;height=700&amp;format=PNG&amp;transparent=FALSE&amp;exceptions=INIMAGE&amp;wrapdateline=TRUE&amp;layers=Bathymetry,Countries,Topography,Builtup+areas,Coastlines,Waterbodies,Rivers,Streams,Highways,Roads,Railroads,Trails,Hillshading,Borders,Settlements,Cities,Airports" y="0" />
-	</g>
 	<g id="Waypoints">
 		<circle cx="504.7896" cy="129.8813" fill="#000000" fill-opacity="0" id="wpt1 marker" r="3" stroke="#000000" stroke-opacity="1" stroke-width="1.0" />
 		<g id="wpt1 label" transform="translate(0,0)" x="508.2896" y="129.8813" />

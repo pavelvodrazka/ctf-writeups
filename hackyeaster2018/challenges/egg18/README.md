@@ -29,9 +29,9 @@ ENTER CREDENTIALS:
 > 
 ```
 
-I played a bit with it and then I decided to decompile the program to figure out what is going on inside. To do it I used this [online tool](https://www.cemetech.net/sc/).
+I played a bit with it and then I decided to decompile the program to figure out what was going on inside. To do it I used this [online tool](https://www.cemetech.net/sc/).
 
-I spent some time with the decompiled [source code](files/A.8xp.source) and TI-83+ programming manual trying to understand it. I used Disp debug messages a lot!
+I spent some time with the decompiled [source code](files/A.8xp.source) and a TI-83+ programming manual trying to understand it. I used *Disp* debug messages a lot!
 
 The first interesting finding was that there was a hidden conditional branch which was triggered by any input other than 1 and 2. This branch was responsible for some drawing but its code was dependant on the password value.
 

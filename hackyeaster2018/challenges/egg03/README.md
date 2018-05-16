@@ -1,7 +1,7 @@
 # 03 - Pony Coder
 
 Tony the pony has encoded something for you. Decode his message and enter it in the egg-o-matic below!  
-**Lowercase and spaces only, and special characters!**
+Lowercase and spaces only, and special characters!
 
 ```
 gn tn-gha87be4e
@@ -9,9 +9,9 @@ gn tn-gha87be4e
 
 ### Solution
 
-*Pony Coder* obviously refers to the [Punycode](https://en.wikipedia.org/wiki/Punycode)  which is a representation of Unicode with the limited ASCII character subset.
+*Pony Coder* obviously referred to the [Punycode](https://en.wikipedia.org/wiki/Punycode)  which is a representation of Unicode with the limited ASCII character subset.
 
-All you need to do is to add `xn--` prefix to the provided code:
+All I had to do was to add `xn--` prefix to the provided code:
 
 ```
 xn--gn tn-gha87be4e

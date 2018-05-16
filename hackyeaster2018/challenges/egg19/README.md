@@ -6,10 +6,10 @@ Virtual hen lays virtual eggs. But only with the correct password it is an Easte
 
 ### Solution
 
-As usual the first thing I did was to search interesting strings in the binary. These were the only interesting ones I found.
+As usual, the first thing I did was to search interesting strings in the binary. These were the only interesting ones I found.
 
 ```
-$ strings create_egg | grep .\\+\\.c
+$ strings create_egg | grep '.\+\.c'
 deteapng.c
 crtstuff.c
 ```

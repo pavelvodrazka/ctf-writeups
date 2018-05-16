@@ -47,7 +47,7 @@ private void handleClip() {
 
 This method put a different Base64 text defined as `egg_5` resource in `strings.xml` in to the clipboard.
 
-The solution was really simple with decompiled application. All you had to do was to copy the textarea content directly from the challenge page [source](files/challenge05.html). 
+The solution was really simple with decompiled application. All I had to do was to copy the textarea content directly from the challenge page [source](files/challenge05.html). 
 
 ### Egg
 

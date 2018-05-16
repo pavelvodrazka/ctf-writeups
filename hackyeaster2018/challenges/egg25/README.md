@@ -4,7 +4,9 @@
 
 ### Solution
 
-The *heads* word written in italics was obviously a hint so I took a look at the response headers. I found one particularly interesting: `Content-Eggcoding`. It contained Base64-encoded URL of the egg.
+The *heads* word written in italics was obviously a hint so I took a look at the response headers. I found one particularly interesting: `Content-Eggcoding`.
+
+It contained Base64-encoded URL of the egg.
 
 ```bash
 $ wget https://hackyeaster.hacking-lab.com/hackyeaster/challenge.html?id=25 -O/dev/null -q -d 2>&1 | grep Content-Eggcoding | cut -d' ' -f2 | base64 -d

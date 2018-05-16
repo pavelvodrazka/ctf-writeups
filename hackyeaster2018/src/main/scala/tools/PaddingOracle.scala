@@ -64,23 +64,23 @@ class PaddingOracle(oracle: Array[Byte] => Boolean, blocksize: Int) {
     for (b <- guesses) {
       r(attackidx) = (iv(attackidx) ^ b ^ pad).toByte
 
-    	if (oracle(r)) {
+      if (oracle(r)) {
         decrypted(attackidx) = b
         println(ascii(decrypted))
 
         if (attacksize == blocksize) {
-					return true; // success
-				} else if (recursiveBlockAttack(iv, block, decrypted, attacksize + 1)) {
-					return true; // recursive success
-				}
+          return true; // success
+        } else if (recursiveBlockAttack(iv, block, decrypted, attacksize + 1)) {
+          return true; // recursive success
+        }
 
-				// our guess wasn't correct. for example, we may have stumbled upon 02 02 when we thought we had found 01.
-				decrypted(attackidx) = 0 // cleanup bad finding
-			}
-		}
+        // our guess wasn't correct. for example, we may have stumbled upon 02 02 when we thought we had found 01.
+        decrypted(attackidx) = 0 // cleanup bad finding
+      }
+    }
 
-		false
-	}
+    false
+  }
 
   private def ascii(n: Byte): Char = (n.toInt & 0xff).toChar
   private def ascii(n: Array[Byte]): String = n.map(ascii).mkString

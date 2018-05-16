@@ -45,7 +45,7 @@ else {
 ?>
 ``` 
 
-I lost lot of time trying to exploit that PHP code but it was an dead end. Later I remembered the [SHAttered collision attack](https://shattered.it/) which allow you to craft two colliding PDF files and obtain a SHA-1 digital signature on the first PDF file which can also be abused as a valid signature on the second PDF file. It looked very promising since the QR library also accepted PDF files as an input. 
+I lost lot of time trying to exploit that PHP code but it was an dead end. Later I remembered the [SHAttered collision attack](https://shattered.it/) which allows you to craft two colliding PDF files and obtain a SHA-1 digital signature on the first PDF file which can also be abused as a valid signature on the second PDF file. It looked very promising since the QR library also accepted PDF files as an input. 
 
 Then I prepared two QR code images: [hackvent.jpeg](files/hackvent.jpeg) and [hackyeaster.jpeg](files/hackyeaster.jpeg). I uploaded them to this [online service](http://alf.nu/SHA1) which generated colliding PDFs for me: [hackvent.pdf](files/hackvent.pdf) and [hackyeaster.pdf](files/hackyeaster.pdf). It worked like a charm!
 

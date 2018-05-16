@@ -25,7 +25,7 @@ $("figure > a").each(function(idx) {
 });
 ```
 
-Although it worked like a charm you still had to manually find and click all the matching images.
+Although it worked like a charm I still had to manually find and click all the matching images.
 
 Later I realized that I can identify cards by the anchor values in their URLs. The matching cards had anchor values `#card_${n}` and `#card_${n+1}`. It allowed me to write a new script which did all the work for me. It simply simulates clicking on matching cards by sending click requests in the right order.
 

@@ -45,7 +45,7 @@ Archive:  rgssad.rgss2a.rgss3a.decrypter.zip
 $ WINEPREFIX="$(pwd)/wine" wine "RGSSAD - RGSS2A - RGSS3A Decrypter.exe"
 ```
 
-Then I simply replaced the `Game.rgss3a` file in the installation directory by the extracted files and made my [decrypted version](files/game-decrypted.zip) of the game.
+Then I simply replaced the `Game.rgss3a` file in the installation directory with the extracted files and made my [decrypted version](files/game-decrypted.zip) of the game.
 
 The next step was to download [trial version](http://www.rpgmakerweb.com/download/free-trials/trial-rpg-maker-vx-ace) of the RPG Maker VX Ace and load the decrypted version of the game into it.
 
@@ -55,7 +55,7 @@ I looked at the items list and quickly found an egg. It had this description.
 7034353577307264355f3472335f6330306c
 ```
 
-The hint stated that there are several parts to be found so I continued in searching the other ones. I inspected all the map events and found the three other hexed parts:
+The hint stated that there are several parts to be found so I continued in searching the other ones. I inspected all the map events and found the other three hexed parts:
 
 ```
 7034353577307264355f052d066b15035433
@@ -67,7 +67,7 @@ It was a time to figure out how to combine them together. Luckily I found the la
 
 ![heaven-map.png](files/heaven-map.png "heaven-map.png")
 
-At first I accidentally misidentified the middle character as `A` instead of the correct `^` which cost me some time. Later I realized that it suggests to use `XOR`.
+At first I accidentally misidentified the middle character as `A` instead of the correct `^` which cost me some time. Later I realized that it suggested to use `XOR`.
 
 I wrote [this](../../src/main/scala/hackyeaster2018/Egg10.scala) simple Scala program to xor the hexed values for me and convert them to ASCII strings.
 

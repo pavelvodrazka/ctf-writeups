@@ -140,5 +140,5 @@ int main() {
         pthread_join(threads[i], NULL);
     }
 
-	return 0;
+    return 0;
 }

@@ -7,7 +7,7 @@
 
 ### Description
 
-The page contains an egg with animated QR code whose pixels quickly change colors in random order.
+The page contained an egg with animated QR code whose pixels quickly changed colors in random order.
 
 ![screenshot.png](files/screenshot.png "screenshot.png")
 
@@ -66,7 +66,7 @@ function changeBg() {
 }
 ```
 
-The interesting part was found in `changeCell` function. It randomly choose color of a cell based on its CSS classes. Cells had multiple color classes, but each cell had exactly one of white or black class. The mapping to QR code was therefore deterministic.
+The interesting part was found in `changeCell` function. It was randomly choosing color of a cell based on its CSS classes. Cells had multiple color classes, but each cell had exactly one of white or black class. The mapping to QR code was therefore deterministic.
 
 The only thing I had to do was to write a simple console script which reduced CSS classes of each cell to only black or white and let it settle for a while. After few seconds of animation the QR code was revealed.
 

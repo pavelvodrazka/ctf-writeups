@@ -27,7 +27,7 @@ Volume: 28
 Page: 355
 ```
 
-This is the content of that page:
+This was the content of that page:
 
 ```
 the super secret hackyeaster password is checkthedatayo
