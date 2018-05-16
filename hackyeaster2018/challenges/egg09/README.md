@@ -14,7 +14,7 @@ The dial button started to play a dial tones sequence once clicked.
 
 The [dial sequence](files/dial.mp3) was stored in mp3 format inside the application apk so you could simple unzip the apk archive to grab it.
 
-It uses the [Dual-Tone Multi-Frequency Signaling](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling) (DTMF) as shown on the following spectrogram from Audacity.
+It used the [Dual-Tone Multi-Frequency Signaling](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling) (DTMF) as shown on the following spectrogram from Audacity.
 
 ![spectrogram.png](files/spectrogram.png "spectrogram.png")
 
