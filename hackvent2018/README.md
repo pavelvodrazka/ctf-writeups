@@ -1,5 +1,5 @@
 # HACKvent 2018 write-up by pjslf
 
-*Here be dragons...*
+#### Daily challenges
 
-Write-up will be published on January 1, 2019 at 0:00
+[Day 01: Just Another Bar Code](challenges/day01/README.md)  
