@@ -9,3 +9,4 @@
 [Day 05: OSINT 1](challenges/day05/README.md)  
 [Day 06: Mondrian](challenges/day06/README.md)  
 [Day 07: Flappy.pl](challenges/day07/README.md)  
+[Day 08: Advent Snail](challenges/day08/README.md)  
