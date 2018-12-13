@@ -10,3 +10,4 @@
 [Day 06: Mondrian](challenges/day06/README.md)  
 [Day 07: Flappy.pl](challenges/day07/README.md)  
 [Day 08: Advent Snail](challenges/day08/README.md)  
+[Day 09: Fake xmass balls](challenges/day09/README.md)  
