@@ -11,3 +11,4 @@
 [Day 07: Flappy.pl](challenges/day07/README.md)  
 [Day 08: Advent Snail](challenges/day08/README.md)  
 [Day 09: Fake xmass balls](challenges/day09/README.md)  
+[Day 10: >_ Run, Node, Run](challenges/day10/README.md)  
