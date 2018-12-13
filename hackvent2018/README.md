@@ -14,3 +14,5 @@
 [Day 10: >_ Run, Node, Run](challenges/day10/README.md)  
 [Day 11: Crypt-o-Math 3.0](challenges/day11/README.md)  
 [Day 12: SmartWishList](challenges/day12/README.md)  
+[Day 13: Flappy's revenge](challenges/day13/README.md)
+  
