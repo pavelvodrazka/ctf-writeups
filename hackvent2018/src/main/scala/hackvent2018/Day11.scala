@@ -7,7 +7,7 @@ object Day11 extends App {
   val p = BigInt("DD8E05FF296C792D2855DB6B5331AF9D112876B41D43F73CEF3AC7425F9", 16)
   val b = BigInt("7BBE3A50F28B2BA511A860A0A32AD71D4B5B93A8AE295E83350E68B57E5", 16)
 
-  assert(b.gcd(p) == 1, "`b` and `p` are not coprimes!")
+  assert(gcd(b, p) == 1, "`b` and `p` are not coprimes!")
 
   // mod inverse: (b * s) ≡ 1 (mod p)
   val s = b.modInverse(p)
@@ -24,9 +24,6 @@ object Day11 extends App {
   }.find(_.startsWith("HV18-")).get
 
   println(flag)
-
-  def ascii(n: Array[Byte]): String = n.map(ascii).mkString
-  def ascii(n: Byte): Char = (n.toInt & 0xff).toChar
 
 }
 
