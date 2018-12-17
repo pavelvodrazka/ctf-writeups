@@ -7,6 +7,14 @@ package object hackvent2018 {
   def b64enc(bytes: Array[Byte]): String = Base64.getEncoder.encodeToString(bytes)
   def b64dec(str: String): Array[Byte] = Base64.getDecoder.decode(str)
 
+  /* -- bytes -- */
+
+  def bin2bytes(bin: String): Array[Byte] = BigInt(bin, 2).toByteArray
+  def oct2bytes(oct: String): Array[Byte] = BigInt(oct, 8).toByteArray
+  def dec2bytes(dec: String): Array[Byte] = BigInt(dec, 10).toByteArray
+  def hex2bytes(hex: String): Array[Byte] = BigInt(hex, 16).toByteArray
+  def str2bytes(str: String): Array[Byte] = str.getBytes
+
   /* -- hexadecimal -- */
 
   def hex(n: Byte): String = "%02x".format(n)
