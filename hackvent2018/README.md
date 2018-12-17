@@ -17,3 +17,4 @@
 [Day 13: Flappy's revenge](challenges/day13/README.md)  
 [Day 14: Power in the shell](challenges/day14/README.md)  
 [Day 15: Watch Mel](challenges/day15/README.md)  
+[Day 16: Pay 100 Bitcoins](challenges/day16/README.md)  
