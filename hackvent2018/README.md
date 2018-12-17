@@ -19,3 +19,7 @@
 [Day 15: Watch Mel](challenges/day15/README.md)  
 [Day 16: Pay 100 Bitcoins](challenges/day16/README.md)  
 [Day 17: Faster Key Exchange](challenges/day17/README.md)
+
+#### Hidden challenges
+
+[Hidden 03](challenges/hidden03/README.md)  
