@@ -24,4 +24,5 @@
 #### Hidden challenges
 
 [Hidden 01](challenges/hidden01/README.md)  
+[Hidden 02](challenges/hidden02/README.md)  
 [Hidden 03](challenges/hidden03/README.md)  
