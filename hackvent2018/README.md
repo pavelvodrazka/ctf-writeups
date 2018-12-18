@@ -1,5 +1,10 @@
 # HACKvent 2018 write-up by pjslf
 
+#### Teaser challenges
+
+[Day -10: Dots](teaser/day-10/README.md)  
+
+
 #### Daily challenges
 
 [Day 01: Just Another Bar Code](challenges/day01/README.md)  
