@@ -232,7 +232,7 @@ The Easy Webshop was running on port [1089](http://challenges.hackvent.hacking-l
 
 The last hint indicated it has something to do with SSTi vulnerability. I quickly realized it's referencing to [Jinja2](http://jinja.pocoo.org/docs/2.10/) templating engine for Python.
 
-I found this useful [article](https://nvisium.com/blog/2016/03/11/exploring-ssti-in-flask-jinja2-part-ii/) which showed me how to exploit that vulnerability. I found that URL path is vulnerable but it took me some time to put all the necessary things together and make it work.
+I found this useful [article](https://nvisium.com/blog/2016/03/11/exploring-ssti-in-flask-jinja2-part-ii.html) which showed me how to exploit that vulnerability. I found that URL path is vulnerable but it took me some time to put all the necessary things together and make it work.
 
 I started local netcat opened for incoming connections: 
 
