@@ -26,6 +26,7 @@
 [Day 17: Faster Key Exchange](challenges/day17/README.md)  
 [Day 18: Be Evil](challenges/day18/README.md)  
 [Day 19: PromoCode](challenges/day19/README.md)  
+[Day 20: I want to play a game](challenges/day20/README.md)  
 
 #### Hidden challenges
 
