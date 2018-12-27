@@ -25,6 +25,7 @@
 [Day 16: Pay 100 Bitcoins](challenges/day16/README.md)  
 [Day 17: Faster Key Exchange](challenges/day17/README.md)  
 [Day 18: Be Evil](challenges/day18/README.md)  
+[Day 19: PromoCode](challenges/day19/README.md)  
 
 #### Hidden challenges
 
