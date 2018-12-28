@@ -27,6 +27,7 @@
 [Day 18: Be Evil](challenges/day18/README.md)  
 [Day 19: PromoCode](challenges/day19/README.md)  
 [Day 20: I want to play a game](challenges/day20/README.md)  
+[Day 21: MuffinCTF](challenges/day21/README.md)  
 
 #### Hidden challenges
 
