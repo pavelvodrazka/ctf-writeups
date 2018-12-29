@@ -28,6 +28,7 @@
 [Day 19: PromoCode](challenges/day19/README.md)  
 [Day 20: I want to play a game](challenges/day20/README.md)  
 [Day 21: MuffinCTF](challenges/day21/README.md)  
+[Day 22: MuffinCTF](challenges/day22/README.md)  
 
 #### Hidden challenges
 
