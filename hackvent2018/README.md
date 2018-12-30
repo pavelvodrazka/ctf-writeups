@@ -30,6 +30,7 @@
 [Day 21: MuffinCTF #1](challenges/day21/README.md)  
 [Day 22: MuffinCTF #2](challenges/day22/README.md)  
 [Day 23: MuffinCTF #3](challenges/day23/README.md)  
+[Day 24: Take the red pill, take the blue pill](challenges/day24/README.md)  
 
 #### Hidden challenges
 
