@@ -4,6 +4,7 @@
 
 [Day -10: Dots](teaser/day-10/README.md)  
 [Day -09: Sneaky Morse](teaser/day-09/README.md)  
+[Day -08: Stereogram](teaser/day-08/README.md)  
 
 #### Daily challenges
 
