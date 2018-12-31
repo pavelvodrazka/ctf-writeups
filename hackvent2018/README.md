@@ -6,6 +6,7 @@
 [Day -09: Sneaky Morse](teaser/day-09/README.md)  
 [Day -08: Stereogram](teaser/day-08/README.md)  
 [Day -07: QR3C.png](teaser/day-07/README.md)  
+[Day -06: Santa.txt](teaser/day-06/README.md)  
 
 #### Daily challenges
 
