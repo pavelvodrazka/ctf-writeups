@@ -25,7 +25,7 @@ Details: RAR 4
                898964                    5
 ```
 
-I extracted a file named QR3C.png from the archive.
+I extracted a file named [QR3C.png](files/QR3C.png) from the archive.
 
 ```
 $ unrar e _ZOoxjUSe1OVB7OPoVrsX.pdf.extracted/39A25.rar QR3C.png
