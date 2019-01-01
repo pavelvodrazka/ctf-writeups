@@ -9,6 +9,7 @@
 [Day -06: Santa.txt](teaser/day-06/README.md)  
 [Day -05: Teaser.pls](teaser/day-05/README.md)  
 [Day -04: Old_School.jpg](teaser/day-04/README.md)  
+[Day -03: Quickresponse.txt](teaser/day-03/README.md)  
 
 #### Daily challenges
 
