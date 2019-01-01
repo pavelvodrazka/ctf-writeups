@@ -11,6 +11,7 @@
 [Day -04: Old_School.jpg](teaser/day-04/README.md)  
 [Day -03: Quickresponse.txt](teaser/day-03/README.md)  
 [Day -02: Final.zip](teaser/day-02/README.md)  
+[Day -01: Xenon.elf](teaser/day-01/README.md)  
 
 #### Daily challenges
 
