@@ -1,4 +1,4 @@
-# Hidden 01
+# Hidden #1
 
 As usual the first thing to try while searching for hidden flags was a port scan.
 

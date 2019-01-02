@@ -52,6 +52,6 @@ Congrats to all perfect solvers and scorers!
 
 #### Hidden challenges
 
-[Hidden 01](challenges/hidden01/README.md)  
-[Hidden 02](challenges/hidden02/README.md)  
-[Hidden 03](challenges/hidden03/README.md)  
+[Hidden #1](challenges/hidden01/README.md)  
+[Hidden #2](challenges/hidden02/README.md)  
+[Hidden #3](challenges/hidden03/README.md)  

@@ -1,4 +1,4 @@
-# Hidden 02
+# Hidden #2
 
 The second hidden flag was an alternative solution to [day 15](../day15/README.md).
 

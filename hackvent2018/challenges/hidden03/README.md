@@ -1,4 +1,4 @@
-# Hidden 03
+# Hidden #3
 
 I discovered this hidden flag while I was mistakenly trying to solve daily [challenge 14](../day14/README.md) by cracking it like it used RSA cipher inside.
 
