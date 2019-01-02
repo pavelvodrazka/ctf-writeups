@@ -61,7 +61,7 @@ function rce(command) {
 
 The final step was to simple read content of the configuration file by calling this piece of code.
 
-```javacript
+```javascript
 rce('cat ./config.json');
 ```
 
