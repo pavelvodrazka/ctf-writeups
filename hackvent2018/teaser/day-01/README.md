@@ -57,38 +57,38 @@ The function was called twice in total. The first call read value of e-fuse set 
 
 ```asm
 li        r4, -1
-# ... snip ...
+; ... snip ...
 li        r3, 0
-bl        xenon_secotp_read_line    # r3 = xenon_secotp_read_line(0) // 0xC0FFFFFFFFFFFFFF
-mr        r8, r4                    # r8 = -1
-insrdi    r8, r3, 32,0              # r8 = 0xC0FFFFFFFFFFFFFF
-li        r3, 1                     # r3 = 1
-# ... snip ...
-bl        xenon_secotp_read_line    # r3 = xenon_secotp_read_line(1) // 0x0F0F0F0F0F0F0F0F
-# ... snip ...
-insrdi    r4, r3, 32,0              # r4 = 0x0F0F0F0F0F0F0F0F
+bl        xenon_secotp_read_line    ; r3 = xenon_secotp_read_line(0) // 0xC0FFFFFFFFFFFFFF
+mr        r8, r4                    ; r8 = -1
+insrdi    r8, r3, 32,0              ; r8 = 0xC0FFFFFFFFFFFFFF
+li        r3, 1                     ; r3 = 1
+; ... snip ...
+bl        xenon_secotp_read_line    ; r3 = xenon_secotp_read_line(1) // 0x0F0F0F0F0F0F0F0F
+; ... snip ...
+insrdi    r4, r3, 32,0              ; r4 = 0x0F0F0F0F0F0F0F0F
 ```
 
 The e-fuse set values were prepared in in registers `r8` and `r4`. Then the key assembly followed.
 
 ```asm
-li        r27, 8                    # r27 = 8
-mtctr     r27                       # ctr = 8
-# ... snip ...
-li        r9, 0                     # r9 = 0
-# ... snip ...
-loc_80002008:                       # do {
-srawi     r7, r9, 1                 #   r7 = r9 / 2
-addze     r7, r7                    #   ...
-addi      r10, r1, 0x1A0+rc4_key    #   r10 = rc4_key
-subfic    r7, r7, 7                 #   r7 = 7 - r7
-slwi      r7, r7, 3                 #   r7 = r7 << 3
-srd       r6, r8, r7                #   r6 = r8 >> r7 // low 7 bits of r7
-srd       r7, r4, r7                #   r7 = r4 >> r7 // low 7 bits of r7
-stbux     r6, r10, r9               #   rc4_key[r9] = r6; r10 = rc4_key + r9 // low 8 bits stored
-addi      r9, r9, 2                 #   r9 = r9 + 2
-stb       r7, 1(r10)                #   rc4_key[r9 + 1] = r7 // low 8 bits stored
-bdnz      loc_80002008              # } while (--ctr != 0)
+li        r27, 8                    ; r27 = 8
+mtctr     r27                       ; ctr = 8
+; ... snip ...
+li        r9, 0                     ; r9 = 0
+; ... snip ...
+loc_80002008:                       ; do {
+srawi     r7, r9, 1                 ;   r7 = r9 / 2
+addze     r7, r7                    ;   ...
+addi      r10, r1, 0x1A0+rc4_key    ;   r10 = rc4_key
+subfic    r7, r7, 7                 ;   r7 = 7 - r7
+slwi      r7, r7, 3                 ;   r7 = r7 << 3
+srd       r6, r8, r7                ;   r6 = r8 >> r7 // low 7 bits of r7
+srd       r7, r4, r7                ;   r7 = r4 >> r7 // low 7 bits of r7
+stbux     r6, r10, r9               ;   rc4_key[r9] = r6; r10 = rc4_key + r9 // low 8 bits stored
+addi      r9, r9, 2                 ;   r9 = r9 + 2
+stb       r7, 1(r10)                ;   rc4_key[r9 + 1] = r7 // low 8 bits stored
+bdnz      loc_80002008              ; } while (--ctr != 0)
 ```
 
 To get the key value I [rewrote](../../src/main/scala/hackvent2018/Teaser01.scala) the algorithm to Scala.
