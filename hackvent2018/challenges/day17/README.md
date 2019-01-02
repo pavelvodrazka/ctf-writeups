@@ -12,7 +12,7 @@ But it's encrypted. Fortunately, you also intercepted the key exchange and figur
 
 ### Solution
 
-The idea behind the Faster Key Exchange is really simple. It relies on given large prime number `p` and base number `g`, a randomly generated integer value `x` kept as a secret and simple modular arithmetic.
+The idea behind the Faster Key Exchange was really simple. It relied on given large prime number `p` and base number `g`, a randomly generated integer value `x` kept as a secret and simple modular arithmetic.
 
 ```python
 class FasterKeyExchange():
@@ -31,7 +31,7 @@ class FasterKeyExchange():
         return (y * self.x) % self.p
 ```
 
-The exchange protocol consists of these steps:
+The exchange protocol consisted of these steps:
 
 1. Both sides randomly generate its own secret value `x` from range `<g, p-2>`
 2. Server's `y` value is calculated as `y_server ≡ g * x_server (mod p)` and send to the client
@@ -41,9 +41,9 @@ The exchange protocol consists of these steps:
     2. Server gets value `s ≡ y_client * x_server (mod p) ≡ g * x_client * x_server (mod p)` 
 5. Since both values of `s` from the previous step are equal to each other, server and client now shares the same secret value of `s`
 
-Such key exchange implementation is however pretty weak. The secret values `x` can be calculated very easily from those intercepted exchanged values.
+Such key exchange implementation was however pretty weak. The secret values `x` could be calculated very easily from those intercepted exchanged values.
 
-The only thing needed is to calculate a modular inverse `g_inv` of publicly known base number `g` such that:
+The only thing needed was to calculate a modular inverse `g_inv` of publicly known base number `g` such that:
 
 ```
 g_inv * g ≡ 1 (mod p)
@@ -57,7 +57,7 @@ g_inv * y_server ≡ g_inv * g * x_server (mod p)
 g_inv * y_server ≡ x_server (mod p)
 ``` 
 
-Since we also intercepted value of `y_client` we can calculate value of shared secret `s` by applying calculation from the 4th step of key exchange.
+Since we also intercepted value of `y_client` we could calculate value of shared secret `s` by applying calculation from the 4th step of key exchange protocol.
 
 ```
 secret = (y_client * x_server) % p

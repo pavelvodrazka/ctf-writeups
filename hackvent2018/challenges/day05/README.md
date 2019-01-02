@@ -20,7 +20,7 @@ To find the right virtual host I decided to lookup up all other domain names of 
 
 One domain immediately took my attention: `osintiscoolisntit.hackvent.org`
 
-After loading the [website]((https://osintiscoolisntit.hackvent.org/)) i got the flag.
+After loading the [website]((https://osintiscoolisntit.hackvent.org/)) I got the flag.
 
 ![flag.png](files/flag.png "flag")
 
