@@ -39,7 +39,7 @@ All OK
 
 This was the content of the pls file.
 
-```oracle
+```sql
 CREATE OR REPLACE FUNCTION checkHV18teaser wrapped 
 a000000
 b2
@@ -74,7 +74,7 @@ MSMAM3ZsIFVQgfnY/sfkB+jfGEuldGYiui7zvIMSHVDfPEE=
 
 It turned out to be a wrapped Oracle PL/SQL function. I [unwrapped](files/teaser.unwrapped) it using this [online tool](https://www.codecrete.net/UnwrapIt/).
 
-```oracle
+```sql
 FUNCTION checkHV18teaser(FLAG VARCHAR2) RETURN NUMBER IS
     A VARCHAR2(4);
     B NUMBER(10);
