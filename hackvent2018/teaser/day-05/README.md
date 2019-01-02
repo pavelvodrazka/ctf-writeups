@@ -113,11 +113,11 @@ END;
 
 This function checked if given flag was the valid one. I had to revert it block by block to get the flag.
 
-1. Known prefix ⟶ `HV18`
-2. Factorize 6497 ⟶ `7389`
-3. MD5 [reverse](https://md5.gromweb.com/?md5=CF945B5A36D1D3E68FFF78829CC8DBF6) ⟶ `H0b0`
-4. XOR -> `HODL`
-5. Square root -> `2969`
-6. Base64 decode ⟶ `F0m0`
+1. Known prefix → `HV18`
+2. Factorize 6497 → `7389`
+3. MD5 [reverse](https://md5.gromweb.com/?md5=CF945B5A36D1D3E68FFF78829CC8DBF6) → `H0b0`
+4. XOR → `HODL`
+5. Square root → `2969`
+6. Base64 decode → `F0m0`
 
 Flag: `HV18-7389-H0b0-HODL-2969-F0m0`
