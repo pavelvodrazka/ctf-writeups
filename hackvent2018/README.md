@@ -1,5 +1,15 @@
 # HACKvent 2018 write-up by pjslf
 
+#### Ranking
+
+This year's HACKvent was really challenging. It started with ten teaser challenges including the xenon reverse to warm up properly at the very beginning. Then there were three hidden challenges and usual 24 daily challenges, but this time with muffinX's A&D CTF right before the Christmas Eve!
+
+I didn't have much time at the end of this advent so I'm very happy that I lost only one point for late submission of the last daily challenge. Finally, I ended up in 12th place with 88 points out of 89 possible.
+
+Congrats to all perfect solvers and scorers!
+
+![ranking.png](images/ranking.png "total ranking")
+
 #### Teaser challenges
 
 [Day -10: Dots](teaser/day-10/README.md)  
