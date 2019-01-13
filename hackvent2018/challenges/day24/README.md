@@ -87,8 +87,7 @@ object BluePill {
     def generateIV(t: Long): Array[Byte] = BigInt(t).toByteArray.reverse
 
     Stream.iterate(filetime(encfile))(_ - 10000).find(t => {
-      val iv = BigInt(t).toByteArray.reverse
-      val encrypted = encrypt(pngMagicNum, iv)
+      val encrypted = encrypt(pngMagicNum, generateIV(t))
       encrypted.sameElements(expected)
     }).map(generateIV).get
   }
