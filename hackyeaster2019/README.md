@@ -8,4 +8,5 @@
 [Egg 04: Disco 2](challenges/egg04/README.md)  
 [Egg 05: Call for Papers](challenges/egg05/README.md)  
 [Egg 06: Dots](challenges/egg06/README.md)  
+[Egg 07: Shell we Argument](challenges/egg07/README.md)  
 
