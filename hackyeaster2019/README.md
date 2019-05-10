@@ -4,3 +4,4 @@
 
 [Egg 01: Twisted](challenges/egg01/README.md)  
 [Egg 02: Just Watch](challenges/egg02/README.md)  
+[Egg 03: Sloppy Encryption](challenges/egg03/README.md)  
