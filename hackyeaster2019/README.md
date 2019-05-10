@@ -6,3 +6,4 @@
 [Egg 02: Just Watch](challenges/egg02/README.md)  
 [Egg 03: Sloppy Encryption](challenges/egg03/README.md)  
 [Egg 04: Disco 2](challenges/egg04/README.md)  
+[Egg 05: Call for Papers](challenges/egg05/README.md)  
