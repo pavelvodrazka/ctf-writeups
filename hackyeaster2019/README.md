@@ -3,3 +3,4 @@
 #### Challenges
 
 [Egg 01: Twisted](challenges/egg01/README.md)  
+[Egg 02: Just Watch](challenges/egg02/README.md)  
