@@ -14,3 +14,4 @@
 [Egg 10: Stackunderflow](challenges/egg10/README.md)  
 [Egg 11: Memeory 2.0](challenges/egg11/README.md)  
 [Egg 12: Decrypt0r](challenges/egg12/README.md)  
+[Egg 13: Symphony in HEX](challenges/egg13/README.md)  
