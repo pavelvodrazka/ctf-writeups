@@ -12,3 +12,4 @@
 [Egg 08: Modern Art](challenges/egg08/README.md)  
 [Egg 09: rorriM rorriM](challenges/egg09/README.md)  
 [Egg 10: Stackunderflow](challenges/egg10/README.md)  
+[Egg 11: Memeory 2.0](challenges/egg11/README.md)  

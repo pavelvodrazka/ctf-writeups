@@ -66,16 +66,22 @@ package object hackyeaster2019 {
   /* -- hashes -- */
 
   private val md5digest = MessageDigest.getInstance("MD5")
-  def md5(text: String): Array[Byte] = md5digest.digest(text.getBytes)
+  def md5(text: String): Array[Byte] = md5(text.getBytes)
+  def md5(bytes: Array[Byte]): Array[Byte] = md5digest.digest(bytes)
   def md5hex(text: String): String = hex(md5(text))
+  def md5hex(bytes: Array[Byte]): String = hex(md5(bytes))
 
   private val sha1digest = MessageDigest.getInstance("SHA1")
-  def sha1(text: String): Array[Byte] = sha1digest.digest(text.getBytes)
+  def sha1(text: String): Array[Byte] = sha1(text.getBytes)
+  def sha1(bytes: Array[Byte]): Array[Byte] = sha1digest.digest(bytes)
   def sha1hex(text: String): String = hex(sha1(text))
+  def sha1hex(bytes: Array[Byte]): String = hex(sha1(bytes))
 
   private val sha256digest = MessageDigest.getInstance("SHA-256")
-  def sha256(text: String): Array[Byte] = sha256digest.digest(text.getBytes)
-  def sha256hex(text: String): String = hex(sha1(text))
+  def sha256(text: String): Array[Byte] = sha256(text.getBytes)
+  def sha256(bytes: Array[Byte]): Array[Byte] = sha256digest.digest(bytes)
+  def sha256hex(text: String): String = hex(sha256(text))
+  def sha256hex(bytes: Array[Byte]): String = hex(sha256(bytes))
 
   /* -- files -- */
 
