@@ -19,3 +19,4 @@
 [Egg 15: Seen in Steem](challenges/egg15/README.md)  
 [Egg 16: Every-Thing](challenges/egg16/README.md)  
 [Egg 17: New Egg Design](challenges/egg17/README.md)  
+[Egg 18: Egg Storage](challenges/egg18/README.md)  
