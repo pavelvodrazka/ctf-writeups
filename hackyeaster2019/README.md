@@ -20,3 +20,4 @@
 [Egg 16: Every-Thing](challenges/egg16/README.md)  
 [Egg 17: New Egg Design](challenges/egg17/README.md)  
 [Egg 18: Egg Storage](challenges/egg18/README.md)  
+[Egg 19: CoUmpact DiAsc](challenges/egg19/README.md)  
