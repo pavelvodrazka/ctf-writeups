@@ -27,3 +27,4 @@
 [Egg 23: The Maze](challenges/egg23/README.md)  
 [Egg 24: CAPTEG](challenges/egg24/README.md)  
 [Egg 25: Hidden Egg 1](challenges/egg25/README.md)  
+[Egg 26: Hidden Egg 2](challenges/egg26/README.md)  
