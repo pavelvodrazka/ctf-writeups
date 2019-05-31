@@ -26,3 +26,4 @@
 [Egg 22: The Hunt: Muddy Quagmire](challenges/egg22/README.md)  
 [Egg 23: The Maze](challenges/egg23/README.md)  
 [Egg 24: CAPTEG](challenges/egg24/README.md)  
+[Egg 25: Hidden Egg 1](challenges/egg25/README.md)  
