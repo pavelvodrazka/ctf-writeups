@@ -22,6 +22,7 @@
 [Egg 18: Egg Storage](challenges/egg18/README.md)  
 [Egg 19: CoUmpact DiAsc](challenges/egg19/README.md)  
 [Egg 20: Scrambled Egg](challenges/egg20/README.md)  
-...  
+[Egg 21: The Hunt: Misty Jungle](challenges/egg21/README.md)  
+[Egg 22: The Hunt: Muddy Quagmire](challenges/egg22/README.md)  
 [Egg 23: The Maze](challenges/egg23/README.md)  
 [Egg 24: CAPTEG](challenges/egg24/README.md)  
