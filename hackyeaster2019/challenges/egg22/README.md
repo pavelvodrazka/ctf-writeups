@@ -1,4 +1,4 @@
-# 20 - The Hunt: Muddy Quagmire
+# 22 - The Hunt: Muddy Quagmire
 
 Welcome to the longest scavenger hunt of the world!
 
