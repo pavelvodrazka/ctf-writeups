@@ -144,7 +144,7 @@ The result:
 
 Here you had to solve a math expression captcha in time. I noticed that UUID-like format of the captcha image names contained the right answer in the third ID part.
 
-For example: [bd1adcff-67ea-**124**-8edf-37663d12dc63.png](http://whale.hacking-lab.com:5337/static/img/ch12/challenges/bd1adcff-67ea-124-8edf-37663d12dc63.png) -> 124
+For example: [bd1adcff-67ea-**124**-8edf-37663d12dc63.png](http://whale.hacking-lab.com:5337/static/img/ch12/challenges/bd1adcff-67ea-124-8edf-37663d12dc63.png) → 124
 
 I wrote a simple jQuery script to extract the result and submit it.
 
@@ -167,6 +167,163 @@ I used [this tool](https://www.miniwebtool.com/remove-accent/) to remove accents
 > Something strange happened. You seem to be at a completly different place.
 
 > 
+
+#### Stage 2
+
+Here is an ASCII version of the map of the second stage. Starting position is marked by `@` and position of the mini challenges by `¤` character.
+
+```
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░█¤█░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░█ █░░░░░░░░░████░░
+░░░░░░░░░░░░░░░░░█ █░█████░░█    █░
+░░█░███░██████████  █     ███¤██ █░
+░█@█   █            █ ███ █ █  █ █░
+░█ █ █ █ █    ███   █ █¤█ █ █  █ █░
+░█ █ █ █ █  █ █¤█ █ █ █   █ █ ¤█ █░
+░█ █ █ █¤█  ███ ███ █ █████ ████ █░
+░█ █ █ █ █  █░█¤█░█ █            █░
+░█ █ █ █ █  ███ ███ ███████ ████ █░
+░█   █   █                       █░
+░░███░███░███████████████████████░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+```
+
+##### Bunny-Teams
+
+![screenshot.png](files/bunny_teams/screenshot.png "screenshot.png")
+
+This challenge was nothing more than the [Battleship](https://en.wikipedia.org/wiki/Battleship_%28puzzle%29) game. I used this [C++ solver](https://github.com/Angelyr/BattleshipPuzzleSolver) and fed it with this [input file](files/bunny_teams/input.txt).
+
+```
+$ g++ -o solver solver.cpp 
+$ ./solver input.txt 
+Solution:
+battleship  1 2 horizontal
+cruiser     3 3 horizontal
+cruiser     6 3 horizontal
+destroyer   4 0 horizontal
+submarine   2 0
+submarine   6 0
++-------+
+|       |0
+|  <xx> |4
+|o      |1
+|   <x> |3
+|<>     |2
+|       |0
+|o  <x> |4
++-------+
+ 3113330
+
+```
+
+##### Pumple's Puzzle
+
+![screenshot.png](files/pumples_puzzle/screenshot.png "screenshot.png")
+
+This was a classic [Einstein's Puzzle](https://web.stanford.edu/~laurik/fsmbook/examples/Einstein'sPuzzle.html) which I solved with this [JS solver](https://github.com/adobnikar/einstein-riddle-solver/blob/master/ein-example.js).
+
+```javascript
+'use strict';
+
+const EinLib = require('./ein-lib');
+
+let data = {
+	positions: 5,
+	names: ['Thumper', 'Angel', 'Midnight', 'Bunny', 'Snowball'],
+	colors: ['Yellow', 'White', 'Green', 'Blue', 'Red'],
+	characteristics: ['Scared', 'Lovely', 'Funny', 'Handsome', 'Attractive'],
+	starsigns: ['Taurus', 'Virgo', 'Pisces', 'Aquarius', 'Capricorn'],
+	masks: ['Chequered', 'One-coloured', 'Camouflaged', 'Dotted', 'Striped'],
+};
+
+let ein = new EinLib.einConstructor();
+ein.analyze(data);
+
+// The backpack of Thumper is yellow.
+ein.same('Thumper', 'Yellow');
+// Angel's star sign is taurus.
+ein.same('Angel', 'Taurus');
+// The one-coloured backpack is also white.
+ein.same('One-coloured', 'White');
+// The chequered backpack by Bunny was expensive.
+ein.same('Bunny', 'Chequered');
+// The bunny with the white backpack sits next to the bunny with the green backpack, on the left.
+ein.neighbours('White', 'Green', true);
+// The virgo is also scared.
+ein.same('Virgo', 'Scared');
+// The lovely bunny has a blue backpack.
+ein.same('Lovely', 'Blue');
+// The bunny with the camouflaged backpack sits in the middle.
+ein.same(3, 'Camouflaged');
+// Snowball is the first bunny.
+ein.same(1, 'Snowball');
+// The bunny with a striped backpack sits next to the funny bunny.
+ein.neighbours('Striped', 'Funny');
+// The funny bunny sits also next to the pisces.
+ein.neighbours('Funny', 'Pisces');
+// The lovely bunny sits next to the aquarius.
+ein.neighbours('Lovely', 'Aquarius');
+// The backpack of the handsome bunny is dotted.
+ein.same('Handsome', 'Dotted');
+// Midnight is a attractive bunny.
+ein.same('Midnight', 'Attractive');
+// Snowball sits next to the bunny with a red backpack.
+ein.neighbours('Snowball', 'Red');
+
+console.time("Time");
+ein.solve();
+console.timeEnd("Time");
+
+process.exit(0);
+```
+
+The solution:
+
+![solution.png](files/pumples_puzzle/solution.png "solution.png")
+
+##### Pssst...
+
+![screenshot.png](files/pssst/screenshot.png "screenshot.png")
+
+This challenge was based on regular expression. You had to response with a string which matched given regex.
+
+> He: `[13-37]%`  
+> You: `1%`
+
+##### Punkt.Hase
+
+![screenshot.png](files/punkt_hase/screenshot.png "screenshot.png")
+
+You had to decode a secret message from the blinking image.
+
+![306ba5e1-dd62-4d28-8844-50347f44761b.gif](files/punkt_hase/306ba5e1-dd62-4d28-8844-50347f44761b.gif "306ba5e1-dd62-4d28-8844-50347f44761b.gif")
+
+As the first step I extracted the image frames.
+
+```
+$ mkdir frames
+$ convert 306ba5e1-dd62-4d28-8844-50347f44761b.gif frames/frame-%03d.jpg
+```
+
+I thought it was a morse code, but I was wrong. The second logical guess was a binary code. I wrote a simple [script](../../src/main/scala/hackyeaster2019/Egg21PunktHase.scala) which converted black and white frames into binary bits and print them as an ASCII string.
+
+```scala
+val workdir = Paths.get("hackyeaster2019/challenges/egg21/files/punkt_hase/frames")
+val frames = workdir.toFile.listFiles().sorted
+
+val binary = frames.map { file =>
+    val image = ImageIO.read(file)
+    val rgb = image.getRGB(0, 0)
+    if (rgb == 0xffffffff) 1 else 0
+  }.mkString
+
+println(ascii(bin2bytes(binary)))
+```
+
+The result: `xmnlhqwgbloaet`
 
 ### Flag
 

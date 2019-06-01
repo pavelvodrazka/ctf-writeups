@@ -1,0 +1,162 @@
+┌─────────┬───────────┬────────────┬───────────┬─────────────────┬───────────┬───────────────┐
+│ (index) │ positions │   names    │  colors   │ characteristics │ starsigns │     masks     │
+├─────────┼───────────┼────────────┼───────────┼─────────────────┼───────────┼───────────────┤
+│    0    │     1     │ 'Snowball' │ undefined │    undefined    │ undefined │   undefined   │
+│    1    │     2     │ undefined  │ undefined │    undefined    │ undefined │   undefined   │
+│    2    │     3     │ undefined  │ undefined │    undefined    │ undefined │ 'Camouflaged' │
+│    3    │     4     │ undefined  │ undefined │    undefined    │ undefined │   undefined   │
+│    4    │     5     │ undefined  │ undefined │    undefined    │ undefined │   undefined   │
+└─────────┴───────────┴────────────┴───────────┴─────────────────┴───────────┴───────────────┘
+Start IDF search with depth 1
+┌─────────┬───────────┬────────────┬───────────┬─────────────────┬───────────┬───────────────┐
+│ (index) │ positions │   names    │  colors   │ characteristics │ starsigns │     masks     │
+├─────────┼───────────┼────────────┼───────────┼─────────────────┼───────────┼───────────────┤
+│    0    │     1     │ 'Snowball' │ undefined │    undefined    │ undefined │   undefined   │
+│    1    │     2     │ undefined  │   'Red'   │    undefined    │ undefined │   undefined   │
+│    2    │     3     │ undefined  │ undefined │    undefined    │ undefined │ 'Camouflaged' │
+│    3    │     4     │ undefined  │ undefined │    undefined    │ undefined │   undefined   │
+│    4    │     5     │ undefined  │ undefined │    undefined    │ undefined │   undefined   │
+└─────────┴───────────┴────────────┴───────────┴─────────────────┴───────────┴───────────────┘
+Start IDF search with depth 1
+Start IDF search with depth 2
+┌─────────┬───────────┬────────────┬───────────┬─────────────────┬───────────┬────────────────┐
+│ (index) │ positions │   names    │  colors   │ characteristics │ starsigns │     masks      │
+├─────────┼───────────┼────────────┼───────────┼─────────────────┼───────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │ undefined │    undefined    │ undefined │   undefined    │
+│    1    │     2     │ undefined  │   'Red'   │    undefined    │ undefined │   undefined    │
+│    2    │     3     │ undefined  │ undefined │    undefined    │ undefined │ 'Camouflaged'  │
+│    3    │     4     │ undefined  │  'White'  │    undefined    │ undefined │ 'One-coloured' │
+│    4    │     5     │ undefined  │ undefined │    undefined    │ undefined │   undefined    │
+└─────────┴───────────┴────────────┴───────────┴─────────────────┴───────────┴────────────────┘
+┌─────────┬───────────┬────────────┬───────────┬─────────────────┬───────────┬────────────────┐
+│ (index) │ positions │   names    │  colors   │ characteristics │ starsigns │     masks      │
+├─────────┼───────────┼────────────┼───────────┼─────────────────┼───────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │ undefined │    undefined    │ undefined │   undefined    │
+│    1    │     2     │ undefined  │   'Red'   │    undefined    │ undefined │   undefined    │
+│    2    │     3     │ undefined  │ undefined │    undefined    │ undefined │ 'Camouflaged'  │
+│    3    │     4     │ undefined  │  'White'  │    undefined    │ undefined │ 'One-coloured' │
+│    4    │     5     │ undefined  │  'Green'  │    undefined    │ undefined │   undefined    │
+└─────────┴───────────┴────────────┴───────────┴─────────────────┴───────────┴────────────────┘
+┌─────────┬───────────┬────────────┬───────────┬─────────────────┬───────────┬────────────────┐
+│ (index) │ positions │   names    │  colors   │ characteristics │ starsigns │     masks      │
+├─────────┼───────────┼────────────┼───────────┼─────────────────┼───────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'   │    'Lovely'     │ undefined │   undefined    │
+│    1    │     2     │ undefined  │   'Red'   │    undefined    │ undefined │   undefined    │
+│    2    │     3     │ undefined  │ undefined │    undefined    │ undefined │ 'Camouflaged'  │
+│    3    │     4     │ undefined  │  'White'  │    undefined    │ undefined │ 'One-coloured' │
+│    4    │     5     │ undefined  │  'Green'  │    undefined    │ undefined │   undefined    │
+└─────────┴───────────┴────────────┴───────────┴─────────────────┴───────────┴────────────────┘
+┌─────────┬───────────┬────────────┬───────────┬─────────────────┬────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors   │ characteristics │ starsigns  │     masks      │
+├─────────┼───────────┼────────────┼───────────┼─────────────────┼────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'   │    'Lovely'     │ undefined  │   undefined    │
+│    1    │     2     │ undefined  │   'Red'   │    undefined    │ 'Aquarius' │   undefined    │
+│    2    │     3     │ undefined  │ undefined │    undefined    │ undefined  │ 'Camouflaged'  │
+│    3    │     4     │ undefined  │  'White'  │    undefined    │ undefined  │ 'One-coloured' │
+│    4    │     5     │ undefined  │  'Green'  │    undefined    │ undefined  │   undefined    │
+└─────────┴───────────┴────────────┴───────────┴─────────────────┴────────────┴────────────────┘
+┌─────────┬───────────┬────────────┬───────────┬─────────────────┬────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors   │ characteristics │ starsigns  │     masks      │
+├─────────┼───────────┼────────────┼───────────┼─────────────────┼────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'   │    'Lovely'     │ undefined  │   undefined    │
+│    1    │     2     │ undefined  │   'Red'   │    undefined    │ 'Aquarius' │   undefined    │
+│    2    │     3     │ undefined  │ undefined │    undefined    │ undefined  │ 'Camouflaged'  │
+│    3    │     4     │ undefined  │  'White'  │    undefined    │ undefined  │ 'One-coloured' │
+│    4    │     5     │ undefined  │  'Green'  │   'Handsome'    │ undefined  │    'Dotted'    │
+└─────────┴───────────┴────────────┴───────────┴─────────────────┴────────────┴────────────────┘
+┌─────────┬───────────┬────────────┬───────────┬─────────────────┬────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors   │ characteristics │ starsigns  │     masks      │
+├─────────┼───────────┼────────────┼───────────┼─────────────────┼────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'   │    'Lovely'     │ undefined  │   undefined    │
+│    1    │     2     │ undefined  │   'Red'   │    undefined    │ 'Aquarius' │   undefined    │
+│    2    │     3     │ undefined  │ undefined │    undefined    │ undefined  │ 'Camouflaged'  │
+│    3    │     4     │ 'Midnight' │  'White'  │  'Attractive'   │ undefined  │ 'One-coloured' │
+│    4    │     5     │ undefined  │  'Green'  │   'Handsome'    │ undefined  │    'Dotted'    │
+└─────────┴───────────┴────────────┴───────────┴─────────────────┴────────────┴────────────────┘
+Start IDF search with depth 1
+┌─────────┬───────────┬────────────┬──────────┬─────────────────┬────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors  │ characteristics │ starsigns  │     masks      │
+├─────────┼───────────┼────────────┼──────────┼─────────────────┼────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'  │    'Lovely'     │ undefined  │   undefined    │
+│    1    │     2     │ undefined  │  'Red'   │    undefined    │ 'Aquarius' │   undefined    │
+│    2    │     3     │ 'Thumper'  │ 'Yellow' │    undefined    │ undefined  │ 'Camouflaged'  │
+│    3    │     4     │ 'Midnight' │ 'White'  │  'Attractive'   │ undefined  │ 'One-coloured' │
+│    4    │     5     │ undefined  │ 'Green'  │   'Handsome'    │ undefined  │    'Dotted'    │
+└─────────┴───────────┴────────────┴──────────┴─────────────────┴────────────┴────────────────┘
+┌─────────┬───────────┬────────────┬──────────┬─────────────────┬────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors  │ characteristics │ starsigns  │     masks      │
+├─────────┼───────────┼────────────┼──────────┼─────────────────┼────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'  │    'Lovely'     │ undefined  │   undefined    │
+│    1    │     2     │ undefined  │  'Red'   │    undefined    │ 'Aquarius' │   undefined    │
+│    2    │     3     │ 'Thumper'  │ 'Yellow' │    'Scared'     │  'Virgo'   │ 'Camouflaged'  │
+│    3    │     4     │ 'Midnight' │ 'White'  │  'Attractive'   │ undefined  │ 'One-coloured' │
+│    4    │     5     │ undefined  │ 'Green'  │   'Handsome'    │ undefined  │    'Dotted'    │
+└─────────┴───────────┴────────────┴──────────┴─────────────────┴────────────┴────────────────┘
+┌─────────┬───────────┬────────────┬──────────┬─────────────────┬────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors  │ characteristics │ starsigns  │     masks      │
+├─────────┼───────────┼────────────┼──────────┼─────────────────┼────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'  │    'Lovely'     │ undefined  │   undefined    │
+│    1    │     2     │ undefined  │  'Red'   │     'Funny'     │ 'Aquarius' │   undefined    │
+│    2    │     3     │ 'Thumper'  │ 'Yellow' │    'Scared'     │  'Virgo'   │ 'Camouflaged'  │
+│    3    │     4     │ 'Midnight' │ 'White'  │  'Attractive'   │ undefined  │ 'One-coloured' │
+│    4    │     5     │ undefined  │ 'Green'  │   'Handsome'    │ undefined  │    'Dotted'    │
+└─────────┴───────────┴────────────┴──────────┴─────────────────┴────────────┴────────────────┘
+┌─────────┬───────────┬────────────┬──────────┬─────────────────┬────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors  │ characteristics │ starsigns  │     masks      │
+├─────────┼───────────┼────────────┼──────────┼─────────────────┼────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'  │    'Lovely'     │ undefined  │   undefined    │
+│    1    │     2     │  'Bunny'   │  'Red'   │     'Funny'     │ 'Aquarius' │  'Chequered'   │
+│    2    │     3     │ 'Thumper'  │ 'Yellow' │    'Scared'     │  'Virgo'   │ 'Camouflaged'  │
+│    3    │     4     │ 'Midnight' │ 'White'  │  'Attractive'   │ undefined  │ 'One-coloured' │
+│    4    │     5     │ undefined  │ 'Green'  │   'Handsome'    │ undefined  │    'Dotted'    │
+└─────────┴───────────┴────────────┴──────────┴─────────────────┴────────────┴────────────────┘
+┌─────────┬───────────┬────────────┬──────────┬─────────────────┬────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors  │ characteristics │ starsigns  │     masks      │
+├─────────┼───────────┼────────────┼──────────┼─────────────────┼────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'  │    'Lovely'     │ undefined  │   'Striped'    │
+│    1    │     2     │  'Bunny'   │  'Red'   │     'Funny'     │ 'Aquarius' │  'Chequered'   │
+│    2    │     3     │ 'Thumper'  │ 'Yellow' │    'Scared'     │  'Virgo'   │ 'Camouflaged'  │
+│    3    │     4     │ 'Midnight' │ 'White'  │  'Attractive'   │ undefined  │ 'One-coloured' │
+│    4    │     5     │ undefined  │ 'Green'  │   'Handsome'    │ undefined  │    'Dotted'    │
+└─────────┴───────────┴────────────┴──────────┴─────────────────┴────────────┴────────────────┘
+Start IDF search with depth 1
+┌─────────┬───────────┬────────────┬──────────┬─────────────────┬────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors  │ characteristics │ starsigns  │     masks      │
+├─────────┼───────────┼────────────┼──────────┼─────────────────┼────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'  │    'Lovely'     │ undefined  │   'Striped'    │
+│    1    │     2     │  'Bunny'   │  'Red'   │     'Funny'     │ 'Aquarius' │  'Chequered'   │
+│    2    │     3     │ 'Thumper'  │ 'Yellow' │    'Scared'     │  'Virgo'   │ 'Camouflaged'  │
+│    3    │     4     │ 'Midnight' │ 'White'  │  'Attractive'   │ undefined  │ 'One-coloured' │
+│    4    │     5     │  'Angel'   │ 'Green'  │   'Handsome'    │  'Taurus'  │    'Dotted'    │
+└─────────┴───────────┴────────────┴──────────┴─────────────────┴────────────┴────────────────┘
+┌─────────┬───────────┬────────────┬──────────┬─────────────────┬────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors  │ characteristics │ starsigns  │     masks      │
+├─────────┼───────────┼────────────┼──────────┼─────────────────┼────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'  │    'Lovely'     │  'Pisces'  │   'Striped'    │
+│    1    │     2     │  'Bunny'   │  'Red'   │     'Funny'     │ 'Aquarius' │  'Chequered'   │
+│    2    │     3     │ 'Thumper'  │ 'Yellow' │    'Scared'     │  'Virgo'   │ 'Camouflaged'  │
+│    3    │     4     │ 'Midnight' │ 'White'  │  'Attractive'   │ undefined  │ 'One-coloured' │
+│    4    │     5     │  'Angel'   │ 'Green'  │   'Handsome'    │  'Taurus'  │    'Dotted'    │
+└─────────┴───────────┴────────────┴──────────┴─────────────────┴────────────┴────────────────┘
+Start IDF search with depth 1
+┌─────────┬───────────┬────────────┬──────────┬─────────────────┬─────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors  │ characteristics │  starsigns  │     masks      │
+├─────────┼───────────┼────────────┼──────────┼─────────────────┼─────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'  │    'Lovely'     │  'Pisces'   │   'Striped'    │
+│    1    │     2     │  'Bunny'   │  'Red'   │     'Funny'     │ 'Aquarius'  │  'Chequered'   │
+│    2    │     3     │ 'Thumper'  │ 'Yellow' │    'Scared'     │   'Virgo'   │ 'Camouflaged'  │
+│    3    │     4     │ 'Midnight' │ 'White'  │  'Attractive'   │ 'Capricorn' │ 'One-coloured' │
+│    4    │     5     │  'Angel'   │ 'Green'  │   'Handsome'    │  'Taurus'   │    'Dotted'    │
+└─────────┴───────────┴────────────┴──────────┴─────────────────┴─────────────┴────────────────┘
+----------------------- Solution ------------------------
+
+┌─────────┬───────────┬────────────┬──────────┬─────────────────┬─────────────┬────────────────┐
+│ (index) │ positions │   names    │  colors  │ characteristics │  starsigns  │     masks      │
+├─────────┼───────────┼────────────┼──────────┼─────────────────┼─────────────┼────────────────┤
+│    0    │     1     │ 'Snowball' │  'Blue'  │    'Lovely'     │  'Pisces'   │   'Striped'    │
+│    1    │     2     │  'Bunny'   │  'Red'   │     'Funny'     │ 'Aquarius'  │  'Chequered'   │
+│    2    │     3     │ 'Thumper'  │ 'Yellow' │    'Scared'     │   'Virgo'   │ 'Camouflaged'  │
+│    3    │     4     │ 'Midnight' │ 'White'  │  'Attractive'   │ 'Capricorn' │ 'One-coloured' │
+│    4    │     5     │  'Angel'   │ 'Green'  │   'Handsome'    │  'Taurus'   │    'Dotted'    │
+└─────────┴───────────┴────────────┴──────────┴─────────────────┴─────────────┴────────────────┘
+Time: 19.720ms
