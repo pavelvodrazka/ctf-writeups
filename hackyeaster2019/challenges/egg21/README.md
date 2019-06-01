@@ -54,7 +54,7 @@ To make things easier I wrote The Hunt Maze [client](../../src/main/scala/hackye
 
 I used the client to manually explore the maze to get a map with position of the mini challenges. This maze had two stages. You had to complete all the mini challenges in the first stage to unlock the second stage.
 
-#### Stage 1
+### Stage 1
 
 Here is an ASCII version of the map of the first stage. Starting position is marked by `@` and position of the mini challenges by `¤` character.
 
@@ -80,7 +80,7 @@ Here is an ASCII version of the map of the first stage. Starting position is mar
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ```
 
-##### Warmup
+#### Warmup
 
 ![screenshot.png](files/warmup/screenshot.png "screenshot.png")
 
@@ -110,7 +110,7 @@ The result:
 [[8,368], [37,95], [207,642], [252,55], [258,557], [278,49], [289,16], [353,315], [358,249], [418,29]]
 ```
 
-##### Mathonymous 2.0
+#### Mathonymous 2.0
 
 ![screenshot.png](files/mathonymous/screenshot.png "screenshot.png")
 
@@ -138,7 +138,7 @@ The result:
 11 + 18 - 15 + 18 + 13 * 4 = 84
 ```
 
-##### C0tt0nt4il Ch3ck V2.0
+#### C0tt0nt4il Ch3ck V2.0
 
 ![screenshot.png](files/c0tt0nt4il_ch3ck/screenshot.png "screenshot.png")
 
@@ -154,7 +154,7 @@ $('input[type="text"]').val(result);
 $('input[type="submit"]').click();
 ```
 
-##### Mysterious Circle
+#### Mysterious Circle
 
 ![screenshot.png](files/mysterious_circle/screenshot.png "screenshot.png")
 
@@ -168,7 +168,7 @@ I used [this tool](https://www.miniwebtool.com/remove-accent/) to remove accents
 
 > 
 
-#### Stage 2
+### Stage 2
 
 Here is an ASCII version of the map of the second stage. Starting position is marked by `@` and position of the mini challenges by `¤` character.
 
@@ -190,7 +190,7 @@ Here is an ASCII version of the map of the second stage. Starting position is ma
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ```
 
-##### Bunny-Teams
+#### Bunny-Teams
 
 ![screenshot.png](files/bunny_teams/screenshot.png "screenshot.png")
 
@@ -219,7 +219,7 @@ submarine   6 0
 
 ```
 
-##### Pumple's Puzzle
+#### Pumple's Puzzle
 
 ![screenshot.png](files/pumples_puzzle/screenshot.png "screenshot.png")
 
@@ -284,7 +284,7 @@ The solution:
 
 ![solution.png](files/pumples_puzzle/solution.png "solution.png")
 
-##### Pssst...
+#### Pssst...
 
 ![screenshot.png](files/pssst/screenshot.png "screenshot.png")
 
@@ -293,7 +293,7 @@ This challenge was based on regular expression. You had to response with a strin
 > He: `[13-37]%`  
 > You: `1%`
 
-##### Punkt.Hase
+#### Punkt.Hase
 
 ![screenshot.png](files/punkt_hase/screenshot.png "screenshot.png")
 
@@ -324,6 +324,299 @@ println(ascii(bin2bytes(binary)))
 ```
 
 The result: `xmnlhqwgbloaet`
+
+#### CLC32
+
+![screenshot.png](files/clc32/screenshot.png "screenshot.png")
+
+This challenge was very confusing to me. I tried several values of `query` URL parameter until I got interesting error for value [`"abc"`](http://whale.hacking-lab.com:5337/live/a/life?query=%22abc%22).
+
+```
+{"errors":[{"message":"Syntax Error GraphQL (1:1) Unexpected String \"abc\"\n\n1: \"abc\"\n   ^\n","locations":[{"line":1,"column":1}]}]}
+```
+
+I found this [article](https://graphql.org/learn/introspection/) about GraphQL Introspection which helped me a lot. I was quickly able to list the `Query` type using this query parameter:
+
+```
+{
+  __type(name: "Query") {
+    name
+    fields {
+      name
+      type {
+        name
+        fields {
+          name
+        }
+      }
+    }
+  }
+}
+```
+
+This was the response to my query:
+
+```
+{  
+   "data":{  
+      "__type":{  
+         "name":"Query",
+         "fields":[  
+            {  
+               "name":"In",
+               "type":{  
+                  "name":"In",
+                  "fields":[  
+                     {  
+                        "name":"Out"
+                     },
+                     {  
+                        "name":"see"
+                     },
+                     {  
+                        "name":"hear"
+                     },
+                     {  
+                        "name":"taste"
+                     },
+                     {  
+                        "name":"smell"
+                     },
+                     {  
+                        "name":"touch"
+                     }
+                  ]
+               }
+            },
+            {  
+               "name":"Out",
+               "type":{  
+                  "name":"Out",
+                  "fields":[  
+                     {  
+                        "name":"In"
+                     },
+                     {  
+                        "name":"see"
+                     },
+                     {  
+                        "name":"hear"
+                     },
+                     {  
+                        "name":"taste"
+                     },
+                     {  
+                        "name":"smell"
+                     },
+                     {  
+                        "name":"touch"
+                     }
+                  ]
+               }
+            }
+         ]
+      }
+   }
+}
+```
+
+Now I knew the complete structure of the `Query` type. I manually tried to send this query to the server.
+
+```
+{
+  In {
+    see
+    hear
+    taste
+    smell
+    touch
+    Out {
+      see
+      hear
+      taste
+      smell
+      touch
+    }
+  }
+}
+```
+
+The server responded with:
+
+```
+{
+  "data": {
+    "In": {
+      "see": "U",
+      "hear": "s",
+      "taste": "T",
+      "smell": "T",
+      "touch": "T",
+      "Out": {
+        "see": "N",
+        "hear": "w",
+        "taste": "u",
+        "smell": "t",
+        "touch": "f"
+      }
+    }
+  }
+}
+```
+
+I finally understood this mini challenge. You had to send such queries and check the response. If any of `In` or `Out` objects in the response contained the same letter 3 or more times you appended it to the solution. You repeated this process until you found 4 letters of the solution.
+
+I wrote this [script](../../src/main/scala/hackyeaster2019/Egg21CLC32.scala) in Scala to automate the process.
+
+```
+Data(In(Q,8,w,j,Y,Out(f,Y,X,I,P)))
+Data(In(4,j,G,4,1,Out(o,w,b,6,P)))
+Data(In(C,i,g,q,4,Out(R,J,R,R,R)))
+   found: R -> R
+Data(In(c,0,5,0,h,Out(z,z,z,z,z)))
+   found: z -> Rz
+Data(In(g,8,g,6,x,Out(Z,p,g,M,c)))
+Data(In(y,w,p,Y,b,Out(k,3,b,i,z)))
+Data(In(w,R,C,Z,6,Out(Q,D,D,x,K)))
+Data(In(D,m,S,N,p,Out(F,L,V,L,4)))
+Data(In(Y,f,Y,Y,Y,Out(i,o,o,2,x)))
+   found: Y -> RzY
+Data(In(E,m,n,y,e,Out(R,9,u,R,E)))
+Data(In(d,T,m,U,E,Out(E,C,G,T,A)))
+Data(In(J,Q,h,e,m,Out(8,u,8,8,8)))
+   found: 8 -> RzY8
+   session: z.f9RbVN48POVq....
+```
+
+The result: `RzY8`
+
+#### The Oracle
+
+![screenshot.png](files/the_oracle/screenshot.png "screenshot.png")
+
+This mini challenge was pretty straightforward. I wrote this Python [script](files/the_oracle/solve.py) to solve it.
+
+```python
+import random
+
+seed = 98561420434999400035248964858544251343852668543658531616904836099441898503737711170671949770260539703182221729662853773196999361191
+
+for i in range(1337):
+    random.seed(seed)
+    seed = random.randint(-(1337**42), 1337**42)
+
+print(seed)
+```
+
+This was the result.
+
+```
+$ ./solve.py 
+43023517778043245341217180154069075756799457493834358901122805278616827672619521565545239083538430229539812388810709200591684059769
+```
+
+#### Museum
+
+![screenshot.png](files/museum/screenshot.png "screenshot.png")
+
+This was the final mini challenge of this level. The page loaded this JavaScript [file](files/museum/index.js) with the following note.
+
+> Whoever finds this may continue to tell our stories or may reveal the secret that is hidden behind all of them. gz opa & ccrypto
+
+This was the main function from the script.
+
+```javascript
+let tell_a_story = () => {
+    while (alive) {
+        heOpened(theBoxOfCarrots)
+            .and().then().heRolled('a really large dice')
+            .and().then().heSaid(['a', 'bra', 'ca', 'da', 'bra'])
+            .but().sometimes().heForgot()
+            .and().then().heShuffled('everything')
+            .and().then().heClosed(theBoxOfCarrots)
+            .and().heDidThat('for a very long time.');
+    }
+};
+```
+
+It referenced lot of other functions to make itself hard to understand. I wrote my own version of this function which inlined logic from all the referenced functions and simplified the result code.
+
+```javascript
+let tell_a_story_simplified = () => {
+    let s = 1;
+
+    for (let age = 0; age <= destiny; age++) {
+        s += 2;
+        
+        // update row number
+        theBoxOfCarrots.forEach((row, idx) => {
+            let sin = Math.abs(Math.floor(Math.sin(s) * 20));
+            s = row[0] + sin;
+            theBoxOfCarrots[idx][0] = s;
+        });
+
+        // append current index to row indices
+        theBoxOfCarrots.forEach((row, idx) => {
+            theBoxOfCarrots[idx][1] += (idx + ".");
+        });
+
+        // sort rows by their numbers in ascending order
+        theBoxOfCarrots.sort((a, b) => {
+            return a[0] - b[0]
+        });
+
+        s++;
+    }
+};
+```
+
+To get the flag you had to reverse this function to get the original numbers and then convert these numbers using the alphabet defined in the original script.
+
+```java
+Array.prototype.last = function() {
+    return this[this.length - 1];
+};
+
+let tell_a_story_reversed = () => {
+
+    // save indices as int array instead of dot-delimited string
+    let box = theBoxOfCarrots.map(row => {
+        let indices = row[1].split('.');
+        indices.pop();
+        indices.map(idx => parseInt(idx));
+        return [row[0], indices];
+    });
+
+    for (var age = destiny; age >= 0; age--) {
+        if (debug) console.log("numbers: " + box.map(row => row[0]));
+
+        // sort rows by their numbers in ascending order
+        box.sort((a, b) => a[1].last() - b[1].last());
+
+        // remove current index from row indices
+        box.forEach(row => row[1].pop());
+
+        // update row numbers
+        for (let idx = box.length - 1; idx >= 0; idx--) {
+            let s_prev = idx > 0 ?
+                box[idx - 1][0] : // get previous number if idx > 0
+                age > 0 ? // get the last number from the next round + 3 if idx == 0
+                    [...box].sort((a, b) => a[1].last() - b[1].last())[box.length - 1][0] + 3 :
+                    3; // handle corner case for the first element in the last round
+
+            box[idx][0] -= Math.abs(Math.floor(Math.sin(s_prev) * 20));
+        }
+    }
+
+    let numbers = box.map(row => row[0]);
+    console.log("numbers: " + numbers);
+
+    let flag = numbers.map(num => a[0].charAt(num)).join("")
+        .match(/(.{1,4})/g).join("-");
+    
+    console.log("flag: " + flag);
+};
+```
 
 ### Flag
 
