@@ -329,7 +329,7 @@ The result: `xmnlhqwgbloaet`
 
 ![screenshot.png](files/clc32/screenshot.png "screenshot.png")
 
-This challenge was very confusing to me. I tried several values of `query` URL parameter until I got interesting error for value [`"abc"`](http://whale.hacking-lab.com:5337/live/a/life?query=%22abc%22).
+This challenge was very confusing to me. I tried several values of `query` URL parameter until I got interesting error for [`"abc"`](http://whale.hacking-lab.com:5337/live/a/life?query=%22abc%22).
 
 ```
 {"errors":[{"message":"Syntax Error GraphQL (1:1) Unexpected String \"abc\"\n\n1: \"abc\"\n   ^\n","locations":[{"line":1,"column":1}]}]}
