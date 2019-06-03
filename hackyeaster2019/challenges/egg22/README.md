@@ -249,6 +249,110 @@ solution = ascii(concat(hex(x1), hex(x2)))
 
 The result: `b4ByG14N7`
 
+#### A mysterious gate
+
+![screenshot.png](files/mysterious_gate/screenshot.png "screenshot.png")
+
+This was the final mini challenge of this level. To solve it you had to find the right combination to open the lock.
+
+As the first thing I had to understand this JavaScript responsible for opening the lock to reveal the flag in case the right combination was entered. I added few comments to the code to sum up my observations. 
+
+```javascript
+function h(s) {
+    return s.split("").reduce(function (a, b) {
+        a = ((a << 5) - a) + b.charCodeAt(0); // a = a * 31 + b
+        return a & a
+    }, 0);
+}
+
+var ca = function (str, amount) { // ROT-n
+    if (Number(amount) < 0)
+        return ca(str, Number(amount) + 26);
+    var output = '';
+    for (var i = 0; i < str.length; i++) {
+        var c = str[i];
+        if (c.match(/[a-z]/i)) {
+            var code = str.charCodeAt(i);
+            if ((code >= 65) && (code <= 90))
+                c = String.fromCharCode(((code - 65 + Number(amount)) % 26) + 65);
+            else if ((code >= 97) && (code <= 122))
+                c = String.fromCharCode(((code - 97 + Number(amount)) % 26) + 97);
+        }
+        output += c;
+    }
+    return output;
+
+};
+
+$('.door').click(function () {
+    var n = [
+        $('#n1').val(),
+        $('#n2').val(),
+        $('#n3').val(),
+        $('#n4').val(),
+        $('#n5').val(),
+        $('#n6').val(),
+        $('#n7').val(),
+        $('#n8').val()
+    ];
+
+    var g = 'Um';
+    var et = 'iT';
+    var lo = 'BG';
+    var st = '4I';
+
+    var into = 'xr';
+    var the = 'Xp';
+    var lab = 'rr';
+    var hahaha = 'Qv';
+
+    var ok = ca('mj19', -5) + '<br>' +
+        ca(et, n[0]) +
+        ca(the, n[1]) + '<br>' +
+        ca(g, n[2]) +
+        ca(lo, n[3]) + '<br>' +
+        ca(st, n[4]) +
+        ca(hahaha, n[5]) + '<br>' +
+        ca(into, n[6]) +
+        ca(lab, n[7]);
+
+    $('#key').html(ok);
+
+    if (h(n.join('')) === -502491864) {
+        $('.door').toggleClass('what');
+    }
+});
+```
+
+The code looked clear enough so I directly wrote my Scala [bruteforce solver](../../src/main/scala/hackyeaster2019/Egg22MysteriousGate.scala) to find the right combination of lock pins.
+
+```scala
+def h(s: String): Int = s.foldLeft(0)((a, b) => a * 31 + b)
+
+def bruteforce(): Option[Array[Int]] = {
+  val range = -9 to 9
+
+  for (n0 <- range; n1 <- range; n2 <- range; n3 <- range; n4 <- range; n5 <- range; n6 <- range; n7 <- range) {
+    val s = s"$n0$n1$n2$n3$n4$n5$n6$n7"
+    if (h(s) == -502491864) {
+      return Some(Array(n0, n1, n2, n3, n4, n5, n6, n7))
+    }
+  }
+
+  None
+}
+
+bruteforce().foreach(pins => println(s"pins: ${pins.mkString(", ")}"))
+```
+
+This was the result:
+
+```
+pins: -9, 2, 4, 8, 6, 6, 3, 1
+```
+
+Lock successfully opened and showed the flag. 
+
 ### Flag
 
 ```
