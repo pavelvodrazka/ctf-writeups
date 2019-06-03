@@ -77,7 +77,7 @@ Enter your command:
 
 #### Maze Solver
 
-The game used simple TUI to visualize the maze. The goal of the game was to find the key and open the chest hidden somewhere in the maze. To do so I wrote a Python maze solver based on the [Wall Follower](https://en.wikipedia.org/wiki/Maze_solving_algorithm#Wall_follower) algorithm and let him to do the job.
+The game used simple TUI to visualize the maze. The goal of the game was to find the key and open the chest hidden somewhere in the maze. To do so I wrote a Python maze solver based on the [Wall Follower](https://en.wikipedia.org/wiki/Maze_solving_algorithm#Wall_follower) algorithm and let him do the job.
 
 ```python
 from pwn import *

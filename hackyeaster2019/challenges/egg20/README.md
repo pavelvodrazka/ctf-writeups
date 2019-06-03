@@ -66,7 +66,7 @@ It printed following output.
 ... (snip) ...
 ```
 
-Each transparent pixel of the row represented one RGB component. The value of these three components had the same unique value for each row and represented the position of the row in the original image. I modified my program to reorder rows to the original order.
+Each transparent pixel of the row represented one RGB component. The value of these three components had the same unique value for each row which encoded the position of the row in the original image. I modified my program to reorder rows to the original order.
 
 ```scala
 val scrambled = ImageIO.read(Paths.get("hackyeaster2019/challenges/egg20/files/egg-scrambled.png").toFile)

@@ -4,7 +4,7 @@ This year, we dance outside, yeaahh! See [here](https://hackyeaster.hacking-lab.
 
 ### Description
 
-The link brought you to a page with an interactive 3D scene containing a sphere made of little squared mirrors. 
+The link brought you to a page with a 3D scene containing a sphere made of little squared mirrors. 
 
 ![sphere.png](files/sphere.png "sphere.png")
 
@@ -12,7 +12,7 @@ The link brought you to a page with an interactive 3D scene containing a sphere 
 
 The scene was interactive so you could move the position of the camera and change its angle.
 
-If you moved the camera inside the sphere you found out that there are another mirrors hidden inside.
+If you moved the camera inside the sphere you found out that there were another mirrors hidden inside.
 
 ![sphere-inside.png](files/sphere-inside.png "sphere-inside.png")
 

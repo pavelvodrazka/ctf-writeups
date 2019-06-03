@@ -288,7 +288,7 @@ The solution:
 
 ![screenshot.png](files/pssst/screenshot.png "screenshot.png")
 
-This challenge was based on regular expression. You had to response with a string which matched given regex.
+This challenge was based on regular expressions. You had to response with a string which matched the given regex.
 
 > He: `[13-37]%`  
 > You: `1%`
@@ -308,7 +308,7 @@ $ mkdir frames
 $ convert 306ba5e1-dd62-4d28-8844-50347f44761b.gif frames/frame-%03d.jpg
 ```
 
-I thought it was a morse code, but I was wrong. The second logical guess was a binary code. I wrote a simple [script](../../src/main/scala/hackyeaster2019/Egg21PunktHase.scala) which converted black and white frames into binary bits and print them as an ASCII string.
+I thought it was a morse code, but I was wrong. The next logical guess was a binary code. I wrote a simple [script](../../src/main/scala/hackyeaster2019/Egg21PunktHase.scala) which converted black and white frames into binary bits and print them as an ASCII string.
 
 ```scala
 val workdir = Paths.get("hackyeaster2019/challenges/egg21/files/punkt_hase/frames")
@@ -519,11 +519,11 @@ $ ./solve.py
 
 ![screenshot.png](files/museum/screenshot.png "screenshot.png")
 
-This was the final mini challenge of this level. The page loaded this JavaScript [file](files/museum/index.js) with the following note.
+This was the final mini challenge of this level. The page loaded a JavaScript [file](files/museum/index.js) with the following note.
 
 > Whoever finds this may continue to tell our stories or may reveal the secret that is hidden behind all of them. gz opa & ccrypto
 
-This was the main function from the script.
+The main function from the script looked like this.
 
 ```javascript
 let tell_a_story = () => {

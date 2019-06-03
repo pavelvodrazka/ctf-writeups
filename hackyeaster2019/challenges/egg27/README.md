@@ -12,14 +12,14 @@ I used DevTools in my browser to enable the third option and tried to submit rat
 
 ![rating.png](files/rating.png "rating.png")
 
-I learned that the path of the third level is similar to the links of the previous levels. As the next step I used [HashKiller] to crack the previous path hashes. 
+I learned that the path of the third level is similar to the links of the previous levels. As the next step I used [HashKiller](https://hashkiller.co.uk/Cracker) to crack the previous path hashes. 
 
 ```
 1804161a0dabfdcd26f7370136e0f766 = MD5("P4TH1")
 7fde33818c41a1089088aa35b301afd9 = MD5("P4TH2")
 ```
 
-I simply calculated hash path of the third level as MD5 hash of "P4TH3".
+I simply calculated hash path of the third level as MD5 hash of `P4TH3`.
  
 ```
 bf42fa858de6db17c6daa54c4d912230 = MD5("P4TH3")

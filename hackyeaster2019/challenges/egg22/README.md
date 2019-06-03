@@ -89,7 +89,7 @@ The result: `117780214897213996119`
 
 ![screenshot.png](files/mathonymous/screenshot.png "screenshot.png")
 
-I simple evaluated the given math expression using python.
+I simply evaluated the given math expression using python.
 
 ```
 $ python -c "print 1+91-92-67"
@@ -100,7 +100,7 @@ $ python -c "print 1+91-92-67"
 
 ![screenshot.png](files/c0tt0nt4il_ch3ck/screenshot.png "screenshot.png")
 
-The small image with yellow text was quickly moving from side to side which made it unreadable. I stopped the JS timer which moved the image in DevTools. Then I could read the text: `bcd3f6h`.
+The small image with the yellow text was quickly moving from side to side which made it unreadable. I stopped the JS timer which moved the image in DevTools. Then I could read the text: `bcd3f6h`.
 
 It was a leetspeak alphabet sequence starting with `n` and ending with `t`. To solve the challenge I had to enter the next letter from the sequence.
 
@@ -120,7 +120,7 @@ The time: `09:50`
 
 I had my ASCII map of the maze so it was easy to just convert the path with this Scala script.
 
-```
+```scala
 def solve(): Array[Char] = "aaawwdddwwaaawwdddwwaaaaassssssssssddddddddddwwwwwwdd".map {
   case 'w' => '1'
   case 's' => '6'
@@ -218,7 +218,7 @@ The decrypted message: `RSA3ncrypt!onw!llneverd!e`
 
 ![screenshot.png](files/sailor_john/screenshot.png "screenshot.png")
 
-You got two tuples of prime number and constant `(p1, c1)` and `(p2, c2)`. For each of those you had to solve the equation `emirp ^ x ≡ c (mod prime)` to get the values `x1` and `x2`. `emirp` was just the `prime` number with digits in reversed order.
+You got two tuples of a prime number and a constant `(p1, c1)` and `(p2, c2)`. For each of those you had to solve the equation `emirp ^ x ≡ c (mod prime)` to get the values `x1` and `x2`. `emirp` was just the `prime` number with digits in reversed order.
 
 I used this online [Discrete logarithm calculator](https://www.alpertron.com.ar/DILOG.HTM) to solve the equation.
 

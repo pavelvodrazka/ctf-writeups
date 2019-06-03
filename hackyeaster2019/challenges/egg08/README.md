@@ -6,17 +6,14 @@ Do you like modern art?
 
 ### Solution
 
-This challenge was a trolling masterpiece. Small QR codes said "remove me". So I did. Then I spent literally hours trying to solve it graphically. I hoped that I could find another smaller QR code sharing same pixels with the original one. Such a waste of time...
+This challenge was a trolling masterpiece. Small QR codes said "remove me". So I did. Then I spent literally hours trying to solve it graphically. I hoped that I could find another smaller QR code sharing the same pixels with the original one. Such a waste of time...
 
 Then i tried different approach. I inspected the image file.  
 
 ```
-$ strings modernart.jpg
-... (snip) ...
+$ strings -n 20 modernart.jpg 
 (E7EF085CEBFCE8ED93410ACF169B226A)
-... (snip) ...
 (KEY=1857304593749584)
-... (snip) ...
 ```
 
 It looked like a ciphertext and a decryption key. I thought I have to guess the cipher but luckily there was another hint hidden at the end of the file.
