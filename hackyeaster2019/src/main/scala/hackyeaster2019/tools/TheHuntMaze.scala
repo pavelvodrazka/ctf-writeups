@@ -20,7 +20,7 @@ class TheHuntMaze(val id: String) {
   private val mapSize = (100, 50)
   private val mapArray = Array.fill(mapSize._2, mapSize._1)('░')
 
-  private var currentPosition = Position(50, 25)
+  private var currentPosition = Position(mapSize._1 / 2, mapSize._2 / 2)
   private var pageContent = ""
 
   def init(position: Option[Position], session: Option[String], map: Option[String]): Unit = {
@@ -56,12 +56,12 @@ class TheHuntMaze(val id: String) {
       print("> ")
       val command = reader.read.toChar
       command match {
-        case 'q' => System.exit(0) // quit
-        case 'p' => println(pageContent) // print page
         case 'w' => move(Directions.up)
         case 's' => move(Directions.down)
         case 'a' => move(Directions.left)
         case 'd' => move(Directions.right)
+        case 'p' => println(pageContent) // print page
+        case 'q' => System.exit(0) // quit
         case _ => println("unknown command")
       }
     }
@@ -73,7 +73,8 @@ class TheHuntMaze(val id: String) {
     loadPage(host.resolve(s"move/${direction.x}/${direction.y}"))
 
     alert() match {
-      case Some("Ouch! You would hit a wall.") => mapArray(newPosition.y)(newPosition.x) = '█'
+      case Some("Ouch! You would hit a wall.") | Some("You are not god, you can&#39;t leave the area.") =>
+        mapArray(newPosition.y)(newPosition.x) = '█'
       case _ =>
         updateMap(newPosition, if (challenge().isDefined) '¤' else ' ')
         currentPosition = newPosition
@@ -141,7 +142,6 @@ class TheHuntMaze(val id: String) {
 
   private case class Position(x: Int, y: Int) {
     def move(direction: Direction): Position = Position(x + direction.x, y + direction.y)
-
     override def toString: String = s"[$x, $y]"
   }
 
