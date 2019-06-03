@@ -1,5 +1,11 @@
 # HackyEaster 2019 write-up by pjslf
 
+#### Ranking
+
+This year I finished at the 6th place.
+
+![scores.png](images/scores.png "scores.png")
+
 #### Challenges
 
 [Egg 01: Twisted](challenges/egg01/README.md)  
