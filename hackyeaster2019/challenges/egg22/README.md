@@ -159,6 +159,96 @@ WhatYouHear: Nothing for you?
 
 Navigator suggested that I should buy something for Madame Pottine. It was a clear clue on how to identify the right item, the teabag. I copied cookie the value from the `Set-Cookie` header of the request with `Content-Type: shop/teabag`, set it via DevTools and clicked the buy button.
 
+#### Ran-Dee's Secret Algorithm
+
+![screenshot.png](files/ran_dee/screenshot.png "screenshot.png")
+
+I had to decrypt one of the encrypted messages `c0`, `c1`, `c2` knowing the modulus values `n0`, `n1`, `n2`. Normally, I would have to factorize the modulus values, but since only 3 (i.e. the size of the smallest odd prime) unique primes were used I could find those factors easily using GCD algorithm. 
+
+```scala
+val n0 = BigInt("5613358668671613665566510382994441407219432062998832523305840186970780370368271618683122274081615792349154210168307159475914213081021759597948038689876676892007399580995868266543309872185843728429426430822156211839073")
+val n1 = BigInt("43197226819995414250880489055413585390503681019180594772781599842207471693041753129885439403306011423063922105541557658194092177558145184151460920732675652134876335722840331008185551706229533179802997366680787866083523")
+val n2 = BigInt("10603199174122839808738169357706062732533966731323858892743816728206914395320609331466257631096646511986506501272036007668358071304364156150345138983648630874220488837685118753574424686204595981514561343227316297317899")
+
+val c0 = BigInt("4870848362302190038444777237783773762989130424052097020657841660502972144445923614388484256730535971521519431799627785375106287039267168740424012477722145444567771983730549192737704000541149116222676893530432722372149")
+val c1 = BigInt("28181072004973949938546689607280132733514376641605169495754912428335704118088087978918344741937618706192728369992365104786854427689675673204353839263196581517462813454954645956569721549887573594597053350585038195786183")
+val c2 = BigInt("883895515518702990157008398945175622369348177479273727666188822384515278346091231223228633562286443126634960286337962216299566852261275189679618639468100617409385486757117996512128227299052476236805574920658456448123")
+
+// find factors
+val f0 = gcd(n0, n1)
+val f1 = gcd(n0, n2)
+val f2 = gcd(n1, n2)
+
+assert(n0 == f0 * f1)
+assert(n1 == f0 * f2)
+assert(n2 == f1 * f2) 
+```
+
+Assertions were met so I added my implementation of the RSA decryption function.
+
+```scala
+def decrypt(ciphertext: BigInt, factors: (BigInt, BigInt), e: BigInt): String = {
+  val p = factors._1
+  val q = factors._2
+  val n = p * q
+
+  // calculate phi
+  val phi = lcm(p - 1, q - 1)
+  assert(e.gcd(phi) == 1, "e and phi are not coprimes")
+
+  // d * e ≡ 1 (mod phi)
+  val d = e.modInverse(phi)
+  assert((d * e).mod(phi).equals(1), "d is not e inverted")
+
+  ascii(ciphertext.modPow(d, n).toByteArray)
+}
+```
+
+The last thing was to guess the value of public exponent `e`. I used the most common value `65537` which worked as expected.
+
+```scala
+val message = decrypt(c0, (f0, f1), 65537)
+```
+
+The comple source code of my solver can be found [here](../../src/main/scala/hackyeaster2019/Egg22RanDee.scala).
+
+The decrypted message: `RSA3ncrypt!onw!llneverd!e`
+
+#### Sailor John
+
+![screenshot.png](files/sailor_john/screenshot.png "screenshot.png")
+
+You got two tuples of prime number and constant `(p1, c1)` and `(p2, c2)`. For each of those you had to solve the equation `emirp ^ x ≡ c (mod prime)` to get the values `x1` and `x2`. `emirp` was just the `prime` number with digits in reversed order.
+
+I used this online [Discrete logarithm calculator](https://www.alpertron.com.ar/DILOG.HTM) to solve the equation.
+
+1. prime = 17635204117, c = 419785298 ⇒ emirp = 71140253671
+
+   `x1 = 1647592057 + 4408801029 · k, for k ∈ Z`
+
+2. prime = 1956033275219, c = 611096952820 ⇒ emirp = 9125723306591
+
+   `x2 = 305768189495 + 978016637609 · k, for k ∈ Z`
+
+I picked k = 0:
+
+```
+x1 = 1647592057  
+x2 = 305768189495
+```
+
+Then I followed given hint `password = x1x2`, i.e. string concatenation of `x1` and `x2` values. To make it work I had to convert those values to hex first.
+
+```
+hex(x1) = 0x62344279
+hex(x2) = 0x4731344E37
+solution = ascii(concat(hex(x1), hex(x2)))
+         = ascii(0x623442794731344E37)
+         = b4ByG14N7
+```
+
+The result: `b4ByG14N7`
+
 ### Flag
 
 ```
