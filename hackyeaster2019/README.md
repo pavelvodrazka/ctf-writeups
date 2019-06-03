@@ -6,6 +6,10 @@ This year I finished at the 6th place.
 
 ![scores.png](images/scores.png "scores.png")
 
+#### Teaser
+
+[Egg 00: Teaser](challenges/teaser/README.md)  
+
 #### Challenges
 
 [Egg 01: Twisted](challenges/egg01/README.md)  
